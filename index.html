@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+<title>红笔生词本</title>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="红笔生词本">
+<meta name="theme-color" content="#fdf6f0">
+<link rel="manifest" href="./manifest.json">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Georgia', 'Noto Serif SC', 'Microsoft YaHei', serif;
+    background: #fdf6f0;
+    min-height: 100vh;
+    padding: 20px 16px 90px; /* 底部留空给 Tab 栏 */
+  }
+  .container { max-width: 800px; margin: 0 auto; }
+
+  /* ---- 顶部标题栏 ---- */
+  .topbar { text-align: center; margin-bottom: 20px; }
+  .topbar h1 { font-size: 22px; color: #3d2b1f; font-weight: 700; }
+  .topbar .hint { font-size: 13px; color: #a09080; margin-top: 4px; }
+
+  /* ---- 底部 Tab 栏 ---- */
+  .tab-bar {
+    position: fixed; bottom: 0; left: 0; right: 0; z-index: 100;
+    display: flex; align-items: center; justify-content: space-around;
+    background: #fff; border-top: 1px solid #ede4da;
+    padding: 6px 0 env(safe-area-inset-bottom, 8px);
+    box-shadow: 0 -2px 10px rgba(0,0,0,0.04);
+  }
+  .tab-item {
+    display: flex; flex-direction: column; align-items: center;
+    gap: 3px; cursor: pointer; padding: 6px 20px; border-radius: 10px;
+    transition: all 0.2s; user-select: none; -webkit-tap-highlight-color: transparent;
+    font-size: 11px; color: #8b7355; font-weight: 500; letter-spacing: 0.5px;
+  }
+  .tab-item .tab-icon { font-size: 20px; transition: transform 0.2s; }
+  .tab-item.active { color: #e74c3c; }
+  .tab-item.active .tab-icon { transform: scale(1.15); }
+  .tab-item:active { background: #fdf6f0; }
+
+  /* ---- 内容区块 ---- */
+  .tab-content { display: none; }
+  .tab-content.active { display: block; }
+
+  /* ---- 自定义文章面板 ---- */
+  .custom-panel {
+    background: #fff; border-radius: 14px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+    padding: 20px 24px; margin-bottom: 20px;
+    border: 1px solid #ede4da;
+  }
+  .custom-panel .toggle-row {
+    display: flex; align-items: center; justify-content: space-between;
+    cursor: pointer; user-select: none;
+  }
+  .custom-panel .toggle-row h3 {
+    font-size: 15px; color: #3d2b1f; display: flex; align-items: center; gap: 6px;
+  }
+  .custom-panel .toggle-row .arrow {
+    transition: transform 0.25s; font-size: 12px; color: #8b7355;
+  }
+  .custom-panel.open .toggle-row .arrow { transform: rotate(180deg); }
+  .custom-panel .custom-body { display: none; margin-top: 14px; }
+  .custom-panel.open .custom-body { display: block; }
+
+  .custom-panel textarea {
+    width: 100%; height: 160px; padding: 14px; font-size: 14px;
+    font-family: 'Georgia', 'Noto Serif SC', serif;
+    border: 1px solid #e0d6cc; border-radius: 10px;
+    resize: vertical; line-height: 1.8; color: #3d2b1f;
+    background: #fdf8f5; outline: none; white-space: pre-wrap;
+  }
+  .custom-panel textarea:focus { border-color: #c0a890; }
+  .custom-panel .hint-text { font-size: 12px; color: #a09080; margin-top: 6px; }
+  .custom-panel .btn-row { display: flex; gap: 8px; margin-top: 10px; flex-wrap: wrap; }
+
+  /* ---- 文章卡片 ---- */
+  .article-card {
+    background: #fff; border-radius: 16px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+    padding: 40px 42px; margin-bottom: 24px;
+    border: 1px solid #ede4da;
+  }
+  .article-card h2 {
+    font-size: 18px; color: #3d2b1f; margin-bottom: 20px;
+    padding-bottom: 14px; border-bottom: 1px solid #f0e8dc;
+  }
+  .article-card .paragraph {
+    font-size: 16px; line-height: 2.4; color: #4a3f35;
+    margin-bottom: 18px; text-indent: 2em;
+  }
+  .article-card .paragraph:last-child { margin-bottom: 0; }
+
+  /* ---- 每个单词 ---- */
+  .word {
+    cursor: pointer;
+    border-radius: 3px;
+    padding: 2px 3px;
+    margin: 0 1px;
+    transition: all 0.12s;
+    display: inline;
+  }
+  .word:hover { background: #fff0f0; }
+  .word.marked {
+    color: #c0392b;
+    text-decoration: underline;
+    text-decoration-color: #e74c3c;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 2px;
+    background: rgba(231,76,60,0.08);
+    font-weight: 600;
+  }
+
+  /* ---- 底部面板 ---- */
+  .panel {
+    background: #fff; border-radius: 16px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+    padding: 28px 32px; border: 1px solid #ede4da;
+  }
+  .panel-header {
+    display: flex; align-items: center; justify-content: space-between;
+    margin-bottom: 16px; flex-wrap: wrap; gap: 12px;
+  }
+  .panel-header h3 {
+    font-size: 16px; color: #3d2b1f;
+    display: flex; align-items: center; gap: 8px;
+  }
+  .panel-header h3 .count {
+    background: #e74c3c; color: #fff; font-size: 12px;
+    padding: 2px 10px; border-radius: 12px; font-weight: 600;
+  }
+  .btn-row-flex { display: flex; gap: 8px; flex-wrap: wrap; }
+  .btn {
+    padding: 8px 22px; font-size: 13px; font-weight: 600;
+    border: none; border-radius: 8px; cursor: pointer;
+    transition: all 0.2s; letter-spacing: 0.3px; white-space: nowrap;
+  }
+  .btn-copy  { background: #e74c3c; color: #fff; }
+  .btn-copy:hover  { background: #c0392b; }
+  .btn-copy:active { transform: scale(0.97); }
+  .btn-clear { background: #f5f0eb; color: #8b7355; }
+  .btn-clear:hover { background: #ebe3d9; }
+  .btn-load  { background: #302b63; color: #fff; }
+  .btn-load:hover  { background: #1f1a4a; }
+  .btn-reset-def { background: #f5f0eb; color: #8b7355; }
+  .btn-archive { background: #8b5e3c; color: #fff; }
+  .btn-archive:hover { background: #6b4630; }
+
+  .word-list {
+    background: #fdf8f5; border: 1px dashed #e0d0c0;
+    border-radius: 10px; padding: 18px 20px; min-height: 50px;
+    font-size: 17px; color: #c0392b; line-height: 2;
+    word-break: break-all; letter-spacing: 1px; font-weight: 500;
+  }
+  .word-list.empty { color: #c0b0a0; font-style: italic; font-weight: 400; font-size: 14px; letter-spacing: 0; }
+
+  /* ---- 导航栏 ---- */
+  .nav-bar {
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+    border: 1px solid #ede4da;
+    margin-bottom: 20px;
+    overflow: hidden;
+  }
+  .nav-bar .nav-toggle {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 16px 22px; cursor: pointer; user-select: none;
+    background: #fdf8f5;
+  }
+  .nav-bar .nav-toggle h3 {
+    font-size: 15px; color: #3d2b1f; display: flex; align-items: center; gap: 6px;
+  }
+  .nav-bar .nav-toggle .arrow {
+    transition: transform 0.25s; font-size: 12px; color: #8b7355;
+  }
+  .nav-bar.open .nav-toggle .arrow { transform: rotate(180deg); }
+  .nav-bar .nav-body { display: none; padding: 0 22px 18px; }
+  .nav-bar.open .nav-body { display: block; }
+
+  .nav-section { margin-bottom: 14px; }
+  .nav-section .ns-title {
+    font-size: 13px; font-weight: 700; color: #8b7355;
+    padding: 6px 0; border-bottom: 1px solid #f0e8dc;
+    margin-bottom: 6px; letter-spacing: 0.5px;
+  }
+  .nav-links { display: flex; flex-wrap: wrap; gap: 6px; }
+  .nav-link {
+    display: inline-block; padding: 4px 12px; font-size: 12px;
+    background: #f5f0eb; color: #3d2b1f; border-radius: 14px;
+    text-decoration: none; font-weight: 500;
+    transition: all 0.15s; cursor: pointer;
+  }
+  .nav-link:hover { background: #e0d6cc; }
+  .nav-link.tool-link { background: #e8eafd; color: #302b63; }
+  .nav-link.tool-link:hover { background: #d0d4f5; }
+
+  /* ---- Stats 页 ---- */
+  .stats-bar {
+    display: flex; gap: 14px; justify-content: center; margin-bottom: 24px; flex-wrap: wrap;
+  }
+  .stat-box {
+    background: #fff; border-radius: 12px; padding: 16px 28px;
+    border: 1px solid #ede4da; text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+  }
+  .stat-box .num {
+    font-size: 28px; font-weight: 700; color: #e74c3c;
+  }
+  .stat-box .label {
+    font-size: 12px; color: #8b7355; margin-top: 4px;
+  }
+
+  .empty-msg {
+    text-align: center; padding: 60px 20px; color: #b0a090; font-size: 15px;
+  }
+
+  .word-table {
+    background: #fff; border-radius: 14px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+    border: 1px solid #ede4da; overflow: hidden;
+  }
+  .word-row {
+    display: flex; align-items: center; padding: 14px 22px;
+    border-bottom: 1px solid #f5f0eb; transition: background 0.12s;
+  }
+  .word-row:last-child { border-bottom: none; }
+  .word-row:hover { background: #fdf8f5; }
+
+  .word-row .rank {
+    width: 32px; font-size: 12px; color: #b0a090; font-weight: 600; flex-shrink: 0;
+  }
+  .word-row.top3 .rank { color: #e74c3c; font-size: 14px; }
+
+  .word-row .word-text {
+    flex: 1; font-size: 16px; color: #3d2b1f; font-weight: 600;
+  }
+
+  .word-row .count-badge {
+    min-width: 36px; height: 26px; line-height: 26px;
+    text-align: center; border-radius: 13px;
+    font-size: 12px; font-weight: 700;
+    color: #fff; flex-shrink: 0; padding: 0 10px;
+  }
+  .count-1  { background: #d4c5b0; }
+  .count-2  { background: #c0a890; }
+  .count-3  { background: #a08060; }
+  .count-4  { background: #8b5e3c; }
+  .count-high { background: #e74c3c; }
+
+  .word-row .word-bar-box {
+    width: 120px; height: 6px; background: #f0e8dc;
+    border-radius: 3px; margin-left: 12px; overflow: hidden; flex-shrink: 0;
+  }
+  .word-row .word-bar {
+    height: 100%; background: #e74c3c; border-radius: 3px; transition: width 0.4s;
+  }
+
+  /* ---- Archive 页 ---- */
+  .archive-card {
+    background: #fff; border-radius: 14px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+    padding: 24px 28px; margin-bottom: 16px;
+    border: 1px solid #ede4da; transition: all 0.2s;
+  }
+  .archive-card:hover { border-color: #c0a890; }
+  .archive-card .meta {
+    display: flex; align-items: center; justify-content: space-between;
+    margin-bottom: 14px; flex-wrap: wrap; gap: 8px;
+  }
+  .archive-card .meta .time {
+    font-size: 12px; color: #8b7355;
+    background: #f5f0eb; padding: 3px 12px; border-radius: 10px;
+  }
+  .archive-card .meta .btn-sm {
+    padding: 4px 12px; font-size: 11px; border-radius: 6px;
+    border: none; cursor: pointer; font-weight: 600;
+    transition: all 0.15s;
+  }
+  .btn-del { background: #fff2f0; color: #cf1322; }
+  .btn-del:hover { background: #ffe7e5; }
+  .archive-card .paragraph {
+    font-size: 15px; line-height: 2.1; color: #4a3f35;
+    margin-bottom: 10px; text-indent: 2em;
+  }
+  .archive-card .paragraph:last-child { margin-bottom: 0; }
+  .btn-back { background: #302b63; color: #fff; }
+
+  /* ---- Toast ---- */
+  .toast {
+    position: fixed; top: 24px; left: 50%; transform: translateX(-50%);
+    background: #333; color: #fff; padding: 10px 26px; border-radius: 8px;
+    font-size: 14px; z-index: 999; opacity: 0; pointer-events: none;
+    transition: opacity 0.3s;
+  }
+  .toast.show { opacity: 1; }
+
+  @media (max-width: 640px) {
+    body { padding: 16px 12px 90px; }
+    .article-card { padding: 24px 16px; }
+    .panel { padding: 20px 16px; }
+    .custom-panel { padding: 16px 14px; }
+    .article-card .paragraph { font-size: 15px; text-indent: 1.5em; line-height: 2.2; }
+    .word-bar-box { display: none; }
+    .archive-card { padding: 18px 16px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- ===== Tab 1: 标记工具 ===== -->
+  <div class="tab-content active" id="tabMark">
+    <!-- 选题导航栏 -->
+    <div class="nav-bar open" id="navBar">
+      <div class="nav-toggle" onclick="toggleNavBar()">
+        <h3>内容选题导航</h3>
+        <span class="arrow">▲</span>
+      </div>
+      <div class="nav-body">
+        <div class="nav-section">
+          <div class="ns-title">CET-4 英文阅读（真题 / 模拟 / 同源外刊）</div>
+          <div class="nav-links">
+            <a class="nav-link" href="https://cet4-6.xdf.cn/" target="_blank">新东方四六级 · 真题阅读</a>
+            <a class="nav-link" href="https://www.kekenet.com/cet4/" target="_blank">可可英语 CET-4 · 精读+音频</a>
+            <a class="nav-link" href="http://www.enread.com/" target="_blank">英文阅读网 · 四级难度美文</a>
+          </div>
+        </div>
+        <div class="nav-section">
+          <div class="ns-title">一、情绪 & 自我成长类</div>
+          <div class="nav-links">
+            <a class="nav-link" href="https://greatergood.berkeley.edu/" target="_blank">Greater Good · 心理+人际</a>
+            <a class="nav-link" href="https://www.ted.com/" target="_blank">TED Talks · 自我成长/心态</a>
+            <a class="nav-link" href="https://www.mindbodygreen.com/" target="_blank">MindBodyGreen · 生活方式</a>
+          </div>
+        </div>
+        <div class="nav-section">
+          <div class="ns-title">二、社交 & 处世类</div>
+          <div class="nav-links">
+            <a class="nav-link" href="https://www.psychologytoday.com/" target="_blank">Psychology Today · 通俗心理</a>
+            <a class="nav-link" href="https://www.bbc.co.uk/learningenglish" target="_blank">BBC Learning English</a>
+            <a class="nav-link" href="https://www.theatlantic.com/" target="_blank">The Atlantic · 人际/社会</a>
+          </div>
+        </div>
+        <div class="nav-section">
+          <div class="ns-title">三、职场 & 现实实用类</div>
+          <div class="nav-links">
+            <a class="nav-link" href="https://hbr.org/" target="_blank">Harvard Business Review</a>
+            <a class="nav-link" href="https://www.fastcompany.com/" target="_blank">Fast Company · 创新/职场</a>
+            <a class="nav-link" href="https://lifehacker.com/" target="_blank">Lifehacker · 自律/效率</a>
+          </div>
+        </div>
+        <div class="nav-section">
+          <div class="ns-title">四、生活 & 家庭类</div>
+          <div class="nav-links">
+            <a class="nav-link" href="https://www.realsimple.com/" target="_blank">Real Simple · 生活美学</a>
+            <a class="nav-link" href="https://www.newyorker.com/" target="_blank">The New Yorker · 随笔感悟</a>
+          </div>
+        </div>
+        <div class="nav-section">
+          <div class="ns-title">五、轻科普 & 趣味认知</div>
+          <div class="nav-links">
+            <a class="nav-link" href="https://www.scientificamerican.com/mind/" target="_blank">Scientific American · 行为心理</a>
+            <a class="nav-link" href="https://nautil.us/" target="_blank">Nautilus · 人文科普</a>
+            <a class="nav-link" href="https://www.bbc.com/earth" target="_blank">BBC Earth · 行为科普</a>
+          </div>
+        </div>
+        <div class="nav-section">
+          <div class="ns-title">分级易读（从入门到四级）</div>
+          <div class="nav-links">
+            <a class="nav-link" href="https://newsinlevels.com/" target="_blank">News in Levels · 3级分级新闻</a>
+            <a class="nav-link" href="https://breakingnewsenglish.com/" target="_blank">Breaking News English · 7级</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 自定义文章面板 -->
+    <div class="custom-panel open" id="customPanel">
+      <div class="toggle-row" onclick="toggleCustomPanel()">
+        <h3>自定义文章</h3>
+        <span class="arrow">▲</span>
+      </div>
+      <div class="custom-body">
+        <textarea id="customInput" placeholder="在此粘贴英文文章...
+支持自动识别换行：
+· 空行分隔 → 自动分段
+· 单行回车 → 自动换行（非空行的回车会被合并为同一段）">Sleep is one of the most essential yet often neglected parts of our daily lives. While we sleep, our bodies are far from idle — the brain sorts through the day's memories, strengthening important ones and discarding what is unnecessary. At the same time, cells throughout the body repair damage and restore energy for the day ahead.
+
+Most adults need between seven and nine hours of sleep per night, but studies show that a large portion of the population gets significantly less. The consequences go far beyond simple drowsiness. Long-term sleep deprivation has been linked to a higher risk of heart disease, weakened immune function, and even weight gain. One reason is that lack of sleep disrupts the hormones that control hunger, making people crave high-calorie foods.
+
+The quality of sleep matters as much as quantity. Deep sleep, also known as slow-wave sleep, is the stage during which the body does most of its physical repair. REM sleep — named for the rapid eye movements that occur during it — plays a key role in emotional regulation and creative thinking. A full sleep cycle lasts roughly ninety minutes, and waking up in the middle of a cycle can leave you feeling groggy even if you spent enough hours in bed.
+
+Improving sleep does not necessarily require expensive products or elaborate routines. Experts recommend keeping a consistent bedtime, avoiding screens for at least thirty minutes before sleep, and keeping the bedroom cool and dark. Caffeine and alcohol, both of which can interfere with sleep quality, are best avoided in the hours before bed. Regular exercise during the day also promotes deeper sleep, though working out too close to bedtime can have the opposite effect.
+
+In a culture that often glorifies busyness and treats sleep as a luxury, it is worth remembering that good sleep is not a sign of laziness. It is a biological necessity — one that affects every aspect of our physical and mental well-being.</textarea>
+        <p class="hint-text">支持自动识别回车换行：<strong>空行</strong>（两个回车）自动分段，<strong>单个回车</strong>在段落内自动换行。</p>
+        <div class="btn-row">
+          <button class="btn btn-load" onclick="loadCustomArticle()">加载文章</button>
+          <button class="btn btn-reset-def" onclick="resetDefaultArticle()">恢复默认文章</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 文章显示区 -->
+    <div class="article-card">
+      <h2>Reading</h2>
+      <div id="articleContent"></div>
+    </div>
+
+    <!-- 底部面板 -->
+    <div class="panel">
+      <div class="panel-header">
+        <h3>红笔标记的生词 <span class="count" id="count">0</span></h3>
+        <div class="btn-row-flex">
+          <button class="btn btn-copy" onclick="copyWords()">一键复制</button>
+          <button class="btn btn-clear" onclick="switchTab('stats')">生词存储</button>
+          <button class="btn btn-clear" onclick="archiveWords()">存档生词</button>
+        </div>
+      </div>
+      <div class="word-list empty" id="wordList">点击文章中的单词进行标记</div>
+    </div>
+  </div>
+
+  <!-- ===== Tab 2: 生词统计 ===== -->
+  <div class="tab-content" id="tabStats">
+    <div class="topbar">
+      <h1>红笔生词统计</h1>
+      <p class="hint">所有标记过的单词，按次数排序（次数越高越需要重点记忆）</p>
+    </div>
+
+    <div class="btn-row-flex" style="justify-content:center;margin-bottom:20px;">
+      <button class="btn btn-copy" onclick="exportWords()">一键复制全部生词</button>
+      <button class="btn btn-clear" onclick="clearStats()">清空全部</button>
+    </div>
+
+    <div class="stats-bar" id="statsBar"></div>
+    <div class="word-table" id="wordTable"></div>
+  </div>
+
+  <!-- ===== Tab 3: 文章存档 ===== -->
+  <div class="tab-content" id="tabArchive">
+    <div class="topbar">
+      <h1>文章存档</h1>
+      <p class="hint">自动同步红笔生词本的已保存文章</p>
+    </div>
+
+    <div class="btn-row-flex" style="justify-content:center;margin-bottom:20px;">
+      <button class="btn btn-clear" onclick="clearArchive()">清空全部</button>
+    </div>
+
+    <div id="articleList"></div>
+  </div>
+
+</div>
+
+<!-- 底部 Tab 栏 -->
+<div class="tab-bar">
+  <div class="tab-item active" onclick="switchTab('mark')" id="tabBtnMark">
+    <span class="tab-icon">🔴</span>
+    <span>标记</span>
+  </div>
+  <div class="tab-item" onclick="switchTab('stats')" id="tabBtnStats">
+    <span class="tab-icon">📊</span>
+    <span>统计</span>
+  </div>
+  <div class="tab-item" onclick="switchTab('archive')" id="tabBtnArchive">
+    <span class="tab-icon">📁</span>
+    <span>存档</span>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+// ==========================================
+//  Tab 切换（保留滚动位置）
+// ==========================================
+let currentTab = 'mark';
+const scrollPositions = { mark: 0, stats: 0, archive: 0 };
+
+function switchTab(name) {
+  // 保存当前 Tab 的滚动位置
+  scrollPositions[currentTab] = window.scrollY;
+
+  document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
+  document.querySelectorAll('.tab-item').forEach(el => el.classList.remove('active'));
+
+  currentTab = name;
+
+  if (name === 'mark') {
+    document.getElementById('tabMark').classList.add('active');
+    document.getElementById('tabBtnMark').classList.add('active');
+    requestAnimationFrame(() => window.scrollTo(0, scrollPositions.mark));
+  } else if (name === 'stats') {
+    document.getElementById('tabStats').classList.add('active');
+    document.getElementById('tabBtnStats').classList.add('active');
+    renderStats();
+    requestAnimationFrame(() => window.scrollTo(0, scrollPositions.stats));
+  } else if (name === 'archive') {
+    document.getElementById('tabArchive').classList.add('active');
+    document.getElementById('tabBtnArchive').classList.add('active');
+    renderArchive();
+    requestAnimationFrame(() => window.scrollTo(0, scrollPositions.archive));
+  }
+}
+
+// ==========================================
+//  Tab 1: 标记工具
+// ==========================================
+const defaultArticle = [
+  "Sleep is one of the most essential yet often neglected parts of our daily lives. While we sleep, our bodies are far from idle — the brain sorts through the day's memories, strengthening important ones and discarding what is unnecessary. At the same time, cells throughout the body repair damage and restore energy for the day ahead.",
+  "Most adults need between seven and nine hours of sleep per night, but studies show that a large portion of the population gets significantly less. The consequences go far beyond simple drowsiness. Long-term sleep deprivation has been linked to a higher risk of heart disease, weakened immune function, and even weight gain. One reason is that lack of sleep disrupts the hormones that control hunger, making people crave high-calorie foods.",
+  "The quality of sleep matters as much as quantity. Deep sleep, also known as slow-wave sleep, is the stage during which the body does most of its physical repair. REM sleep — named for the rapid eye movements that occur during it — plays a key role in emotional regulation and creative thinking. A full sleep cycle lasts roughly ninety minutes, and waking up in the middle of a cycle can leave you feeling groggy even if you spent enough hours in bed.",
+  "Improving sleep does not necessarily require expensive products or elaborate routines. Experts recommend keeping a consistent bedtime, avoiding screens for at least thirty minutes before sleep, and keeping the bedroom cool and dark. Caffeine and alcohol, both of which can interfere with sleep quality, are best avoided in the hours before bed. Regular exercise during the day also promotes deeper sleep, though working out too close to bedtime can have the opposite effect.",
+  "In a culture that often glorifies busyness and treats sleep as a luxury, it is worth remembering that good sleep is not a sign of laziness. It is a biological necessity — one that affects every aspect of our physical and mental well-being."
+];
+
+let mouseDown = false;
+
+function parseArticle(raw) {
+  let text = raw.replace(/\r\n/g, '\n').replace(/\r/g, '\n');
+  const paragraphs = text.split('\n')
+    .map(l => l.trim())
+    .filter(l => l.length > 0);
+  return paragraphs;
+}
+
+function renderArticle(paragraphs) {
+  const articleDiv = document.getElementById('articleContent');
+  articleDiv.innerHTML = '';
+
+  paragraphs.forEach(para => {
+    const p = document.createElement('p');
+    p.className = 'paragraph';
+
+    const tokens = para.match(/[\w'-]+|[^\w'-]+/g) || [];
+
+    tokens.forEach(token => {
+      if (/^[\w'-]+$/.test(token)) {
+        const span = document.createElement('span');
+        span.className = 'word';
+        span.textContent = token;
+        span.addEventListener('click', () => toggleWord(span));
+        span.addEventListener('mousedown', () => { mouseDown = true; });
+        span.addEventListener('mouseenter', () => { if (mouseDown) toggleWord(span); });
+        p.appendChild(span);
+      } else {
+        p.appendChild(document.createTextNode(token));
+      }
+    });
+
+    articleDiv.appendChild(p);
+  });
+
+  refreshList();
+}
+
+function loadCustomArticle() {
+  const raw = document.getElementById('customInput').value.trim();
+  if (!raw) { showToast('请先输入文章内容'); return; }
+
+  const paragraphs = parseArticle(raw);
+  if (paragraphs.length === 0) { showToast('未能识别到段落'); return; }
+
+  renderArticle(paragraphs);
+  saveToLocalStorage(paragraphs);
+  markTab('archive');
+  showToast('文章已加载，共 ' + paragraphs.length + ' 段');
+}
+
+function resetDefaultArticle() {
+  document.getElementById('customInput').value = defaultArticle.join('\n\n');
+  renderArticle(defaultArticle);
+  showToast('已恢复默认文章');
+}
+
+function toggleCustomPanel() {
+  document.getElementById('customPanel').classList.toggle('open');
+}
+
+function toggleNavBar() {
+  document.getElementById('navBar').classList.toggle('open');
+}
+
+function toggleWord(span) {
+  span.classList.toggle('marked');
+  refreshList();
+}
+
+function getMarked() {
+  return Array.from(document.querySelectorAll('#tabMark .word.marked')).map(s => s.textContent);
+}
+
+function refreshList() {
+  const arr = getMarked();
+  document.getElementById('count').textContent = arr.length;
+  const wl = document.getElementById('wordList');
+  if (arr.length === 0) {
+    wl.textContent = '点击文章中的单词进行标记';
+    wl.classList.add('empty');
+  } else {
+    wl.textContent = arr.join(' ');
+    wl.classList.remove('empty');
+  }
+}
+
+function copyWords() {
+  const arr = getMarked();
+  if (arr.length === 0) { showToast('还没有标记任何单词'); return; }
+  const text = arr.join(' ');
+  navigator.clipboard.writeText(text).then(() => {
+    showToast('已复制 ' + arr.length + ' 个单词');
+  }).catch(() => {
+    const ta = document.createElement('textarea');
+    ta.value = text;
+    ta.style.cssText = 'position:fixed;left:-9999px;';
+    document.body.appendChild(ta);
+    ta.select();
+    document.execCommand('copy');
+    document.body.removeChild(ta);
+    showToast('已复制 ' + arr.length + ' 个单词');
+  });
+}
+
+function archiveWords() {
+  const words = getMarked();
+  if (words.length === 0) { showToast('没有标记的生词可存档'); return; }
+
+  const hist = JSON.parse(localStorage.getItem('cet4_vocab_history') || '{}');
+  words.forEach(w => {
+    hist[w] = (hist[w] || 0) + 1;
+  });
+  localStorage.setItem('cet4_vocab_history', JSON.stringify(hist));
+
+  showToast('已存档 ' + words.length + ' 个生词');
+}
+
+function saveToLocalStorage(paragraphs) {
+  let list = [];
+  try {
+    const saved = localStorage.getItem('cet4_articles');
+    if (saved) list = JSON.parse(saved);
+  } catch(e) { list = []; }
+  const now = new Date();
+  const ts = now.getFullYear() + '-' +
+    String(now.getMonth()+1).padStart(2,'0') + '-' +
+    String(now.getDate()).padStart(2,'0') + ' ' +
+    String(now.getHours()).padStart(2,'0') + ':' +
+    String(now.getMinutes()).padStart(2,'0');
+  const article = { title: paragraphs[0].substring(0, 60), time: ts, paragraphs: paragraphs };
+  const dup = list.find(a => a.paragraphs.join('|') === paragraphs.join('|'));
+  if (!dup) {
+    list.unshift(article);
+    if (list.length > 50) list = list.slice(0, 50);
+    localStorage.setItem('cet4_articles', JSON.stringify(list));
+  }
+}
+
+document.addEventListener('mouseup', () => { mouseDown = false; });
+
+// ==========================================
+//  Tab 2: 生词统计
+// ==========================================
+function getVocabHistory() {
+  try {
+    const saved = localStorage.getItem('cet4_vocab_history');
+    return saved ? JSON.parse(saved) : {};
+  } catch(e) { return {}; }
+}
+
+function saveVocabHistory(hist) {
+  localStorage.setItem('cet4_vocab_history', JSON.stringify(hist));
+}
+
+function getSorted() {
+  const hist = getVocabHistory();
+  return Object.entries(hist)
+    .map(([word, count]) => ({ word, count }))
+    .sort((a, b) => b.count - a.count || a.word.localeCompare(b.word));
+}
+
+function renderStats() {
+  const list = getSorted();
+  const maxCount = list.length > 0 ? list[0].count : 1;
+
+  const totalWords = list.length;
+  const totalMarks = list.reduce((s, w) => s + w.count, 0);
+  document.getElementById('statsBar').innerHTML = `
+    <div class="stat-box"><div class="num">${totalWords}</div><div class="label">不同生词</div></div>
+    <div class="stat-box"><div class="num">${totalMarks}</div><div class="label">总标记次数</div></div>
+    <div class="stat-box"><div class="num">${list.length > 0 ? list[0].word : '-'}</div><div class="label">最常标记</div></div>
+  `;
+
+  const table = document.getElementById('wordTable');
+  if (list.length === 0) {
+    table.innerHTML = '<div class="empty-msg">还没有标记过任何单词。去标记页标记单词后会自动统计。</div>';
+    return;
+  }
+
+  const countClass = (c) => {
+    if (c >= 5) return 'count-high';
+    if (c === 4) return 'count-4';
+    if (c === 3) return 'count-3';
+    if (c === 2) return 'count-2';
+    return 'count-1';
+  };
+
+  table.innerHTML = list.map((w, i) => `
+    <div class="word-row ${i < 3 ? 'top3' : ''}">
+      <span class="rank">${i < 3 ? ['🥇','🥈','🥉'][i] : '#'+(i+1)}</span>
+      <span class="word-text">${w.word}</span>
+      <span class="count-badge ${countClass(w.count)}">${w.count}次</span>
+      <span class="word-bar-box"><span class="word-bar" style="width:${(w.count / maxCount) * 100}%"></span></span>
+    </div>
+  `).join('');
+}
+
+function exportWords() {
+  const list = getSorted();
+  if (list.length === 0) { showToast('还没有标记过单词'); return; }
+  const text = list.map(w => `${w.word}  (${w.count}次)`).join('\n');
+  navigator.clipboard.writeText(text).then(() => {
+    showToast('已复制 ' + list.length + ' 个生词');
+  }).catch(() => {
+    const ta = document.createElement('textarea');
+    ta.value = text;
+    ta.style.cssText = 'position:fixed;left:-9999px;';
+    document.body.appendChild(ta); ta.select();
+    document.execCommand('copy'); document.body.removeChild(ta);
+    showToast('已复制 ' + list.length + ' 个生词');
+  });
+}
+
+function clearStats() {
+  if (!confirm('确认清空所有生词统计？')) return;
+  saveVocabHistory({});
+  renderStats();
+  showToast('已清空');
+}
+
+// ==========================================
+//  Tab 3: 文章存档
+// ==========================================
+function getArticles() {
+  try {
+    const saved = localStorage.getItem('cet4_articles');
+    return saved ? JSON.parse(saved) : [];
+  } catch(e) { return []; }
+}
+
+function saveArticles(list) {
+  localStorage.setItem('cet4_articles', JSON.stringify(list));
+}
+
+function renderArchive() {
+  const list = getArticles();
+  const container = document.getElementById('articleList');
+
+  if (list.length === 0) {
+    container.innerHTML = '<div class="empty-msg">还没有保存的文章。去标记页加载文章后会自动出现在这里。</div>';
+    return;
+  }
+
+  container.innerHTML = list.map((a, idx) => `
+    <div class="archive-card">
+      <div class="meta">
+        <span class="time">${a.time}</span>
+        <div class="actions">
+          <button class="btn-sm btn-del" onclick="delArticle(${idx})">删除</button>
+        </div>
+      </div>
+      ${a.paragraphs.map(p => `<p class="paragraph">${p}</p>`).join('')}
+    </div>
+  `).join('');
+}
+
+function delArticle(idx) {
+  const list = getArticles();
+  list.splice(idx, 1);
+  saveArticles(list);
+  renderArchive();
+  showToast('已删除');
+}
+
+function clearArchive() {
+  if (!confirm('确认清空所有存档文章？')) return;
+  saveArticles([]);
+  renderArchive();
+  showToast('已清空');
+}
+
+// ==========================================
+//  存档 Tab 红点标记
+// ==========================================
+function markTab(name) {
+  if (name === 'archive') {
+    // 存档有新内容时给 Tab 加个视觉提示
+  }
+}
+
+// ==========================================
+//  Toast
+// ==========================================
+let toastTimer;
+function showToast(msg) {
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => t.classList.remove('show'), 1800);
+}
+
+// ==========================================
+//  初始加载
+// ==========================================
+renderArticle(defaultArticle);
+</script>
+
+</body>
+</html>
