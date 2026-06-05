@@ -8,7 +8,11 @@ const RSS_FEEDS = [
 
 function fetchJson(url) {
   return new Promise((resolve, reject) => {
-    const req = https.get(url, { timeout: 20000 }, (res) => {
+    const options = {
+      timeout: 20000,
+      headers: { 'User-Agent': 'red-pen-vocab/1.0 (https://github.com/1286451057-ux/red-pen-vocab)' }
+    };
+    const req = https.get(url, options, (res) => {
       let data = '';
       res.on('data', chunk => data += chunk);
       res.on('end', () => {
