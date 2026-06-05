@@ -84,7 +84,7 @@ async function fetchWikipediaArticles(count, existingKeys) {
     const key = normalizeTitle(title);
     if (existingKeys.has(key)) continue;
 
-    const contentUrl = 'https://simple.wikipedia.org/w/api.php?action=query&titles=' + encodeURIComponent(title) + '&prop=extracts&explaintext=1&exintro=1&format=json';
+    const contentUrl = 'https://simple.wikipedia.org/w/api.php?action=query&titles=' + encodeURIComponent(title) + '&prop=extracts&explaintext=1&format=json';
     let contentData;
     try {
       contentData = await fetchJson(contentUrl);
@@ -95,7 +95,7 @@ async function fetchWikipediaArticles(count, existingKeys) {
     if (!page || !page.extract) continue;
 
     const paragraphs = cleanArticle(page.extract);
-    if (paragraphs.length < 3) continue;
+    if (paragraphs.length < 2) continue;
 
     articles.push({
       title: page.title,
@@ -162,8 +162,8 @@ async function main() {
 
   // Source 2: Wikipedia Simple English random articles
   try {
-    console.log('Fetching Wikipedia Simple English (5 random)');
-    const wikiArticles = await fetchWikipediaArticles(5, existingKeys);
+    console.log('Fetching Wikipedia Simple English (10 random)');
+    const wikiArticles = await fetchWikipediaArticles(10, existingKeys);
     allArticles = allArticles.concat(wikiArticles);
     console.log(`  Kept: ${wikiArticles.length}`);
   } catch(e) {
