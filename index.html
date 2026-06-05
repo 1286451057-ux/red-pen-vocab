@@ -855,68 +855,27 @@ function saveToLocalStorage(paragraphs) {
 
 
 // ==========================================
-//  RSS 外部文章抓取（rss2json API）
+//  同源加载 articles.json（GitHub Action 每 12h 自动更新）
 // ==========================================
-const RSS_SOURCES = [
-  { name: 'BBC News', url: 'https://feeds.bbci.co.uk/news/rss.xml' },
-  { name: 'NPR', url: 'https://feeds.npr.org/1001/rss.xml' },
-  { name: 'VOA', url: 'https://www.voanews.com/api/zyzqrevzu' }
-];
-
-function stripAndSplitHtml(html) {
-  let text = html
-    .replace(/<\/?p[^>]*>/gi, '\n')
-    .replace(/<br\s*\/?>/gi, '\n')
-    .replace(/<\/?div[^>]*>/gi, '\n')
-    .replace(/<li[^>]*>/gi, '\n• ')
-    .replace(/<[^>]*>/g, '')
-    .replace(/&nbsp;/g, ' ')
-    .replace(/&amp;/g, '&')
-    .replace(/&lt;/g, '<')
-    .replace(/&gt;/g, '>')
-    .replace(/&quot;/g, '"')
-    .replace(/&#39;/g, "'")
-    .replace(/&rsquo;/g, "'")
-    .replace(/&lsquo;/g, "'")
-    .replace(/&rdquo;/g, '"')
-    .replace(/&ldquo;/g, '"')
-    .replace(/&mdash;/g, '—')
-    .replace(/&ndash;/g, '–');
-  return text.split(/\n+/).map(s => s.trim()).filter(s => s.length > 60 && /[a-zA-Z]/.test(s));
-}
-
 async function refreshArticlePool(silent) {
   let newCount = 0;
   let cached = [];
   try { cached = JSON.parse(localStorage.getItem('cet4_fetched_articles') || '[]'); } catch (e) {}
   const existingTitles = new Set(cached.map(a => a.title));
 
-  for (const src of RSS_SOURCES) {
-    try {
-      const apiUrl = 'https://api.rss2json.com/v1/api.json?rss_url=' + encodeURIComponent(src.url);
-      const resp = await fetch(apiUrl);
-      if (!resp.ok) continue;
+  try {
+    const resp = await fetch('./articles.json');
+    if (resp.ok) {
       const data = await resp.json();
-      if (data.status !== 'ok' || !data.items) continue;
-
-      for (const item of data.items) {
-        const title = (item.title || '').replace(/<[^>]*>/g, '').trim();
-        if (!title || existingTitles.has(title)) continue;
-        const raw = item.description || item.content || '';
-        const paragraphs = stripAndSplitHtml(raw);
-        if (paragraphs.length < 2) continue;
-
-        cached.unshift({
-          title: title,
-          paragraphs: paragraphs.slice(0, 6),
-          source: src.name,
-          fetchedAt: getTodayStr()
-        });
-        existingTitles.add(title);
+      for (const article of data) {
+        if (!article.title || existingTitles.has(article.title)) continue;
+        if (!article.paragraphs || article.paragraphs.length < 2) continue;
+        cached.unshift(article);
+        existingTitles.add(article.title);
         newCount++;
       }
-    } catch (e) { continue; }
-  }
+    }
+  } catch (e) {}
 
   if (newCount > 0) {
     if (cached.length > 200) cached = cached.slice(0, 200);
@@ -926,7 +885,7 @@ async function refreshArticlePool(silent) {
   updatePoolSizeDisplay();
 
   if (!silent) {
-    showToast(newCount > 0 ? '已获取 ' + newCount + ' 篇新文章，明天起自动轮换' : '暂未获取到新文章，使用内置文章库');
+    showToast(newCount > 0 ? '已同步 ' + newCount + ' 篇新文章' : '暂无新文章，使用内置文章库');
   }
   return newCount;
 }
