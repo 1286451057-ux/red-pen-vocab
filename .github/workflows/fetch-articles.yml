@@ -1,0 +1,23 @@
+name: Fetch English Articles
+
+on:
+  schedule:
+    - cron: '17 */12 * * *'
+  workflow_dispatch:
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fetch articles from RSS feeds
+        run: node fetch-articles.js
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add articles.json
+          git diff --staged --quiet || git commit -m "Auto-fetch articles [skip ci]"
+          git push
