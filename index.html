@@ -417,7 +417,10 @@ In a culture that often glorifies busyness and treats sleep as a luxury, it is w
 
     <!-- 文章显示区 -->
     <div class="article-card">
-      <h2 id="articleTitle">Reading</h2>
+      <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;margin-bottom:20px;padding-bottom:14px;border-bottom:1px solid #f0e8dc;">
+        <h2 id="articleTitle" style="border:none;margin:0;padding:0;font-size:18px;color:#3d2b1f;">Reading</h2>
+        <button class="btn btn-load" onclick="loadNextArticle()" style="font-size:12px;padding:4px 14px;">下一篇 →</button>
+      </div>
       <div id="articleContent"></div>
     </div>
 
@@ -769,6 +772,35 @@ function resetDefaultArticle() {
   document.getElementById('customInput').value = todayArticle.paragraphs.join('\n\n');
   renderArticle(todayArticle.paragraphs, todayArticle.title);
   showToast('已恢复今日文章：' + todayArticle.title);
+}
+
+function loadNextArticle() {
+  const words = getMarked();
+  if (words.length > 0) {
+    const hist = JSON.parse(localStorage.getItem('cet4_vocab_history') || '{}');
+    words.forEach(w => { hist[w] = (hist[w] || 0) + 1; });
+    localStorage.setItem('cet4_vocab_history', JSON.stringify(hist));
+  }
+
+  let shown = JSON.parse(localStorage.getItem('cet4_shown_titles') || '[]');
+  const fullPool = getFullPool();
+  const unseen = fullPool.filter(a => !shown.includes(a.title));
+
+  if (unseen.length === 0) {
+    shown = [];
+    showToast('已看完一轮，重新开始');
+  }
+
+  const available = fullPool.filter(a => !shown.includes(a.title));
+  const picked = available[Math.floor(Math.random() * available.length)];
+
+  shown.push(picked.title);
+  localStorage.setItem('cet4_shown_titles', JSON.stringify(shown));
+  localStorage.setItem('cet4_article_title', picked.title);
+
+  document.getElementById('customInput').value = picked.paragraphs.join('\n\n');
+  renderArticle(picked.paragraphs, picked.title);
+  showToast('下一篇：' + picked.title);
 }
 
 function toggleCustomPanel() {
