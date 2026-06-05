@@ -35,8 +35,8 @@ function cleanArticle(raw) {
     .replace(/&lsquo;/g, "'")
     .replace(/&rdquo;/g, '"')
     .replace(/&ldquo;/g, '"')
-    .replace(/&mdash;/g, '—')
-    .replace(/&ndash;/g, '–')
+    .replace(/&mdash;/g, '-')
+    .replace(/&ndash;/g, '-')
     .replace(/\.{2,}/g, '.')
     .replace(/\s+/g, ' ')
     .trim();
@@ -70,6 +70,40 @@ function normalizeTitle(title) {
     .trim();
 }
 
+async function fetchWikipediaArticles(count, existingKeys) {
+  const articles = [];
+  const randomUrl = 'https://simple.wikipedia.org/w/api.php?action=query&list=random&rnnamespace=0&rnlimit=' + count + '&format=json';
+  const randomData = await fetchJson(randomUrl);
+  const titles = (randomData.query?.random || []).map(r => r.title);
+
+  for (const title of titles) {
+    const key = normalizeTitle(title);
+    if (existingKeys.has(key)) continue;
+
+    const contentUrl = 'https://simple.wikipedia.org/w/api.php?action=query&titles=' + encodeURIComponent(title) + '&prop=extracts&explaintext=1&exintro=1&format=json';
+    let contentData;
+    try {
+      contentData = await fetchJson(contentUrl);
+    } catch(e) { continue; }
+
+    const pages = contentData.query?.pages || {};
+    const page = pages[Object.keys(pages)[0]];
+    if (!page || !page.extract) continue;
+
+    const paragraphs = cleanArticle(page.extract);
+    if (paragraphs.length < 3) continue;
+
+    articles.push({
+      title: page.title,
+      paragraphs: paragraphs.slice(0, 6),
+      fetchedAt: new Date().toISOString().split('T')[0]
+    });
+    existingKeys.add(key);
+  }
+
+  return articles;
+}
+
 async function main() {
   let allArticles = [];
 
@@ -81,10 +115,11 @@ async function main() {
 
   const existingKeys = new Set(existing.map(a => normalizeTitle(a.title)));
 
+  // Source 1: News in Levels RSS
   for (const feedUrl of RSS_FEEDS) {
     try {
       const apiUrl = 'https://api.rss2json.com/v1/api.json?rss_url=' + encodeURIComponent(feedUrl);
-      console.log('Fetching:', feedUrl);
+      console.log('Fetching RSS:', feedUrl);
       const data = await fetchJson(apiUrl);
       if (data.status !== 'ok' || !data.items) {
         console.log('  Status:', data.status, '| Items:', (data.items||[]).length);
@@ -117,11 +152,21 @@ async function main() {
       }
       console.log(`  Items: ${data.items.length} | Kept: ${kept}`);
     } catch(e) {
-      console.error('  Failed:', e.message);
+      console.error('  RSS failed:', e.message);
     }
   }
 
-  const merged = [...allArticles, ...existing].slice(0, 200);
+  // Source 2: Wikipedia Simple English random articles
+  try {
+    console.log('Fetching Wikipedia Simple English (5 random)');
+    const wikiArticles = await fetchWikipediaArticles(5, existingKeys);
+    allArticles = allArticles.concat(wikiArticles);
+    console.log(`  Kept: ${wikiArticles.length}`);
+  } catch(e) {
+    console.error('  Wikipedia failed:', e.message);
+  }
+
+  const merged = [...allArticles, ...existing].slice(0, 300);
   fs.writeFileSync(existingPath, JSON.stringify(merged, null, 2));
   console.log(`New: ${allArticles.length} | Total: ${merged.length}`);
 }
