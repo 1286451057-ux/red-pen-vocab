@@ -333,6 +333,13 @@
           </div>
         </div>
         <div class="nav-section">
+          <div class="ns-title">自动抓取外刊（每日更新）</div>
+          <div class="nav-links">
+            <span class="nav-link tool-link" onclick="refreshArticlePool(false)" style="cursor:pointer">刷新文章源</span>
+            <span class="nav-link" id="poolSize" style="cursor:default">内置12篇</span>
+          </div>
+        </div>
+        <div class="nav-section">
           <div class="ns-title">一、情绪 & 自我成长类</div>
           <div class="nav-links">
             <a class="nav-link" href="https://greatergood.berkeley.edu/" target="_blank">Greater Good · 心理+人际</a>
@@ -410,7 +417,7 @@ In a culture that often glorifies busyness and treats sleep as a luxury, it is w
 
     <!-- 文章显示区 -->
     <div class="article-card">
-      <h2>Reading</h2>
+      <h2 id="articleTitle">Reading</h2>
       <div id="articleContent"></div>
     </div>
 
@@ -514,13 +521,194 @@ function switchTab(name) {
 // ==========================================
 //  Tab 1: 标记工具
 // ==========================================
-const defaultArticle = [
-  "Sleep is one of the most essential yet often neglected parts of our daily lives. While we sleep, our bodies are far from idle — the brain sorts through the day's memories, strengthening important ones and discarding what is unnecessary. At the same time, cells throughout the body repair damage and restore energy for the day ahead.",
-  "Most adults need between seven and nine hours of sleep per night, but studies show that a large portion of the population gets significantly less. The consequences go far beyond simple drowsiness. Long-term sleep deprivation has been linked to a higher risk of heart disease, weakened immune function, and even weight gain. One reason is that lack of sleep disrupts the hormones that control hunger, making people crave high-calorie foods.",
-  "The quality of sleep matters as much as quantity. Deep sleep, also known as slow-wave sleep, is the stage during which the body does most of its physical repair. REM sleep — named for the rapid eye movements that occur during it — plays a key role in emotional regulation and creative thinking. A full sleep cycle lasts roughly ninety minutes, and waking up in the middle of a cycle can leave you feeling groggy even if you spent enough hours in bed.",
-  "Improving sleep does not necessarily require expensive products or elaborate routines. Experts recommend keeping a consistent bedtime, avoiding screens for at least thirty minutes before sleep, and keeping the bedroom cool and dark. Caffeine and alcohol, both of which can interfere with sleep quality, are best avoided in the hours before bed. Regular exercise during the day also promotes deeper sleep, though working out too close to bedtime can have the opposite effect.",
-  "In a culture that often glorifies busyness and treats sleep as a luxury, it is worth remembering that good sleep is not a sign of laziness. It is a biological necessity — one that affects every aspect of our physical and mental well-being."
+const articlePool = [
+  {
+    title: "The Science of Sleep",
+    paragraphs: [
+      "Sleep is one of the most essential yet often neglected parts of our daily lives. While we sleep, our bodies are far from idle — the brain sorts through the day's memories, strengthening important ones and discarding what is unnecessary. At the same time, cells throughout the body repair damage and restore energy for the day ahead.",
+      "Most adults need between seven and nine hours of sleep per night, but studies show that a large portion of the population gets significantly less. The consequences go far beyond simple drowsiness. Long-term sleep deprivation has been linked to a higher risk of heart disease, weakened immune function, and even weight gain. One reason is that lack of sleep disrupts the hormones that control hunger, making people crave high-calorie foods.",
+      "The quality of sleep matters as much as quantity. Deep sleep, also known as slow-wave sleep, is the stage during which the body does most of its physical repair. REM sleep — named for the rapid eye movements that occur during it — plays a key role in emotional regulation and creative thinking. A full sleep cycle lasts roughly ninety minutes, and waking up in the middle of a cycle can leave you feeling groggy even if you spent enough hours in bed.",
+      "Improving sleep does not necessarily require expensive products or elaborate routines. Experts recommend keeping a consistent bedtime, avoiding screens for at least thirty minutes before sleep, and keeping the bedroom cool and dark. Caffeine and alcohol, both of which can interfere with sleep quality, are best avoided in the hours before bed. Regular exercise during the day also promotes deeper sleep, though working out too close to bedtime can have the opposite effect.",
+      "In a culture that often glorifies busyness and treats sleep as a luxury, it is worth remembering that good sleep is not a sign of laziness. It is a biological necessity — one that affects every aspect of our physical and mental well-being."
+    ]
+  },
+  {
+    title: "The Power of Reading Books",
+    paragraphs: [
+      "In an age dominated by screens and short videos, reading books may seem like an old-fashioned habit. Yet research consistently shows that regular reading brings unique benefits that digital media cannot easily replace. When we read a book, our brains engage in a process known as deep reading — a slow, focused form of attention that allows us to follow complex arguments, understand different perspectives, and reflect on what we have learned.",
+      "One of the most valuable gifts of reading is vocabulary expansion. Unlike spoken conversation, which tends to use a limited set of common words, books expose readers to a much wider range of expressions and sentence structures. This is especially important for language learners, who can absorb new words naturally through context rather than through memorization alone.",
+      "Beyond language skills, reading fiction has been shown to increase empathy. When we follow a character's journey — their struggles, joys, and disappointments — we practice seeing the world through another person's eyes. Studies using brain scans have found that people who read literary fiction score higher on tests measuring their ability to understand what others are thinking and feeling.",
+      "Perhaps most importantly, reading provides something that is increasingly rare in modern life: uninterrupted time for reflection. In a world of constant notifications and endless scrolling, sitting down with a book for thirty minutes can feel like a radical act of self-care. It is a chance to slow down, to think deeply, and to connect with ideas that have stood the test of time."
+    ]
+  },
+  {
+    title: "Why Friendship Matters",
+    paragraphs: [
+      "Human beings are social creatures by nature. Throughout history, our survival has depended on our ability to form and maintain relationships with others. While modern life no longer requires us to hunt in groups or defend shared territory, the need for meaningful social connection remains wired deep within our brains.",
+      "Research has found that people with strong friendships tend to live longer, healthier lives. One landmark study tracked thousands of participants over several decades and discovered that the quality of a person's social relationships was a stronger predictor of longevity than factors like exercise, diet, or even smoking. Loneliness, by contrast, has been linked to higher levels of stress hormones, poorer immune function, and increased risk of heart problems.",
+      "Friends do more than just keep us healthy — they shape who we become. Through conversations, shared experiences, and honest feedback, our friends influence our opinions, habits, and goals. A good friend challenges us to grow while also providing a safe space where we can be ourselves without fear of judgment. It is in these relationships that many people find their deepest sense of belonging.",
+      "Yet building and maintaining friendships takes effort, especially in adulthood when work and family responsibilities compete for our time. The key is consistency: small gestures like a regular phone call, a shared meal, or simply remembering to check in can keep a friendship alive across years and distances. The investment is almost always worth it — because at the end of our lives, few people wish they had spent less time with the people they loved."
+    ]
+  },
+  {
+    title: "The Benefits of Regular Exercise",
+    paragraphs: [
+      "Most people know that exercise is good for the body, but its effects on the mind are equally remarkable. Physical activity triggers the release of chemicals called endorphins, which act as natural painkillers and mood boosters. This is the science behind the so-called runner's high — a feeling of calm and well-being that often follows a good workout.",
+      "Regular exercise also improves cognitive function in ways that directly benefit learning and academic performance. Studies have shown that students who engage in physical activity perform better on tests of memory, attention, and problem-solving. One reason is that exercise increases blood flow to the brain, delivering more oxygen and nutrients to the cells that power our thinking.",
+      "The benefits extend to mental health as well. Physical activity has been found to reduce symptoms of anxiety and depression, sometimes as effectively as medication for mild to moderate cases. The reasons are both biological — exercise balances brain chemicals — and psychological: setting and achieving fitness goals builds confidence and a sense of control over one's life.",
+      "Importantly, you do not need to run marathons or spend hours in the gym to experience these benefits. Even moderate activities like brisk walking, cycling, or dancing for thirty minutes a day can make a meaningful difference. The best form of exercise is simply the one that you enjoy enough to do consistently."
+    ]
+  },
+  {
+    title: "Learning a Foreign Language",
+    paragraphs: [
+      "Many people dream of speaking a second language, but the journey from beginner to fluent speaker can feel overwhelming. The good news is that decades of research into language acquisition have revealed principles that make the process more effective and enjoyable. Understanding how the brain acquires language can turn what seems like an impossible task into a series of manageable steps.",
+      "One of the most important discoveries is the role of comprehensible input — the idea that we learn a language best when we are exposed to messages that we can mostly understand, with just a small amount of new material. This is how children learn their first language, and it is how adults learn best too. Rather than memorizing grammar rules in isolation, learners benefit more from reading and listening to content that interests them.",
+      "Consistency matters more than intensity. Studying for fifteen minutes every day is far more effective than cramming for three hours once a week. This is because language learning depends on building and strengthening neural pathways, which happens gradually through repeated exposure and practice. Short daily sessions also make it easier to maintain motivation, since the task never feels like a burden.",
+      "Making mistakes is not a sign of failure — it is an essential part of the learning process. Every error provides feedback that helps the brain adjust and improve. The most successful language learners are those who are willing to speak even when they know they might get something wrong. Confidence, it turns out, is often more important than accuracy in the early stages of learning.",
+      "Perhaps the greatest reward of learning a language is not the skill itself but the doors it opens. A new language gives access to different ways of thinking, new friendships, and a deeper appreciation of other cultures. In a world that often feels divided, the ability to communicate across linguistic boundaries is a powerful tool for building understanding."
+    ]
+  },
+  {
+    title: "The Joy of Cooking",
+    paragraphs: [
+      "For much of human history, cooking was a necessary daily chore — something people did because they had to eat. In recent decades, however, more and more people have rediscovered cooking as a source of creativity, relaxation, and connection. The rise of cooking shows, food blogs, and online recipe platforms reflects a growing appreciation for the art of preparing meals at home.",
+      "Cooking at home has clear health advantages. When you prepare your own meals, you control exactly what goes into them: the amount of salt, sugar, and oil; the freshness of the ingredients; the portion sizes. Studies have found that people who cook most of their meals at home tend to eat more vegetables, consume fewer calories overall, and maintain a healthier weight than those who rely on restaurant meals or processed foods.",
+      "Beyond nutrition, cooking engages the senses in a way that few other daily activities do. The sizzle of garlic in hot oil, the vibrant colors of fresh vegetables, the aroma of bread baking in the oven — these sensory experiences can be deeply satisfying and even meditative. Many people describe cooking as a form of stress relief, a time when the mind can focus on simple, tangible tasks rather than endless worries.",
+      "Cooking also brings people together. A shared meal is one of the oldest forms of human bonding, crossing cultures and generations. Whether it is teaching a child a family recipe, cooking dinner with friends, or preparing a holiday feast for extended family, the kitchen often becomes the heart of a home. The food itself may be forgotten, but the memories of cooking and eating together can last a lifetime."
+    ]
+  },
+  {
+    title: "How Music Shapes Our Brain",
+    paragraphs: [
+      "Music is a universal feature of human culture — every society in history has created some form of music. But only in recent decades have scientists begun to understand what happens inside the brain when we listen to, play, or create music. What they have found is that music engages more parts of the brain than almost any other activity.",
+      "When we listen to a piece of music we enjoy, the brain releases dopamine — the same chemical involved in the pleasure we get from food, exercise, and social interaction. This helps explain why music can lift our mood so powerfully and why certain songs become tied to specific memories. The connection between music and memory is so strong that even people with advanced memory loss often remember songs from their youth.",
+      "Learning to play a musical instrument has particularly strong effects on brain development. Children who study music tend to perform better in areas like reading, mathematics, and spatial reasoning. Brain scans of musicians reveal that the parts of the brain responsible for hearing, movement, and coordination are more developed and more closely connected than in non-musicians.",
+      "Music may also be one of the oldest forms of social bonding. Singing together, dancing to the same rhythm, or simply sharing a favorite song with a friend creates a sense of connection that words alone cannot always achieve. In this sense, music is not just entertainment — it is a form of communication that reaches parts of us that language cannot touch."
+    ]
+  },
+  {
+    title: "Time Management for Students",
+    paragraphs: [
+      "Every student has the same twenty-four hours in a day, yet some seem to accomplish far more than others. The difference is rarely about intelligence or talent — it is about how time is managed. Learning to use time effectively is one of the most valuable skills a student can develop, and it pays dividends long after graduation.",
+      "The foundation of good time management is knowing the difference between urgent and important. Urgent tasks demand immediate attention — a deadline tomorrow, a ringing phone — while important tasks contribute to long-term goals, such as mastering a subject or building a skill. Most people spend too much time on urgent but unimportant tasks and not enough on activities that truly matter in the long run.",
+      "One practical technique is to break large tasks into smaller, actionable steps. A goal like 'study for the exam' is too vague to be useful. A better approach would be 'review chapters one through three and complete ten practice questions.' Specific, achievable goals reduce the anxiety that often leads to procrastination and provide a clear sense of progress.",
+      "It is equally important to schedule breaks and respect one's own energy rhythms. Research suggests that the brain works best in focused bursts of about twenty-five to fifty minutes, followed by short breaks. Trying to study for hours without rest often leads to diminishing returns: the mind wanders, information stops sticking, and frustration builds. Working with the brain's natural rhythms, rather than against them, leads to better results in less time."
+    ]
+  },
+  {
+    title: "The History of Tea",
+    paragraphs: [
+      "Tea is the most widely consumed beverage in the world after water, yet its journey from wild plant to global phenomenon spans thousands of years and crosses multiple continents. According to legend, tea was discovered by the Chinese emperor Shen Nong around 2737 BCE, when leaves from a wild tea tree drifted into his pot of boiling water.",
+      "From China, tea spread to Japan in the 8th century, where it became central to a highly refined cultural practice: the Japanese tea ceremony. Meanwhile, in China itself, tea culture flourished during the Tang and Song dynasties, giving rise to elaborate preparation methods, tea houses, and poetry celebrating the drink's subtle flavors and calming effects. Tea was not just a beverage — it was an art form.",
+      "Tea reached Europe in the 16th century through Portuguese and Dutch traders and quickly became a luxury item among the wealthy. By the 18th century, Britain's demand for tea had grown so immense that it shaped global trade routes and even contributed to historical events such as the Opium Wars and the American Revolution. The Boston Tea Party of 1773 was a direct protest against British tea taxes.",
+      "Today, tea is grown in over forty countries and consumed in countless forms: green, black, oolong, white, and pu-erh, to name just a few. Modern science has confirmed many of the health benefits that traditional cultures long believed: tea is rich in antioxidants, may reduce the risk of heart disease, and contains compounds that promote calm, focused alertness. A simple cup of tea, it turns out, carries thousands of years of human history within it."
+    ]
+  },
+  {
+    title: "Why Nature Makes Us Happier",
+    paragraphs: [
+      "There is a reason that people pay more for apartments with a view of trees and that hospital patients recover faster when their windows look out onto green spaces. Human beings have an innate need for connection with the natural world — a concept that the biologist E. O. Wilson called biophilia, meaning a love of living things.",
+      "Studies have consistently found that spending time in nature reduces stress, lowers blood pressure, and improves mood. In Japan, the practice of forest bathing — simply spending quiet time among trees — has been shown to decrease levels of the stress hormone cortisol and boost the activity of natural killer cells, which help the body fight off illness.",
+      "Nature also appears to restore our ability to focus. Modern life bombards us with information, notifications, and decisions, all of which drain our mental energy over time. Natural environments, by contrast, engage what psychologists call soft fascination — they hold our attention gently, without demanding effort, allowing our overtaxed minds to rest and recover.",
+      "You do not need to climb a mountain or live in the countryside to experience these benefits. Even small doses of nature — a walk through a city park, tending a few plants on a balcony, or simply looking at photographs of natural scenes — can produce measurable improvements in well-being. The key is to make contact with the natural world a regular part of life rather than a rare escape."
+    ]
+  },
+  {
+    title: "The Secret of Building Good Habits",
+    paragraphs: [
+      "We are what we repeatedly do, as the saying goes. Yet most people struggle to stick with new habits, whether it is exercising regularly, eating better, or reading more. The reason is not a lack of willpower — it is that we often go about habit change in the wrong way, focusing on goals rather than on the systems that produce them.",
+      "Every habit follows a simple three-step loop: a cue triggers a routine, which leads to a reward. For example, feeling stressed — the cue — might trigger eating a snack — the routine — which provides temporary comfort — the reward. Once the brain learns this loop, it runs automatically, which is why breaking bad habits can feel so difficult and why building good ones requires understanding this mechanism.",
+      "Research suggests that the most effective way to build a new habit is to start incredibly small. Want to read more? Start with one page per day. Want to exercise? Begin with five minutes. The goal at first is not results — it is simply showing up consistently. Once the habit becomes automatic, which typically takes two to three months, it can be expanded gradually.",
+      "Environment also matters more than motivation. People who keep fruits visible on the counter eat more fruit; people who keep their phones in another room while working get more done. Designing your surroundings to make good habits easy and bad habits difficult is a far more reliable strategy than depending on willpower alone. Small changes to your environment can lead to large changes in behavior over time."
+    ]
+  },
+  {
+    title: "Technology and Modern Relationships",
+    paragraphs: [
+      "Smartphones and social media have transformed the way we connect with one another. We can now talk to friends on the other side of the world, share moments of our lives instantly, and maintain relationships across distances that would have been impossible just a generation ago. These tools have brought genuine benefits, especially for people who might otherwise feel isolated.",
+      "Yet there is a growing body of research suggesting that digital communication, for all its convenience, cannot fully replace face-to-face interaction. Texts and emojis lack tone of voice, facial expressions, and body language — the nonverbal cues that carry much of the emotional meaning in human conversation. Misunderstandings are more common, and the depth of connection often feels shallower.",
+      "The problem is not just about quality but also about attention. When we keep our phones nearby during conversations — even face-to-face ones — the mere presence of the device reduces the quality of the interaction. Studies have found that people feel less connected to their conversation partners and rate the conversation as less meaningful when a phone is visible, even if it never buzzes.",
+      "The goal is not to reject technology but to use it mindfully. Setting aside phone-free time, turning off unnecessary notifications, and prioritizing real-world gatherings over digital check-ins can help restore balance. Technology should serve our relationships, not replace them — and the most meaningful moments in life still tend to happen when we put down our screens and look each other in the eye."
+    ]
+  }
 ];
+
+// ==========================================
+//  每日文章轮换（不重复）
+// ==========================================
+function getTodayStr() {
+  const d = new Date();
+  return d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0');
+}
+
+function getFullPool() {
+  let external = [];
+  try {
+    external = JSON.parse(localStorage.getItem('cet4_fetched_articles') || '[]');
+  } catch (e) {}
+  return [...external, ...articlePool];
+}
+
+function updatePoolSizeDisplay() {
+  const el = document.getElementById('poolSize');
+  if (el) {
+    const full = getFullPool();
+    el.textContent = '共' + full.length + '篇';
+  }
+}
+
+function getDailyArticle() {
+  const today = getTodayStr();
+  const lastDate = localStorage.getItem('cet4_article_date');
+  const lastTitle = localStorage.getItem('cet4_article_title');
+  let shown = JSON.parse(localStorage.getItem('cet4_shown_titles') || '[]');
+
+  const fullPool = getFullPool();
+
+  if (today === lastDate && lastTitle) {
+    const found = fullPool.find(a => a.title === lastTitle);
+    if (found) return found;
+  }
+
+  const unseen = fullPool.filter(a => !shown.includes(a.title));
+
+  let picked;
+  if (unseen.length === 0) {
+    shown = [];
+    picked = fullPool[Math.floor(Math.random() * fullPool.length)];
+  } else {
+    picked = unseen[Math.floor(Math.random() * unseen.length)];
+  }
+
+  shown.push(picked.title);
+  localStorage.setItem('cet4_shown_titles', JSON.stringify(shown));
+  localStorage.setItem('cet4_article_date', today);
+  localStorage.setItem('cet4_article_title', picked.title);
+
+  return picked;
+}
+
+function autoSaveDailyArticle(article) {
+  let list = [];
+  try {
+    const saved = localStorage.getItem('cet4_articles');
+    if (saved) list = JSON.parse(saved);
+  } catch (e) { list = []; }
+  const now = new Date();
+  const ts = now.getFullYear() + '-' +
+    String(now.getMonth() + 1).padStart(2, '0') + '-' +
+    String(now.getDate()).padStart(2, '0') + ' ' +
+    String(now.getHours()).padStart(2, '0') + ':' +
+    String(now.getMinutes()).padStart(2, '0');
+  const entry = { title: article.title, time: ts, paragraphs: article.paragraphs };
+  const dup = list.find(a => a.paragraphs.join('|') === article.paragraphs.join('|'));
+  if (!dup) {
+    list.unshift(entry);
+    if (list.length > 50) list = list.slice(0, 50);
+    localStorage.setItem('cet4_articles', JSON.stringify(list));
+  }
+}
 
 let mouseDown = false;
 
@@ -532,9 +720,10 @@ function parseArticle(raw) {
   return paragraphs;
 }
 
-function renderArticle(paragraphs) {
+function renderArticle(paragraphs, title) {
   const articleDiv = document.getElementById('articleContent');
   articleDiv.innerHTML = '';
+  if (title) { document.getElementById('articleTitle').textContent = title; }
 
   paragraphs.forEach(para => {
     const p = document.createElement('p');
@@ -569,16 +758,17 @@ function loadCustomArticle() {
   const paragraphs = parseArticle(raw);
   if (paragraphs.length === 0) { showToast('未能识别到段落'); return; }
 
-  renderArticle(paragraphs);
+  renderArticle(paragraphs, '自定义文章');
   saveToLocalStorage(paragraphs);
   markTab('archive');
   showToast('文章已加载，共 ' + paragraphs.length + ' 段');
 }
 
 function resetDefaultArticle() {
-  document.getElementById('customInput').value = defaultArticle.join('\n\n');
-  renderArticle(defaultArticle);
-  showToast('已恢复默认文章');
+  const todayArticle = getDailyArticle();
+  document.getElementById('customInput').value = todayArticle.paragraphs.join('\n\n');
+  renderArticle(todayArticle.paragraphs, todayArticle.title);
+  showToast('已恢复今日文章：' + todayArticle.title);
 }
 
 function toggleCustomPanel() {
@@ -661,6 +851,96 @@ function saveToLocalStorage(paragraphs) {
     if (list.length > 50) list = list.slice(0, 50);
     localStorage.setItem('cet4_articles', JSON.stringify(list));
   }
+}
+
+
+// ==========================================
+//  RSS 外部文章抓取（rss2json API）
+// ==========================================
+const RSS_SOURCES = [
+  { name: 'BBC News', url: 'https://feeds.bbci.co.uk/news/rss.xml' },
+  { name: 'NPR', url: 'https://feeds.npr.org/1001/rss.xml' },
+  { name: 'VOA', url: 'https://www.voanews.com/api/zyzqrevzu' }
+];
+
+function stripAndSplitHtml(html) {
+  let text = html
+    .replace(/<\/?p[^>]*>/gi, '\n')
+    .replace(/<br\s*\/?>/gi, '\n')
+    .replace(/<\/?div[^>]*>/gi, '\n')
+    .replace(/<li[^>]*>/gi, '\n• ')
+    .replace(/<[^>]*>/g, '')
+    .replace(/&nbsp;/g, ' ')
+    .replace(/&amp;/g, '&')
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;/g, "'")
+    .replace(/&rsquo;/g, "'")
+    .replace(/&lsquo;/g, "'")
+    .replace(/&rdquo;/g, '"')
+    .replace(/&ldquo;/g, '"')
+    .replace(/&mdash;/g, '—')
+    .replace(/&ndash;/g, '–');
+  return text.split(/\n+/).map(s => s.trim()).filter(s => s.length > 60 && /[a-zA-Z]/.test(s));
+}
+
+async function refreshArticlePool(silent) {
+  let newCount = 0;
+  let cached = [];
+  try { cached = JSON.parse(localStorage.getItem('cet4_fetched_articles') || '[]'); } catch (e) {}
+  const existingTitles = new Set(cached.map(a => a.title));
+
+  for (const src of RSS_SOURCES) {
+    try {
+      const apiUrl = 'https://api.rss2json.com/v1/api.json?rss_url=' + encodeURIComponent(src.url);
+      const resp = await fetch(apiUrl);
+      if (!resp.ok) continue;
+      const data = await resp.json();
+      if (data.status !== 'ok' || !data.items) continue;
+
+      for (const item of data.items) {
+        const title = (item.title || '').replace(/<[^>]*>/g, '').trim();
+        if (!title || existingTitles.has(title)) continue;
+        const raw = item.description || item.content || '';
+        const paragraphs = stripAndSplitHtml(raw);
+        if (paragraphs.length < 2) continue;
+
+        cached.unshift({
+          title: title,
+          paragraphs: paragraphs.slice(0, 6),
+          source: src.name,
+          fetchedAt: getTodayStr()
+        });
+        existingTitles.add(title);
+        newCount++;
+      }
+    } catch (e) { continue; }
+  }
+
+  if (newCount > 0) {
+    if (cached.length > 200) cached = cached.slice(0, 200);
+    localStorage.setItem('cet4_fetched_articles', JSON.stringify(cached));
+  }
+
+  updatePoolSizeDisplay();
+
+  if (!silent) {
+    showToast(newCount > 0 ? '已获取 ' + newCount + ' 篇新文章，明天起自动轮换' : '暂未获取到新文章，使用内置文章库');
+  }
+  return newCount;
+}
+
+function shouldFetchArticles() {
+  const lastFetch = localStorage.getItem('cet4_last_fetch_date');
+  if (!lastFetch) return true;
+  return (new Date() - new Date(lastFetch)) > 6 * 60 * 60 * 1000;
+}
+
+async function autoFetchIfNeeded() {
+  if (!shouldFetchArticles()) return;
+  localStorage.setItem('cet4_last_fetch_date', new Date().toISOString());
+  await refreshArticlePool(true);
 }
 
 document.addEventListener('mouseup', () => { mouseDown = false; });
@@ -820,7 +1100,12 @@ function showToast(msg) {
 // ==========================================
 //  初始加载
 // ==========================================
-renderArticle(defaultArticle);
+const todayArticle = getDailyArticle();
+document.getElementById('customInput').value = todayArticle.paragraphs.join('\n\n');
+renderArticle(todayArticle.paragraphs, todayArticle.title);
+autoSaveDailyArticle(todayArticle);
+updatePoolSizeDisplay();
+autoFetchIfNeeded();
 </script>
 
 </body>
