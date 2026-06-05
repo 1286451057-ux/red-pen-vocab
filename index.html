@@ -889,25 +889,72 @@ function saveToLocalStorage(paragraphs) {
 // ==========================================
 //  同源加载 articles.json（GitHub Action 每 12h 自动更新）
 // ==========================================
+function parseRssItem(item) {
+  const title = (item.title || '').replace(/<[^>]*>/g, '').trim();
+  const raw = (item.description || '') + ' ' + (item.content || '');
+  let text = raw
+    .replace(/<\/?p[^>]*>/gi, '\n').replace(/<br\s*\/?>/gi, '\n')
+    .replace(/<[^>]*>/g, '').replace(/&[a-z]+;/g, ' ')
+    .replace(/\s+/g, ' ').trim();
+  text = text.replace(/^\d{2}-\d{2}-\d{4}\s+\d{2}:\d{2}\s+/, '');
+  text = text.replace(/\s*The post .+ appeared first on .+\.?\s*$/i, '');
+  const sentences = text.match(/[^.!?]+[.!?]+/g) || [text];
+  const paragraphs = [];
+  let chunk = '';
+  for (const s of sentences) {
+    if (chunk.length + s.length < 200) { chunk += (chunk ? ' ' : '') + s.trim(); }
+    else { if (chunk.trim()) paragraphs.push(chunk.trim()); chunk = s.trim(); }
+  }
+  if (chunk.trim()) paragraphs.push(chunk.trim());
+  return { title, paragraphs: paragraphs.filter(p => p.length > 40) };
+}
+
 async function refreshArticlePool(silent) {
   let newCount = 0;
   let cached = [];
   try { cached = JSON.parse(localStorage.getItem('cet4_fetched_articles') || '[]'); } catch (e) {}
   const existingTitles = new Set(cached.map(a => a.title));
+  const addArticle = (article) => {
+    if (!article.title || existingTitles.has(article.title)) return false;
+    if (!article.paragraphs || article.paragraphs.length < 2) return false;
+    cached.unshift(article);
+    existingTitles.add(article.title);
+    newCount++;
+    return true;
+  };
 
+  // Step 1: same-origin articles.json
   try {
     const resp = await fetch('./articles.json');
     if (resp.ok) {
       const data = await resp.json();
-      for (const article of data) {
-        if (!article.title || existingTitles.has(article.title)) continue;
-        if (!article.paragraphs || article.paragraphs.length < 2) continue;
-        cached.unshift(article);
-        existingTitles.add(article.title);
-        newCount++;
-      }
+      for (const article of data) { addArticle(article); }
     }
   } catch (e) {}
+
+  // Step 2: try rss2json via CORS proxy
+  if (newCount === 0) {
+    const rssUrl = 'https://api.rss2json.com/v1/api.json?rss_url=' + encodeURIComponent('https://www.newsinlevels.com/feed/');
+    const proxyUrls = [
+      'https://api.allorigins.win/raw?url=' + encodeURIComponent(rssUrl),
+      'https://api.codetabs.com/v1/proxy?quest=' + rssUrl,
+      rssUrl
+    ];
+    for (const url of proxyUrls) {
+      try {
+        const resp = await fetch(url);
+        if (!resp.ok) continue;
+        const data = await resp.json();
+        if (!data.items) continue;
+        let added = 0;
+        for (const item of data.items) {
+          // Prefer longer content (higher level) for same topic
+          if (addArticle(parseRssItem(item))) added++;
+        }
+        if (added > 0) break;
+      } catch (e) { continue; }
+    }
+  }
 
   if (newCount > 0) {
     if (cached.length > 200) cached = cached.slice(0, 200);
