@@ -537,6 +537,74 @@
     <div id="articleList"></div>
   </div>
 
+  <!-- ===== Tab 4: AI 生文 ===== -->
+  <div class="tab-content" id="tabGenerate">
+    <div class="topbar">
+      <h1>AI 生文</h1>
+      <p class="hint">输入你不会的生词，AI 生成一篇包含这些词的文章，在阅读中记忆</p>
+    </div>
+
+    <!-- API Key 设置 -->
+    <div class="custom-panel" id="apiKeyPanel">
+      <div class="toggle-row" onclick="toggleApiKeyPanel()">
+        <h3>🔑 API 设置</h3>
+        <span class="arrow" id="apiKeyArrow">▼</span>
+      </div>
+      <div class="custom-body" style="display:none">
+        <input type="password" id="apiKeyInput" placeholder="输入 DeepSeek API Key（sk-...）" style="width:100%;padding:10px 14px;font-size:14px;border:1px solid #e0d6cc;border-radius:10px;background:#fdf8f5;outline:none;font-family:monospace;">
+        <p class="hint-text">Key 仅保存在你的浏览器中，不会上传到任何服务器。<a href="https://platform.deepseek.com/api_keys" target="_blank" style="color:#302b63;">获取 Key →</a></p>
+      </div>
+    </div>
+
+    <!-- 生词输入 -->
+    <div class="custom-panel">
+      <div class="toggle-row">
+        <h3>📝 输入生词</h3>
+      </div>
+      <div style="margin-top:12px">
+        <textarea id="vocabInput" placeholder="输入生词，每行一个或用空格/逗号分隔&#10;例如：&#10;essential&#10;deprivation&#10;elaborate&#10;glorify&#10;necessity" style="width:100%;height:130px;padding:14px;font-size:14px;font-family:'Georgia','Noto Serif SC',serif;border:1px solid #e0d6cc;border-radius:10px;resize:vertical;line-height:1.8;color:#3d2b1f;background:#fdf8f5;outline:none;"></textarea>
+      </div>
+    </div>
+
+    <!-- 生成设置 -->
+    <div class="btn-row-flex" style="justify-content:center;align-items:center;margin-bottom:16px;gap:12px;flex-wrap:wrap;">
+      <span style="font-size:13px;color:#8b7355;">难度：</span>
+      <select id="genLevel" style="padding:6px 12px;border:1px solid #e0d6cc;border-radius:8px;font-size:13px;color:#3d2b1f;background:#fff;outline:none;">
+        <option value="CET-4" selected>CET-4</option>
+        <option value="高考">高考</option>
+        <option value="考研">考研</option>
+      </select>
+      <span style="font-size:13px;color:#8b7355;">长度：</span>
+      <select id="genLength" style="padding:6px 12px;border:1px solid #e0d6cc;border-radius:8px;font-size:13px;color:#3d2b1f;background:#fff;outline:none;">
+        <option value="中篇（4-5段）" selected>中篇（4-5段）</option>
+        <option value="短篇（2-3段）">短篇（2-3段）</option>
+        <option value="长篇（6-8段）">长篇（6-8段）</option>
+      </select>
+      <button class="btn btn-load" onclick="generateArticle()" id="btnGenerate">✨ 生成文章</button>
+    </div>
+
+    <!-- 加载中 -->
+    <div id="genLoading" style="display:none;text-align:center;padding:30px;color:#a09080;">
+      <span class="dict-spinner" style="width:20px;height:20px;border-width:3px;"></span>
+      <span style="margin-left:8px;">AI 正在生成文章...</span>
+    </div>
+
+    <!-- 错误提示 -->
+    <div id="genError" style="display:none;text-align:center;padding:16px;color:#cf1322;font-size:14px;background:#fff2f0;border-radius:10px;margin-bottom:16px;"></div>
+
+    <!-- 生成结果 -->
+    <div id="genResult" style="display:none;">
+      <div class="article-card">
+        <h2 id="genTitle" style="border:none;margin-bottom:16px;padding:0;">生成的文章</h2>
+        <div id="genContent"></div>
+      </div>
+      <div class="btn-row-flex" style="justify-content:center;margin-bottom:20px;">
+        <button class="btn btn-copy" onclick="loadGeneratedToMarker()">📥 加载到标记工具</button>
+        <button class="btn btn-clear" onclick="regenerateArticle()">🔄 换一篇</button>
+      </div>
+    </div>
+  </div>
+
 </div>
 
 <!-- 底部 Tab 栏 -->
@@ -553,6 +621,10 @@
     <span class="tab-icon">📁</span>
     <span>存档</span>
   </div>
+  <div class="tab-item" onclick="switchTab('generate')" id="tabBtnGenerate">
+    <span class="tab-icon">✨</span>
+    <span>生文</span>
+  </div>
 </div>
 
 <div class="toast" id="toast"></div>
@@ -562,7 +634,7 @@
 //  Tab 切换（保留滚动位置）
 // ==========================================
 let currentTab = 'mark';
-const scrollPositions = { mark: 0, stats: 0, archive: 0 };
+const scrollPositions = { mark: 0, stats: 0, archive: 0, generate: 0 };
 
 function switchTab(name) {
   // 保存当前 Tab 的滚动位置
@@ -588,6 +660,10 @@ function switchTab(name) {
     document.getElementById('tabBtnArchive').classList.add('active');
     renderArchive();
     requestAnimationFrame(() => window.scrollTo(0, scrollPositions.archive));
+  } else if (name === 'generate') {
+    document.getElementById('tabGenerate').classList.add('active');
+    document.getElementById('tabBtnGenerate').classList.add('active');
+    requestAnimationFrame(() => window.scrollTo(0, scrollPositions.generate));
   }
 }
 
@@ -1235,6 +1311,202 @@ function hideDictPopup() {
 document.getElementById('dictOverlay').addEventListener('click', hideDictPopup);
 // ESC 关闭
 document.addEventListener('keydown', (e) => { if (e.key === 'Escape') hideDictPopup(); });
+
+// ==========================================
+//  Tab 4: AI 生文
+// ==========================================
+let lastGeneratedArticle = null;
+
+function toggleApiKeyPanel() {
+  const panel = document.getElementById('apiKeyPanel');
+  const body = panel.querySelector('.custom-body');
+  const arrow = document.getElementById('apiKeyArrow');
+  const isOpen = body.style.display !== 'none';
+  body.style.display = isOpen ? 'none' : 'block';
+  arrow.textContent = isOpen ? '▼' : '▲';
+  if (!isOpen) {
+    const saved = localStorage.getItem('cet4_deepseek_key');
+    if (saved) document.getElementById('apiKeyInput').value = saved;
+  }
+}
+
+function getApiKey() {
+  const input = document.getElementById('apiKeyInput').value.trim();
+  if (input) {
+    localStorage.setItem('cet4_deepseek_key', input);
+    return input;
+  }
+  return localStorage.getItem('cet4_deepseek_key') || '';
+}
+
+function parseVocabWords(text) {
+  return text
+    .replace(/[,，、\s]+/g, ' ')
+    .split(' ')
+    .map(w => w.replace(/[^a-zA-Z'-]/g, '').trim())
+    .filter(w => w.length > 1);
+}
+
+async function generateArticle() {
+  const apiKey = getApiKey();
+  if (!apiKey) {
+    document.getElementById('genError').textContent = '请先设置 DeepSeek API Key（点击上方"API 设置"展开）';
+    document.getElementById('genError').style.display = 'block';
+    return;
+  }
+  if (!apiKey.startsWith('sk-')) {
+    document.getElementById('genError').textContent = 'API Key 格式不正确，应以 sk- 开头';
+    document.getElementById('genError').style.display = 'block';
+    return;
+  }
+
+  const raw = document.getElementById('vocabInput').value.trim();
+  if (!raw) {
+    document.getElementById('genError').textContent = '请先输入生词';
+    document.getElementById('genError').style.display = 'block';
+    return;
+  }
+
+  const words = parseVocabWords(raw);
+  if (words.length === 0) {
+    document.getElementById('genError').textContent = '未识别到有效英文单词';
+    document.getElementById('genError').style.display = 'block';
+    return;
+  }
+  if (words.length > 20) {
+    document.getElementById('genError').textContent = '一次最多 20 个生词，当前 ' + words.length + ' 个';
+    document.getElementById('genError').style.display = 'block';
+    return;
+  }
+
+  const level = document.getElementById('genLevel').value;
+  const length = document.getElementById('genLength').value;
+
+  // 显示加载
+  document.getElementById('genError').style.display = 'none';
+  document.getElementById('genResult').style.display = 'none';
+  document.getElementById('genLoading').style.display = 'block';
+  document.getElementById('btnGenerate').disabled = true;
+  document.getElementById('btnGenerate').textContent = '生成中...';
+
+  const prompt = `Write an English article for Chinese students learning English. The article must NATURALLY incorporate ALL of these vocabulary words: ${words.join(', ')}
+
+Requirements:
+- Difficulty: ${level} level
+- Length: ${length}
+- The article should be engaging, educational, and read like a real magazine article
+- Use the vocabulary words naturally — do NOT force them or make the article awkward
+- Write in a natural, fluent style
+
+Respond in this exact format:
+TITLE: [article title]
+
+[paragraph 1]
+
+[paragraph 2]
+
+...more paragraphs...`;
+
+  try {
+    const resp = await fetch('https://api.deepseek.com/v1/chat/completions', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': 'Bearer ' + apiKey
+      },
+      body: JSON.stringify({
+        model: 'deepseek-chat',
+        messages: [
+          { role: 'system', content: 'You are an English article writer specializing in educational reading materials. Write natural, engaging articles that help Chinese students learn English vocabulary in context.' },
+          { role: 'user', content: prompt }
+        ],
+        temperature: 0.8,
+        max_tokens: 2048
+      })
+    });
+
+    if (!resp.ok) {
+      const err = await resp.json().catch(() => ({}));
+      throw new Error(err.error?.message || 'API 返回错误 ' + resp.status);
+    }
+
+    const data = await resp.json();
+    const content = data.choices[0].message.content.trim();
+
+    // 解析：标题 + 段落
+    const lines = content.split('\n');
+    let title = '';
+    const paragraphs = [];
+    let inTitle = false;
+
+    for (const line of lines) {
+      const trimmed = line.trim();
+      if (!trimmed) continue;
+      if (trimmed.toUpperCase().startsWith('TITLE:') || trimmed.startsWith('TITLE：')) {
+        title = trimmed.replace(/^TITLE[:：]\s*/i, '').trim();
+        inTitle = true;
+        continue;
+      }
+      if (inTitle && !title) {
+        title = trimmed;
+        continue;
+      }
+      inTitle = false;
+      if (trimmed.length > 20) {
+        paragraphs.push(trimmed);
+      }
+    }
+
+    if (!title) title = words.slice(0, 3).join(', ') + '...';
+    if (paragraphs.length === 0) {
+      // fallback: split content by double newlines
+      const chunks = content.split(/\n\s*\n/).filter(c => c.trim().length > 20);
+      if (chunks.length > 0) {
+        title = chunks[0].replace(/^TITLE[:：]\s*/i, '').replace(/^#+\s*/, '').trim();
+        if (title.length > 80) { paragraphs.push(title); title = words.slice(0, 3).join(', '); }
+        else { chunks.slice(1).forEach(c => paragraphs.push(c.trim())); }
+      }
+    }
+
+    lastGeneratedArticle = { title, paragraphs };
+    displayGeneratedArticle(title, paragraphs);
+    document.getElementById('genLoading').style.display = 'none';
+
+  } catch(e) {
+    document.getElementById('genLoading').style.display = 'none';
+    document.getElementById('genError').textContent = '生成失败：' + e.message;
+    document.getElementById('genError').style.display = 'block';
+  } finally {
+    document.getElementById('btnGenerate').disabled = false;
+    document.getElementById('btnGenerate').textContent = '✨ 生成文章';
+  }
+}
+
+function displayGeneratedArticle(title, paragraphs) {
+  document.getElementById('genTitle').textContent = title;
+  const contentDiv = document.getElementById('genContent');
+  contentDiv.innerHTML = paragraphs.map(p => `<p class="paragraph">${p}</p>`).join('');
+  document.getElementById('genResult').style.display = 'block';
+}
+
+function loadGeneratedToMarker() {
+  if (!lastGeneratedArticle) { showToast('请先生成文章'); return; }
+  document.getElementById('customInput').value = lastGeneratedArticle.paragraphs.join('\n\n');
+  renderArticle(lastGeneratedArticle.paragraphs, lastGeneratedArticle.title);
+  saveToLocalStorage(lastGeneratedArticle.paragraphs);
+  switchTab('mark');
+  showToast('已加载到标记工具');
+}
+
+function regenerateArticle() {
+  generateArticle();
+}
+
+// 页面加载时恢复已保存的 API Key
+(function() {
+  const saved = localStorage.getItem('cet4_deepseek_key');
+  if (saved) document.getElementById('apiKeyInput').value = saved;
+})();
 </script>
 
 <!-- 词典释义弹窗 -->
