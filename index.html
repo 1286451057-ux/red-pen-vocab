@@ -239,7 +239,9 @@
 
   .word-row .word-text {
     flex: 1; font-size: 16px; color: #3d2b1f; font-weight: 600;
+    cursor: pointer; padding: 2px 4px; border-radius: 3px; transition: background 0.12s;
   }
+  .word-row .word-text:hover { background: #fff0f0; }
 
   .word-row .count-badge {
     min-width: 36px; height: 26px; line-height: 26px;
@@ -253,6 +255,12 @@
   .count-4  { background: #8b5e3c; }
   .count-high { background: #e74c3c; }
 
+  .word-row .btn-del-word {
+    background: none; border: none; color: #c0b0a0; cursor: pointer;
+    font-size: 16px; padding: 4px 8px; border-radius: 4px;
+    transition: all 0.15s; flex-shrink: 0; line-height: 1;
+  }
+  .word-row .btn-del-word:hover { color: #cf1322; background: #fff2f0; }
   .word-row .word-bar-box {
     width: 120px; height: 6px; background: #f0e8dc;
     border-radius: 3px; margin-left: 12px; overflow: hidden; flex-shrink: 0;
@@ -309,6 +317,82 @@
     .word-bar-box { display: none; }
     .archive-card { padding: 18px 16px; }
   }
+
+  /* ---- 词典释义弹窗 ---- */
+  .dict-overlay {
+    position: fixed; inset: 0; z-index: 998;
+    background: rgba(0,0,0,0.08);
+    opacity: 0; pointer-events: none; transition: opacity 0.2s;
+  }
+  .dict-overlay.show { opacity: 1; pointer-events: auto; }
+  .dict-popup {
+    position: fixed; z-index: 999;
+    background: #fff; border-radius: 14px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+    padding: 20px 24px 18px;
+    max-width: 340px; min-width: 220px;
+    border: 1px solid #ede4da;
+    opacity: 0; transform: translateY(8px);
+    transition: opacity 0.25s, transform 0.25s;
+    pointer-events: none;
+    font-size: 14px;
+  }
+  .dict-popup.show { opacity: 1; transform: translateY(0); pointer-events: auto; }
+  .dict-popup .dict-word {
+    font-size: 19px; font-weight: 700; color: #c0392b; margin-bottom: 2px;
+    padding-right: 24px;
+  }
+  .dict-popup .dict-phonetic {
+    font-size: 13px; color: #8b7355; margin-bottom: 6px; letter-spacing: 0.5px;
+  }
+  .dict-popup .dict-zh {
+    font-size: 15px; color: #2d5016; font-weight: 600;
+    margin-bottom: 12px; padding: 6px 10px;
+    background: #f0f7e8; border-radius: 6px;
+    border-left: 3px solid #5a9e3a;
+  }
+  .dict-popup .dict-zh.loading-zh {
+    color: #a09080; font-style: italic; font-weight: 400;
+    background: #fdf8f5; border-left-color: #d0c8b8;
+  }
+  .dict-popup .dict-meaning { margin-bottom: 10px; }
+  .dict-popup .dict-pos {
+    font-size: 12px; color: #a09080; font-style: italic; margin-bottom: 4px;
+    background: #fdf8f5; display: inline-block; padding: 2px 8px; border-radius: 4px;
+  }
+  .dict-popup .dict-def {
+    font-size: 14px; color: #3d2b1f; line-height: 1.7; margin-top: 4px;
+  }
+  .dict-popup .dict-example {
+    font-size: 13px; color: #8b7355; line-height: 1.6;
+    padding-left: 10px; border-left: 2px solid #e0d6cc; margin-top: 8px;
+  }
+  .dict-popup .dict-close {
+    position: absolute; top: 10px; right: 14px;
+    background: none; border: none; font-size: 20px; cursor: pointer;
+    color: #b0a090; line-height: 1; padding: 0;
+  }
+  .dict-popup .dict-close:hover { color: #3d2b1f; }
+  .dict-popup .dict-loading {
+    text-align: center; color: #a09080; font-size: 13px; padding: 12px 0;
+    display: flex; align-items: center; justify-content: center; gap: 6px;
+  }
+  .dict-spinner {
+    display: inline-block; width: 14px; height: 14px;
+    border: 2px solid #e0d6cc; border-top-color: #8b7355;
+    border-radius: 50%; animation: spin 0.6s linear infinite;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  .dict-popup .dict-error {
+    color: #a09080; font-size: 13px; text-align: center; padding: 8px 0;
+  }
+  .dict-popup .dict-audio {
+    display: inline-flex; align-items: center; gap: 4px;
+    font-size: 12px; color: #8b7355; cursor: pointer;
+    background: #f5f0eb; border: none; border-radius: 14px;
+    padding: 3px 10px; margin-left: 8px; transition: background 0.15s;
+  }
+  .dict-popup .dict-audio:hover { background: #e0d6cc; }
 </style>
 </head>
 <body>
@@ -318,7 +402,7 @@
   <!-- ===== Tab 1: 标记工具 ===== -->
   <div class="tab-content active" id="tabMark">
     <!-- 选题导航栏 -->
-    <div class="nav-bar open" id="navBar">
+    <div class="nav-bar" id="navBar">
       <div class="nav-toggle" onclick="toggleNavBar()">
         <h3>内容选题导航</h3>
         <span class="arrow">▲</span>
@@ -330,13 +414,6 @@
             <a class="nav-link" href="https://cet4-6.xdf.cn/" target="_blank">新东方四六级 · 真题阅读</a>
             <a class="nav-link" href="https://www.kekenet.com/cet4/" target="_blank">可可英语 CET-4 · 精读+音频</a>
             <a class="nav-link" href="http://www.enread.com/" target="_blank">英文阅读网 · 四级难度美文</a>
-          </div>
-        </div>
-        <div class="nav-section">
-          <div class="ns-title">自动抓取外刊（每日更新）</div>
-          <div class="nav-links">
-            <span class="nav-link tool-link" onclick="refreshArticlePool(false)" style="cursor:pointer">刷新文章源</span>
-            <span class="nav-link" id="poolSize" style="cursor:default">内置12篇</span>
           </div>
         </div>
         <div class="nav-section">
@@ -389,7 +466,7 @@
     </div>
 
     <!-- 自定义文章面板 -->
-    <div class="custom-panel open" id="customPanel">
+    <div class="custom-panel" id="customPanel">
       <div class="toggle-row" onclick="toggleCustomPanel()">
         <h3>自定义文章</h3>
         <span class="arrow">▲</span>
@@ -398,15 +475,7 @@
         <textarea id="customInput" placeholder="在此粘贴英文文章...
 支持自动识别换行：
 · 空行分隔 → 自动分段
-· 单行回车 → 自动换行（非空行的回车会被合并为同一段）">Sleep is one of the most essential yet often neglected parts of our daily lives. While we sleep, our bodies are far from idle — the brain sorts through the day's memories, strengthening important ones and discarding what is unnecessary. At the same time, cells throughout the body repair damage and restore energy for the day ahead.
-
-Most adults need between seven and nine hours of sleep per night, but studies show that a large portion of the population gets significantly less. The consequences go far beyond simple drowsiness. Long-term sleep deprivation has been linked to a higher risk of heart disease, weakened immune function, and even weight gain. One reason is that lack of sleep disrupts the hormones that control hunger, making people crave high-calorie foods.
-
-The quality of sleep matters as much as quantity. Deep sleep, also known as slow-wave sleep, is the stage during which the body does most of its physical repair. REM sleep — named for the rapid eye movements that occur during it — plays a key role in emotional regulation and creative thinking. A full sleep cycle lasts roughly ninety minutes, and waking up in the middle of a cycle can leave you feeling groggy even if you spent enough hours in bed.
-
-Improving sleep does not necessarily require expensive products or elaborate routines. Experts recommend keeping a consistent bedtime, avoiding screens for at least thirty minutes before sleep, and keeping the bedroom cool and dark. Caffeine and alcohol, both of which can interfere with sleep quality, are best avoided in the hours before bed. Regular exercise during the day also promotes deeper sleep, though working out too close to bedtime can have the opposite effect.
-
-In a culture that often glorifies busyness and treats sleep as a luxury, it is worth remembering that good sleep is not a sign of laziness. It is a biological necessity — one that affects every aspect of our physical and mental well-being.</textarea>
+· 单行回车 → 自动换行（非空行的回车会被合并为同一段）"></textarea>
         <p class="hint-text">支持自动识别回车换行：<strong>空行</strong>（两个回车）自动分段，<strong>单个回车</strong>在段落内自动换行。</p>
         <div class="btn-row">
           <button class="btn btn-load" onclick="loadCustomArticle()">加载文章</button>
@@ -498,6 +567,7 @@ const scrollPositions = { mark: 0, stats: 0, archive: 0 };
 function switchTab(name) {
   // 保存当前 Tab 的滚动位置
   scrollPositions[currentTab] = window.scrollY;
+  hideDictPopup();
 
   document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
   document.querySelectorAll('.tab-item').forEach(el => el.classList.remove('active'));
@@ -524,118 +594,7 @@ function switchTab(name) {
 // ==========================================
 //  Tab 1: 标记工具
 // ==========================================
-const articlePool = [
-  {
-    title: "The Science of Sleep",
-    paragraphs: [
-      "Sleep is one of the most essential yet often neglected parts of our daily lives. While we sleep, our bodies are far from idle — the brain sorts through the day's memories, strengthening important ones and discarding what is unnecessary. At the same time, cells throughout the body repair damage and restore energy for the day ahead.",
-      "Most adults need between seven and nine hours of sleep per night, but studies show that a large portion of the population gets significantly less. The consequences go far beyond simple drowsiness. Long-term sleep deprivation has been linked to a higher risk of heart disease, weakened immune function, and even weight gain. One reason is that lack of sleep disrupts the hormones that control hunger, making people crave high-calorie foods.",
-      "The quality of sleep matters as much as quantity. Deep sleep, also known as slow-wave sleep, is the stage during which the body does most of its physical repair. REM sleep — named for the rapid eye movements that occur during it — plays a key role in emotional regulation and creative thinking. A full sleep cycle lasts roughly ninety minutes, and waking up in the middle of a cycle can leave you feeling groggy even if you spent enough hours in bed.",
-      "Improving sleep does not necessarily require expensive products or elaborate routines. Experts recommend keeping a consistent bedtime, avoiding screens for at least thirty minutes before sleep, and keeping the bedroom cool and dark. Caffeine and alcohol, both of which can interfere with sleep quality, are best avoided in the hours before bed. Regular exercise during the day also promotes deeper sleep, though working out too close to bedtime can have the opposite effect.",
-      "In a culture that often glorifies busyness and treats sleep as a luxury, it is worth remembering that good sleep is not a sign of laziness. It is a biological necessity — one that affects every aspect of our physical and mental well-being."
-    ]
-  },
-  {
-    title: "The Power of Reading Books",
-    paragraphs: [
-      "In an age dominated by screens and short videos, reading books may seem like an old-fashioned habit. Yet research consistently shows that regular reading brings unique benefits that digital media cannot easily replace. When we read a book, our brains engage in a process known as deep reading — a slow, focused form of attention that allows us to follow complex arguments, understand different perspectives, and reflect on what we have learned.",
-      "One of the most valuable gifts of reading is vocabulary expansion. Unlike spoken conversation, which tends to use a limited set of common words, books expose readers to a much wider range of expressions and sentence structures. This is especially important for language learners, who can absorb new words naturally through context rather than through memorization alone.",
-      "Beyond language skills, reading fiction has been shown to increase empathy. When we follow a character's journey — their struggles, joys, and disappointments — we practice seeing the world through another person's eyes. Studies using brain scans have found that people who read literary fiction score higher on tests measuring their ability to understand what others are thinking and feeling.",
-      "Perhaps most importantly, reading provides something that is increasingly rare in modern life: uninterrupted time for reflection. In a world of constant notifications and endless scrolling, sitting down with a book for thirty minutes can feel like a radical act of self-care. It is a chance to slow down, to think deeply, and to connect with ideas that have stood the test of time."
-    ]
-  },
-  {
-    title: "Why Friendship Matters",
-    paragraphs: [
-      "Human beings are social creatures by nature. Throughout history, our survival has depended on our ability to form and maintain relationships with others. While modern life no longer requires us to hunt in groups or defend shared territory, the need for meaningful social connection remains wired deep within our brains.",
-      "Research has found that people with strong friendships tend to live longer, healthier lives. One landmark study tracked thousands of participants over several decades and discovered that the quality of a person's social relationships was a stronger predictor of longevity than factors like exercise, diet, or even smoking. Loneliness, by contrast, has been linked to higher levels of stress hormones, poorer immune function, and increased risk of heart problems.",
-      "Friends do more than just keep us healthy — they shape who we become. Through conversations, shared experiences, and honest feedback, our friends influence our opinions, habits, and goals. A good friend challenges us to grow while also providing a safe space where we can be ourselves without fear of judgment. It is in these relationships that many people find their deepest sense of belonging.",
-      "Yet building and maintaining friendships takes effort, especially in adulthood when work and family responsibilities compete for our time. The key is consistency: small gestures like a regular phone call, a shared meal, or simply remembering to check in can keep a friendship alive across years and distances. The investment is almost always worth it — because at the end of our lives, few people wish they had spent less time with the people they loved."
-    ]
-  },
-  {
-    title: "The Benefits of Regular Exercise",
-    paragraphs: [
-      "Most people know that exercise is good for the body, but its effects on the mind are equally remarkable. Physical activity triggers the release of chemicals called endorphins, which act as natural painkillers and mood boosters. This is the science behind the so-called runner's high — a feeling of calm and well-being that often follows a good workout.",
-      "Regular exercise also improves cognitive function in ways that directly benefit learning and academic performance. Studies have shown that students who engage in physical activity perform better on tests of memory, attention, and problem-solving. One reason is that exercise increases blood flow to the brain, delivering more oxygen and nutrients to the cells that power our thinking.",
-      "The benefits extend to mental health as well. Physical activity has been found to reduce symptoms of anxiety and depression, sometimes as effectively as medication for mild to moderate cases. The reasons are both biological — exercise balances brain chemicals — and psychological: setting and achieving fitness goals builds confidence and a sense of control over one's life.",
-      "Importantly, you do not need to run marathons or spend hours in the gym to experience these benefits. Even moderate activities like brisk walking, cycling, or dancing for thirty minutes a day can make a meaningful difference. The best form of exercise is simply the one that you enjoy enough to do consistently."
-    ]
-  },
-  {
-    title: "Learning a Foreign Language",
-    paragraphs: [
-      "Many people dream of speaking a second language, but the journey from beginner to fluent speaker can feel overwhelming. The good news is that decades of research into language acquisition have revealed principles that make the process more effective and enjoyable. Understanding how the brain acquires language can turn what seems like an impossible task into a series of manageable steps.",
-      "One of the most important discoveries is the role of comprehensible input — the idea that we learn a language best when we are exposed to messages that we can mostly understand, with just a small amount of new material. This is how children learn their first language, and it is how adults learn best too. Rather than memorizing grammar rules in isolation, learners benefit more from reading and listening to content that interests them.",
-      "Consistency matters more than intensity. Studying for fifteen minutes every day is far more effective than cramming for three hours once a week. This is because language learning depends on building and strengthening neural pathways, which happens gradually through repeated exposure and practice. Short daily sessions also make it easier to maintain motivation, since the task never feels like a burden.",
-      "Making mistakes is not a sign of failure — it is an essential part of the learning process. Every error provides feedback that helps the brain adjust and improve. The most successful language learners are those who are willing to speak even when they know they might get something wrong. Confidence, it turns out, is often more important than accuracy in the early stages of learning.",
-      "Perhaps the greatest reward of learning a language is not the skill itself but the doors it opens. A new language gives access to different ways of thinking, new friendships, and a deeper appreciation of other cultures. In a world that often feels divided, the ability to communicate across linguistic boundaries is a powerful tool for building understanding."
-    ]
-  },
-  {
-    title: "The Joy of Cooking",
-    paragraphs: [
-      "For much of human history, cooking was a necessary daily chore — something people did because they had to eat. In recent decades, however, more and more people have rediscovered cooking as a source of creativity, relaxation, and connection. The rise of cooking shows, food blogs, and online recipe platforms reflects a growing appreciation for the art of preparing meals at home.",
-      "Cooking at home has clear health advantages. When you prepare your own meals, you control exactly what goes into them: the amount of salt, sugar, and oil; the freshness of the ingredients; the portion sizes. Studies have found that people who cook most of their meals at home tend to eat more vegetables, consume fewer calories overall, and maintain a healthier weight than those who rely on restaurant meals or processed foods.",
-      "Beyond nutrition, cooking engages the senses in a way that few other daily activities do. The sizzle of garlic in hot oil, the vibrant colors of fresh vegetables, the aroma of bread baking in the oven — these sensory experiences can be deeply satisfying and even meditative. Many people describe cooking as a form of stress relief, a time when the mind can focus on simple, tangible tasks rather than endless worries.",
-      "Cooking also brings people together. A shared meal is one of the oldest forms of human bonding, crossing cultures and generations. Whether it is teaching a child a family recipe, cooking dinner with friends, or preparing a holiday feast for extended family, the kitchen often becomes the heart of a home. The food itself may be forgotten, but the memories of cooking and eating together can last a lifetime."
-    ]
-  },
-  {
-    title: "How Music Shapes Our Brain",
-    paragraphs: [
-      "Music is a universal feature of human culture — every society in history has created some form of music. But only in recent decades have scientists begun to understand what happens inside the brain when we listen to, play, or create music. What they have found is that music engages more parts of the brain than almost any other activity.",
-      "When we listen to a piece of music we enjoy, the brain releases dopamine — the same chemical involved in the pleasure we get from food, exercise, and social interaction. This helps explain why music can lift our mood so powerfully and why certain songs become tied to specific memories. The connection between music and memory is so strong that even people with advanced memory loss often remember songs from their youth.",
-      "Learning to play a musical instrument has particularly strong effects on brain development. Children who study music tend to perform better in areas like reading, mathematics, and spatial reasoning. Brain scans of musicians reveal that the parts of the brain responsible for hearing, movement, and coordination are more developed and more closely connected than in non-musicians.",
-      "Music may also be one of the oldest forms of social bonding. Singing together, dancing to the same rhythm, or simply sharing a favorite song with a friend creates a sense of connection that words alone cannot always achieve. In this sense, music is not just entertainment — it is a form of communication that reaches parts of us that language cannot touch."
-    ]
-  },
-  {
-    title: "Time Management for Students",
-    paragraphs: [
-      "Every student has the same twenty-four hours in a day, yet some seem to accomplish far more than others. The difference is rarely about intelligence or talent — it is about how time is managed. Learning to use time effectively is one of the most valuable skills a student can develop, and it pays dividends long after graduation.",
-      "The foundation of good time management is knowing the difference between urgent and important. Urgent tasks demand immediate attention — a deadline tomorrow, a ringing phone — while important tasks contribute to long-term goals, such as mastering a subject or building a skill. Most people spend too much time on urgent but unimportant tasks and not enough on activities that truly matter in the long run.",
-      "One practical technique is to break large tasks into smaller, actionable steps. A goal like 'study for the exam' is too vague to be useful. A better approach would be 'review chapters one through three and complete ten practice questions.' Specific, achievable goals reduce the anxiety that often leads to procrastination and provide a clear sense of progress.",
-      "It is equally important to schedule breaks and respect one's own energy rhythms. Research suggests that the brain works best in focused bursts of about twenty-five to fifty minutes, followed by short breaks. Trying to study for hours without rest often leads to diminishing returns: the mind wanders, information stops sticking, and frustration builds. Working with the brain's natural rhythms, rather than against them, leads to better results in less time."
-    ]
-  },
-  {
-    title: "The History of Tea",
-    paragraphs: [
-      "Tea is the most widely consumed beverage in the world after water, yet its journey from wild plant to global phenomenon spans thousands of years and crosses multiple continents. According to legend, tea was discovered by the Chinese emperor Shen Nong around 2737 BCE, when leaves from a wild tea tree drifted into his pot of boiling water.",
-      "From China, tea spread to Japan in the 8th century, where it became central to a highly refined cultural practice: the Japanese tea ceremony. Meanwhile, in China itself, tea culture flourished during the Tang and Song dynasties, giving rise to elaborate preparation methods, tea houses, and poetry celebrating the drink's subtle flavors and calming effects. Tea was not just a beverage — it was an art form.",
-      "Tea reached Europe in the 16th century through Portuguese and Dutch traders and quickly became a luxury item among the wealthy. By the 18th century, Britain's demand for tea had grown so immense that it shaped global trade routes and even contributed to historical events such as the Opium Wars and the American Revolution. The Boston Tea Party of 1773 was a direct protest against British tea taxes.",
-      "Today, tea is grown in over forty countries and consumed in countless forms: green, black, oolong, white, and pu-erh, to name just a few. Modern science has confirmed many of the health benefits that traditional cultures long believed: tea is rich in antioxidants, may reduce the risk of heart disease, and contains compounds that promote calm, focused alertness. A simple cup of tea, it turns out, carries thousands of years of human history within it."
-    ]
-  },
-  {
-    title: "Why Nature Makes Us Happier",
-    paragraphs: [
-      "There is a reason that people pay more for apartments with a view of trees and that hospital patients recover faster when their windows look out onto green spaces. Human beings have an innate need for connection with the natural world — a concept that the biologist E. O. Wilson called biophilia, meaning a love of living things.",
-      "Studies have consistently found that spending time in nature reduces stress, lowers blood pressure, and improves mood. In Japan, the practice of forest bathing — simply spending quiet time among trees — has been shown to decrease levels of the stress hormone cortisol and boost the activity of natural killer cells, which help the body fight off illness.",
-      "Nature also appears to restore our ability to focus. Modern life bombards us with information, notifications, and decisions, all of which drain our mental energy over time. Natural environments, by contrast, engage what psychologists call soft fascination — they hold our attention gently, without demanding effort, allowing our overtaxed minds to rest and recover.",
-      "You do not need to climb a mountain or live in the countryside to experience these benefits. Even small doses of nature — a walk through a city park, tending a few plants on a balcony, or simply looking at photographs of natural scenes — can produce measurable improvements in well-being. The key is to make contact with the natural world a regular part of life rather than a rare escape."
-    ]
-  },
-  {
-    title: "The Secret of Building Good Habits",
-    paragraphs: [
-      "We are what we repeatedly do, as the saying goes. Yet most people struggle to stick with new habits, whether it is exercising regularly, eating better, or reading more. The reason is not a lack of willpower — it is that we often go about habit change in the wrong way, focusing on goals rather than on the systems that produce them.",
-      "Every habit follows a simple three-step loop: a cue triggers a routine, which leads to a reward. For example, feeling stressed — the cue — might trigger eating a snack — the routine — which provides temporary comfort — the reward. Once the brain learns this loop, it runs automatically, which is why breaking bad habits can feel so difficult and why building good ones requires understanding this mechanism.",
-      "Research suggests that the most effective way to build a new habit is to start incredibly small. Want to read more? Start with one page per day. Want to exercise? Begin with five minutes. The goal at first is not results — it is simply showing up consistently. Once the habit becomes automatic, which typically takes two to three months, it can be expanded gradually.",
-      "Environment also matters more than motivation. People who keep fruits visible on the counter eat more fruit; people who keep their phones in another room while working get more done. Designing your surroundings to make good habits easy and bad habits difficult is a far more reliable strategy than depending on willpower alone. Small changes to your environment can lead to large changes in behavior over time."
-    ]
-  },
-  {
-    title: "Technology and Modern Relationships",
-    paragraphs: [
-      "Smartphones and social media have transformed the way we connect with one another. We can now talk to friends on the other side of the world, share moments of our lives instantly, and maintain relationships across distances that would have been impossible just a generation ago. These tools have brought genuine benefits, especially for people who might otherwise feel isolated.",
-      "Yet there is a growing body of research suggesting that digital communication, for all its convenience, cannot fully replace face-to-face interaction. Texts and emojis lack tone of voice, facial expressions, and body language — the nonverbal cues that carry much of the emotional meaning in human conversation. Misunderstandings are more common, and the depth of connection often feels shallower.",
-      "The problem is not just about quality but also about attention. When we keep our phones nearby during conversations — even face-to-face ones — the mere presence of the device reduces the quality of the interaction. Studies have found that people feel less connected to their conversation partners and rate the conversation as less meaningful when a phone is visible, even if it never buzzes.",
-      "The goal is not to reject technology but to use it mindfully. Setting aside phone-free time, turning off unnecessary notifications, and prioritizing real-world gatherings over digital check-ins can help restore balance. Technology should serve our relationships, not replace them — and the most meaningful moments in life still tend to happen when we put down our screens and look each other in the eye."
-    ]
-  }
-];
+const articlePool = []; // emptied
 
 // ==========================================
 //  每日文章轮换（不重复）
@@ -662,12 +621,12 @@ function updatePoolSizeDisplay() {
 }
 
 function getDailyArticle() {
+  const fullPool = getFullPool();
+  if (fullPool.length === 0) return null;
   const today = getTodayStr();
   const lastDate = localStorage.getItem('cet4_article_date');
   const lastTitle = localStorage.getItem('cet4_article_title');
   let shown = JSON.parse(localStorage.getItem('cet4_shown_titles') || '[]');
-
-  const fullPool = getFullPool();
 
   if (today === lastDate && lastTitle) {
     const found = fullPool.find(a => a.title === lastTitle);
@@ -714,6 +673,7 @@ function autoSaveDailyArticle(article) {
 }
 
 let mouseDown = false;
+let dragToggled = false;
 
 function parseArticle(raw) {
   let text = raw.replace(/\r\n/g, '\n').replace(/\r/g, '\n');
@@ -739,9 +699,9 @@ function renderArticle(paragraphs, title) {
         const span = document.createElement('span');
         span.className = 'word';
         span.textContent = token;
-        span.addEventListener('click', () => toggleWord(span));
-        span.addEventListener('mousedown', () => { mouseDown = true; });
-        span.addEventListener('mouseenter', () => { if (mouseDown) toggleWord(span); });
+        span.addEventListener('click', () => { toggleWord(span); if (!dragToggled && span.classList.contains('marked')) showDictPopup(span); });
+        span.addEventListener('mousedown', () => { mouseDown = true; dragToggled = false; });
+        span.addEventListener('mouseenter', () => { if (mouseDown) { toggleWord(span); dragToggled = true; } });
         p.appendChild(span);
       } else {
         p.appendChild(document.createTextNode(token));
@@ -768,13 +728,16 @@ function loadCustomArticle() {
 }
 
 function resetDefaultArticle() {
-  const todayArticle = getDailyArticle();
-  document.getElementById('customInput').value = todayArticle.paragraphs.join('\n\n');
-  renderArticle(todayArticle.paragraphs, todayArticle.title);
-  showToast('已恢复今日文章：' + todayArticle.title);
+  const article = getDailyArticle();
+  if (!article) { showToast('文章池为空，请在下方输入框粘贴文章'); return; }
+  document.getElementById('customInput').value = article.paragraphs.join('\n\n');
+  renderArticle(article.paragraphs, article.title);
+  showToast('已恢复今日文章：' + article.title);
 }
 
 function loadNextArticle() {
+  const fullPool = getFullPool();
+  if (fullPool.length === 0) { showToast('文章池为空，请在下方输入框粘贴文章'); return; }
   const words = getMarked();
   if (words.length > 0) {
     const hist = JSON.parse(localStorage.getItem('cet4_vocab_history') || '{}');
@@ -783,7 +746,6 @@ function loadNextArticle() {
   }
 
   let shown = JSON.parse(localStorage.getItem('cet4_shown_titles') || '[]');
-  const fullPool = getFullPool();
   const unseen = fullPool.filter(a => !shown.includes(a.title));
 
   if (unseen.length === 0) {
@@ -1033,9 +995,10 @@ function renderStats() {
   table.innerHTML = list.map((w, i) => `
     <div class="word-row ${i < 3 ? 'top3' : ''}">
       <span class="rank">${i < 3 ? ['🥇','🥈','🥉'][i] : '#'+(i+1)}</span>
-      <span class="word-text">${w.word}</span>
+      <span class="word-text" onclick="showDictPopup(this)">${w.word}</span>
       <span class="count-badge ${countClass(w.count)}">${w.count}次</span>
       <span class="word-bar-box"><span class="word-bar" style="width:${(w.count / maxCount) * 100}%"></span></span>
+      <button class="btn-del-word" onclick="deleteWord('${w.word.replace(/'/g, "\\'")}')" title="删除">×</button>
     </div>
   `).join('');
 }
@@ -1043,7 +1006,7 @@ function renderStats() {
 function exportWords() {
   const list = getSorted();
   if (list.length === 0) { showToast('还没有标记过单词'); return; }
-  const text = list.map(w => `${w.word}  (${w.count}次)`).join('\n');
+  const text = list.map(w => w.word).join('\n');
   navigator.clipboard.writeText(text).then(() => {
     showToast('已复制 ' + list.length + ' 个生词');
   }).catch(() => {
@@ -1054,6 +1017,14 @@ function exportWords() {
     document.execCommand('copy'); document.body.removeChild(ta);
     showToast('已复制 ' + list.length + ' 个生词');
   });
+}
+
+function deleteWord(word) {
+  const hist = getVocabHistory();
+  delete hist[word];
+  saveVocabHistory(hist);
+  renderStats();
+  showToast('已删除：' + word);
 }
 
 function clearStats() {
@@ -1138,13 +1109,137 @@ function showToast(msg) {
 // ==========================================
 //  初始加载
 // ==========================================
+// 清除之前抓取的文章缓存
+['cet4_fetched_articles', 'cet4_shown_titles', 'cet4_article_date', 'cet4_article_title', 'cet4_last_fetch_date'].forEach(k => localStorage.removeItem(k));
+
 const todayArticle = getDailyArticle();
-document.getElementById('customInput').value = todayArticle.paragraphs.join('\n\n');
-renderArticle(todayArticle.paragraphs, todayArticle.title);
-autoSaveDailyArticle(todayArticle);
-updatePoolSizeDisplay();
-autoFetchIfNeeded();
+if (todayArticle) {
+  document.getElementById('customInput').value = todayArticle.paragraphs.join('\n\n');
+  renderArticle(todayArticle.paragraphs, todayArticle.title);
+  autoSaveDailyArticle(todayArticle);
+}
+
+// ==========================================
+//  词典释义弹窗（免费 API：dictionaryapi.dev）
+// ==========================================
+const dictCache = new Map();
+const zhCache = new Map();
+
+async function fetchDefinition(word) {
+  if (dictCache.has(word)) return dictCache.get(word);
+  try {
+    const resp = await fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${encodeURIComponent(word)}`);
+    if (!resp.ok) {
+      const result = { error: true, word };
+      dictCache.set(word, result);
+      return result;
+    }
+    const data = await resp.json();
+    const entry = data[0];
+    const result = {
+      word: entry.word,
+      phonetic: entry.phonetic || (entry.phonetics && entry.phonetics[0] && entry.phonetics[0].text) || '',
+      audio: (entry.phonetics && entry.phonetics.find(p => p.audio) || {}).audio || '',
+      meanings: (entry.meanings || []).slice(0, 3)
+    };
+    dictCache.set(word, result);
+    return result;
+  } catch(e) {
+    const result = { error: true, word, offline: true };
+    dictCache.set(word, result);
+    return result;
+  }
+}
+
+async function fetchChineseTranslation(word) {
+  if (zhCache.has(word)) return zhCache.get(word);
+  try {
+    const resp = await fetch(`https://api.mymemory.translated.net/get?q=${encodeURIComponent(word)}&langpair=en|zh`);
+    if (!resp.ok) { zhCache.set(word, ''); return ''; }
+    const data = await resp.json();
+    const text = (data.responseData && data.responseData.translatedText) || '';
+    zhCache.set(word, text);
+    return text;
+  } catch(e) { zhCache.set(word, ''); return ''; }
+}
+
+function positionPopup(popup, rect) {
+  const vw = window.innerWidth;
+  const vh = window.innerHeight;
+  const pw = 320;
+  let left = rect.left + rect.width / 2 - pw / 2;
+  let top = rect.bottom + 8;
+  if (left < 10) left = 10;
+  if (left + pw > vw - 10) left = vw - pw - 10;
+  if (top + 200 > vh) top = rect.top - 8; // flip above
+  popup.style.left = left + 'px';
+  popup.style.top = top + 'px';
+  popup.style.maxWidth = Math.min(340, vw - 20) + 'px';
+}
+
+function buildDictHTML(data, zhText, zhLoading) {
+  if (data.error) {
+    return `<div class="dict-error">${data.offline ? '网络不可用，无法查询' : '未找到 "' + data.word + '" 的释义'}</div>`;
+  }
+  const audioBtn = data.audio
+    ? `<button class="dict-audio" onclick="event.stopPropagation();new Audio('${data.audio.replace(/'/g, "\\'")}').play()">🔊 发音</button>`
+    : '';
+  const zhHTML = zhLoading
+    ? `<div class="dict-zh loading-zh">⏳ 查询中文翻译中...</div>`
+    : (zhText ? `<div class="dict-zh">🇨🇳 ${zhText}</div>` : '');
+  const meaningsHTML = data.meanings.map(m => `
+    <div class="dict-meaning">
+      <span class="dict-pos">${m.partOfSpeech}</span>
+      <div class="dict-def">${m.definitions[0].definition}</div>
+      ${m.definitions[0].example ? `<div class="dict-example">"${m.definitions[0].example}"</div>` : ''}
+    </div>
+  `).join('');
+  return `
+    <button class="dict-close" onclick="event.stopPropagation();hideDictPopup()">&times;</button>
+    <div class="dict-word">${data.word}${audioBtn}</div>
+    ${data.phonetic ? `<div class="dict-phonetic">${data.phonetic}</div>` : ''}
+    ${zhHTML}
+    ${meaningsHTML}
+  `;
+}
+
+async function showDictPopup(span) {
+  const word = span.textContent.trim();
+  if (!word || word.length < 2) return;
+  hideDictPopup();
+  const popup = document.getElementById('dictPopup');
+  const overlay = document.getElementById('dictOverlay');
+  const rect = span.getBoundingClientRect();
+  positionPopup(popup, rect);
+  popup.innerHTML = '<div class="dict-loading"><span class="dict-spinner"></span>查询中...</div>';
+  popup.classList.add('show');
+  overlay.classList.add('show');
+
+  // 并行请求英文释义 + 中文翻译
+  const [data, zhText] = await Promise.all([
+    fetchDefinition(word),
+    fetchChineseTranslation(word)
+  ]);
+
+  if (!document.getElementById('dictPopup').classList.contains('show')) return;
+  popup.innerHTML = buildDictHTML(data, zhText, false);
+  positionPopup(popup, rect);
+}
+
+function hideDictPopup() {
+  document.getElementById('dictPopup').classList.remove('show');
+  document.getElementById('dictOverlay').classList.remove('show');
+}
+
+// 点击弹窗外关闭
+document.getElementById('dictOverlay').addEventListener('click', hideDictPopup);
+// ESC 关闭
+document.addEventListener('keydown', (e) => { if (e.key === 'Escape') hideDictPopup(); });
 </script>
+
+<!-- 词典释义弹窗 -->
+<div class="dict-overlay" id="dictOverlay" onclick="hideDictPopup()"></div>
+<div class="dict-popup" id="dictPopup"></div>
 
 </body>
 </html>
