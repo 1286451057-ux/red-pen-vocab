@@ -1,5 +1,121 @@
 [
   {
+    "title": "Bulgaria stops helping Ukraine – level 3",
+    "paragraphs": [
+      "Bulgaria will stop providing weapons from its army stocks to Ukraine, according to the country’s prime minister, Rumen Radev.",
+      "He stated that Bulgaria has already given enough military aid and is currently suffering socio-economic damage from the conflict.",
+      "He also believed that a peaceful solution cannot be achieved through military means and calls for a diplomatic end to."
+    ],
+    "fetchedAt": "2026-06-15"
+  },
+  {
+    "title": "Belfast protests after a knife attack – level 3",
+    "paragraphs": [
+      "A second night of riots broke out in Northern Ireland following a violent knife attack in North Belfast.",
+      "The violence started after a 44-year-old local man, Steven Ogilvie, was attacked by a Sudanese immigrant. The victim lost his left eye and suffered severe injuries.",
+      "The 30-year-old suspect was arrested and has since appeared in court charged with attempted."
+    ],
+    "fetchedAt": "2026-06-15"
+  },
+  {
+    "title": "Duck Hunt",
+    "paragraphs": [
+      "Duck Hunt is a video game for the Nintendo Entertainment System (NES) game system. The game was made by Nintendo, and was released in 1984 in Japan.",
+      "In Duck Hunt, players use the NES Zapper to shoot ducks on screen to get points. The ducks come onto the screen one or two at a time, and the player is given three shots to shoot them down.",
+      "Duck Hunt was one of the two first Pack-in games for the NES. The game did not get many reviews, but many gamers enjoyed playing it, and many people said it was a good game.",
+      "Before Nintendo made the game, it also made a Duck Hunt game about the Laser Clay Shooting System released in 1976.",
+      "== Gameplay == In Duck Hunt, players use the Nintendo Zapper Light Gun that must be plugged into their NES consoles. Then they try to shoot down ducks or clay pigeons.",
+      "Duck Hunt was also released as an arcade game in 1984, and was also in the PlayChoice-10 arcade console."
+    ],
+    "fetchedAt": "2026-06-15"
+  },
+  {
+    "title": "Method of moments (statistics)",
+    "paragraphs": [
+      "In statistics, the method of moments is a method of estimation of population parameters.",
+      "== Method == Suppose that the problem is to estimate k {\\displaystyle k} unknown parameters θ 1 , θ 2 , … , θ k {\\displaystyle \\theta _{1},\\theta _{2},\\dots ,\\theta _{k}} describing the distribution f W ( w ; θ ) {\\displaystyle f_{W}(w;\\theta )} of the random variable W {\\displaystyle W} .",
+      "Suppose the first k {\\displaystyle k} moments of the true distribution (the \"population moments\") can be expressed as functions of the θ {\\displaystyle \\theta } s: μ 1 ≡ E ⁡ [ W ] = g 1 ( θ 1 , θ 2 , … , θ k ) , μ 2 ≡ E ⁡ [ W 2 ] = g 2 ( θ 1 , θ 2 , … , θ k ) , ⋮ μ k ≡ E ⁡ [ W k ] = g k ( θ 1 , θ 2 , … , θ k ) .",
+      "{\\displaystyle {\\begin{aligned}\\mu _{1}&\\equiv \\operatorname {E} [W]=g_{1}(\\theta _{1},\\theta _{2},\\ldots ,\\theta _{k}),\\\\[4pt]\\mu _{2}&\\equiv \\operatorname {E} [W^{2}]=g_{2}(\\theta _{1},\\theta _{2},\\ldots ,\\theta _{k}),\\\\&\\,\\,\\,\\vdots \\\\\\mu _{k}&\\equiv \\operatorname {E} [W^{k}]=g_{k}(\\theta _{1},\\theta _{2},\\ldots ,\\theta _{k}).",
+      "\\end{aligned}}} Suppose a sample of size n {\\displaystyle n} is drawn, and it leads to the values w 1 , … , w n {\\displaystyle w_{1},\\dots ,w_{n}} .",
+      "For j = 1 , … , k {\\displaystyle j=1,\\dots ,k} , let μ ^ j = 1 n ∑ i = 1 n w i j {\\displaystyle {\\widehat {\\mu }}_{j}={\\frac {1}{n}}\\sum _{i=1}^{n}w_{i}^{j}} be the j-th sample moment, an estimate of μ j {\\displaystyle \\mu _{j}} ."
+    ],
+    "fetchedAt": "2026-06-15"
+  },
+  {
+    "title": "Saturated and unsaturated compounds",
+    "paragraphs": [
+      "In chemistry, a saturated compound is a chemical compound which can't usually do addition reactions, such as hydrogenation, oxidative addition, and the binding of a Lewis base.",
+      "Therefore an unsaturated compound is the opposite. Saturated compounds are compounds like alkanes. Saturated hydrocarbons contain only carbon to carbon single bonds.",
+      "Unsaturated compounds are compounds like alkenes or alkynes. Unsaturated hydrocarbons contain a carbon to carbon double bond, or carbon to carbon triple bond."
+    ],
+    "fetchedAt": "2026-06-15"
+  },
+  {
+    "title": "Lena Philipsson",
+    "paragraphs": [
+      "Maria Magdalena \"Lena\" Philipsson (also known as Lena PH; born January 19, 1966) is a Swedish singer and media personality.",
+      "She represented Sweden in the 2004 Eurovision Song Contest, with the song It Hurts finishing fifth.",
+      "Scoring successes participating att Melodifestivalen in 1986, 1987 and 1988, she followed it up with successful album My Name that included top hits \"Standing In My Rain\", \"Why\" and \"Leave A Light\".",
+      "In 1991 she recorded a concept album and show about a female secret agent, 'Agent 006'. In 2001 she had a stage comeback, the Lena Philipsson Show was sold out for two and a half years around Sweden.",
+      "In 2004, she returned after a seven year hiatus from the album charts."
+    ],
+    "fetchedAt": "2026-06-15"
+  },
+  {
+    "title": "Eclipse (Delta Goodrem song)",
+    "paragraphs": [
+      "\"Eclipse\" is a song by Delta Goodrem, an Australian singer and songwriter. It was released on March 1, 2026, by ATLED Records.",
+      "Delta Goodrem wrote the song with producer Michael Fatkin and co-writers Jonas Myrin and Ferras Alqaisi. The song was Australia's entry in the Eurovision Song Contest 2026.",
+      "It was the first Australian song to reach the final since 2023, when the song \"Promise\" did. \"Eclipse\" finished in fourth place with 287 points.",
+      "The song will be part of Delta Goodrem's eighth album called Pure, released in 2026.",
+      "\"Eclipse\" started at number thirteen on the ARIA Top 20 Australian Artist Singles Chart and reached number one on the AIR Independent Singles Chart.",
+      "== Background == === How the song was made === \"Eclipse\" was written and produced by Michael Fatkin. Delta Goodrem, Jonas Myrin, and Ferras Alqaisi also helped write the song."
+    ],
+    "fetchedAt": "2026-06-15"
+  },
+  {
+    "title": "Akhbari",
+    "paragraphs": [
+      "The Akhbaris are a part of Twelverism. Unlike the Usulis they follow only the Qur'an and Hadith as their source without aql (logic) and ijma (consensus).",
+      "They reject the usoli version of ilm al rijal (Hadith science) and taqleed (following without proof) in ijtaihad (making rulings) to a fallible being.",
+      "The term akhbari originated from the daughter of imam Al-Jawad calling the companions of the imams ashab al-akhbar companions of the akhbar (news)."
+    ],
+    "fetchedAt": "2026-06-15"
+  },
+  {
+    "title": "Ted Lasso",
+    "paragraphs": [
+      "Ted Lasso is an American sports comedy-drama streaming television series created by Jason Sudeikis, Bill Lawrence, Brendan Hunt, and Joe Kelly.",
+      "It is based on a character of the same name that Sudeikis first played in a series of promos for NBC Sports.",
+      "The show is about Ted Lasso, an American college football coach who is hired to coach an English soccer team.",
+      "The first season of 10 episodes premiered on Apple TV+ on August 14, 2020, with three episodes; with weekly episodes releasing shortly afterwards.",
+      "A second season of 12 episodes premiered on July 23, 2021. It has received positive reviews and was nominated for 20 Emmy Awards.",
+      "It is the most Emmy-nominated freshman television series in Emmy history."
+    ],
+    "fetchedAt": "2026-06-15"
+  },
+  {
+    "title": "Peada of Mercia",
+    "paragraphs": [
+      "Peada (died 17 April 656) was briefly the King of Mercia. From c. 653 he had been King of the Middle Angles.",
+      "Peada was a pagan who accepted baptism in order to marry the daughter of Oswiu of Northumbria. == King in Mercia == Peada was a son of King Penda. In c.",
+      "653 he was made king of the Middle Angles by his father. The Middle Angles were a group of peoples located between Mercia and East Anglia. They later became part of Mercia.",
+      "Peada asked for the hand of Alflaed, daughter of Oswiu of Northumbria. Oswiu agreed on condition Peada and his kingdom became Christian.",
+      "In 653 Peada was baptised by Finan, Bishop of Lindisfarne, and married Alflaed. On 15 November 655 the armies of Oswiu and Penda met in battle near Leeds.",
+      "Although he had the larger army, Penda was killed. This established Oswiu as king of all Northumbria and as overlord of all the English south of the River Humber."
+    ],
+    "fetchedAt": "2026-06-15"
+  },
+  {
+    "title": "Mamasa Regency",
+    "paragraphs": [
+      "Mamasa Regency (Indonesian: Kabupaten Mamasa) is a regency in West Sulawesi Province, Indonesia. It is on the island Sulawesi. The capital is Mamasa. The population was 139,962 in the 2010 Census.",
+      "The Toraja are the most common ethnic group. == Sumarorong Airport == The airport opened in 2012 with a 700-meter runway in 2012. The airport closed in 2016.",
+      "== Administration == The regency has seventeen districts (Indonesian: kecamatan)."
+    ],
+    "fetchedAt": "2026-06-15"
+  },
+  {
     "title": "Chato Galante",
     "paragraphs": [
       "José María Galante Serrano (1948 – 28 March 2020) was a Spanish political prisoner and human rights activist. He was born in Madrid.",
