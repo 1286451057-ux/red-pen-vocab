@@ -1,5 +1,64 @@
 [
   {
+    "title": "From the Mixed-Up Files of Mrs. Basil E. Frankweiler",
+    "paragraphs": [
+      "From the Mixed-Up Files of Mrs. Basil E. Frankweiler is a novel by E. L. Konigsburg that won the Newbery Medal for excellence in American children's literature in 1968.",
+      "== Story == This book tells the story of Claudia Kincaid, an 11-year-old girl who feels unappreciated by her parents.",
+      "She decides to run away from home just long enough to show her family what they would be missing without her.",
+      "Unfortunately, she does not enjoy hardship or discomfort, so running away has lots of problems. To solve this problem, Claudia decides to stay at the Metropolitan Museum of Art in New York City.",
+      "She tells her brother Jamie to accompany her: he's quiet, but most importantly, he has a secret stash of cash he's gotten by cheating at card games with his best friend, Bruce.",
+      "Much of the first part of the novel details how Claudia and Jamie settle in at the museum: blending in with school groups on field trips during the day to get a free presentation, hiding in the restroom at closing time to stay there, and emerging at night to bathe in the fountain and sleep on antique beds."
+    ],
+    "fetchedAt": "2026-06-28"
+  },
+  {
+    "title": "Palm-nut vulture",
+    "paragraphs": [
+      "The palm-nut vulture (Gypohierax angolensis) is a bird found throughout most of Africa. It feeds mainly on the fruit of the oil palm.",
+      "Like many African vultures, it is quite approachable and can be seen near habitation."
+    ],
+    "fetchedAt": "2026-06-28"
+  },
+  {
+    "title": "Aziz Mushabber Ahmadi",
+    "paragraphs": [
+      "Aziz Mushabber Ahmadi (25 March 1932 – 2 March 2023) was an Indian judge. He was the 26th Chief Justice of India from 1994 to 1997.",
+      "After serving as a judge in the Gujarat High Court, Ahmadi was appointed judge to the Supreme Court in 1988. He was Chancellor at the Aligarh Muslim University for two terms."
+    ],
+    "fetchedAt": "2026-06-28"
+  },
+  {
+    "title": "Dimethyl peroxide",
+    "paragraphs": [
+      "Dimethyl peroxide is an organic compound with the chemical formula H3COOCH3. It is the simplest organic peroxide, a type of organic compound with a C−O−O−C pattern of chemical bonds.",
+      "Like most organic peroxides, it is an unstable compound that is explosive at room temperature.",
+      "== Chemistry == The bond between the oxygen atoms is very weak, and often breaks apart into methoxy radicals.",
+      "These radicals make dimethyl peroxide a useful radical initiator for polymerisation, but also make it dangerously reactive."
+    ],
+    "fetchedAt": "2026-06-28"
+  },
+  {
+    "title": "622",
+    "paragraphs": [
+      "622 (DCXXII) was a common year starting on Friday of the Julian calendar, the 622nd year of the Common Era (CE) and Anno Domini (AD) designations, the 622nd year of the 1st millennium, the 22nd year of the 7th century, and the 3rd year of the 620s decade.",
+      "As of the start of 622, the Gregorian calendar was 3 days ahead of the Julian calendar, which was the dominant calendar of the time. == Events == July 16 — Year one of the Islamic calendar begins.",
+      "September – Hijra (Islam) (Mohammad leave Mecca and go to Medina. ) Xuanzang is fully ordained as a monk at the age of 20. The first Chinese Encyclopedia, Yiwen Leiju, is completed."
+    ],
+    "fetchedAt": "2026-06-28"
+  },
+  {
+    "title": "Conjugate variables",
+    "paragraphs": [
+      "Conjugate variables are special pairs of variables (like x, y, z) that don't give the same result when you do a certain mathematical operation with them. This means that x*y is not equal to y*x.",
+      "Here, the * does not mean multiplication. It could mean addition, subtraction, division, or any operation that makes sense, in that case.",
+      "A physicist, Werner Heisenberg, and his co-workers used equations studied in classical physics to describe and predict events from quantum physics.",
+      "He discovered that the momentum (mass times velocity, represented by P) and position (represented by Q) are conjugate variables. This means that P*Q is not equal to Q*P, in quantum physics.",
+      "Here are two special equations to calculate the energy of an electron (small green thing) in a hydrogen atom.",
+      "The first equation could be used to find out the product of momentum and position: Y ( n , n − b ) = ∑ a p ( n , n − a ) q ( n − a , n − b ) {\\displaystyle Y(n,n-b)=\\sum _{a}^{}\\,p(n,n-a)q(n-a,n-b)} The second equation could be used to calculate the product of position and momentum: Z ( n , n − b ) = ∑ a q ( n , n − a ) p ( n − a , n − b ) {\\displaystyle Z(n,n-b)=\\sum _{a}^{}\\,q(n,n-a)p(n-a,n-b)} Some time later, another physicist, Max Born found out that, because P*Q is not equal to Q*P, the result of Q*P minus P*Q is not zero."
+    ],
+    "fetchedAt": "2026-06-28"
+  },
+  {
     "title": "Karaite",
     "paragraphs": [
       "The words Karaite and Qaraite are very confusing and can be used about a few different things: 1) There are some groups of people (whose ancestors came from Central Asia) who have been called Karaite people and the languages of some of these groups of people have also been called Karaite languages.",
@@ -2921,62 +2980,6 @@
       "Archaeothyris belonged to a group of early pelycosaurs which evolved early in the Pennsylvanian. It is thus seen as the precursor of all synapsids (which include mammals).",
       "== Appearance and lifestyle == Unlike the early sauropsids, Hylonomus and its kin, Archaeothyris was relatively large, measuring 50 centimetres (20 in) head to tail.",
       "It was also more advanced than the early sauropsids (~reptiles), with strong jaws that could open wider than those of the sauropsids."
-    ],
-    "fetchedAt": "2026-06-05"
-  },
-  {
-    "title": "Junio Hamano",
-    "paragraphs": [
-      "Junio Hamano (Japanese: 濱野 純) is a software engineer and hacker from Japan. He is best known for leading a large team of software developers who maintain Git.",
-      "Linus Torvalds, the original developer, has said that one of his big successes was recognizing Hamano's skills as a developer. Torvalds turned the entire project over to Hamano in July 2005.",
-      "Hamano lives in California and works for Google."
-    ],
-    "fetchedAt": "2026-06-05"
-  },
-  {
-    "title": "Batman (TV series)",
-    "paragraphs": [
-      "Batman is a 1960s American television series, based on the DC comic book character Batman. It aired on the ABC network for two and a half seasons from 1966 to 1968.",
-      "Even though it was on TV for such a short time, the series had two new episodes each week, giving the show a total of 120 episodes (the equivalent of roughly five regular seasons).",
-      "== Cast == Adam West - Batman/Bruce Wayne - A caped crusader whose parents were murdered when he was a child. Burt Ward - Robin/Dick Grayson - Batman's faithful partner and \"boy wonder\".",
-      "Alan Napier - Alfred - Batman's loyal butler. Neil Hamilton - Commissioner James Worthington Gordon - Gotham City Commissioner of Police.",
-      "Stafford Repp - Chief Miles O'Hara - Gotham City Chief of Police. Madge Blake - Aunt Harriet Cooper - Dick Grayson's maternal aunt.",
-      "Yvonne Craig - Batgirl/Barbara Gordon - Commissioner Gordon's daughter and Batman's partner (Season 3). Byron Keith - Mayor John Linseed - Mayor of Gotham City (recurring)."
-    ],
-    "fetchedAt": "2026-06-05"
-  },
-  {
-    "title": "Obersaxen Mundaun",
-    "paragraphs": [
-      "Obersaxen Mundaun is a new municipality of the district of Surselva in the canton of Graubünden in Switzerland.",
-      "On 1 January 2016, the former municipalities of Mundaun and Obersaxen merged into the new municipality of Obersaxen Mundaun."
-    ],
-    "fetchedAt": "2026-06-05"
-  },
-  {
-    "title": "California's 47th congressional district",
-    "paragraphs": [
-      "California's 47th congressional district is a congressional district in the U. S. state of California. After the 2020 redistricting cycle, the district moved to Orange County.",
-      "The district now represents Irvine, Huntington Beach, Costa Mesa, Newport Beach, and Seal Beach. It is currently represented by Democrat Dave Min."
-    ],
-    "fetchedAt": "2026-06-05"
-  },
-  {
-    "title": "Sphalerite",
-    "paragraphs": [
-      "Sphalerite is a mineral. Its is a mixed zinc and iron sulfide. The chemical formula is (Zn,Fe)S. It can be brown, yellow, red, green, and black. It is normally found with galena, a lead ore.",
-      "It is also known as zinc blende. It has a Mohs hardness of 3. 5 to 4. It is the main ore of zinc. It has a non-metalic sheen."
-    ],
-    "fetchedAt": "2026-06-05"
-  },
-  {
-    "title": "Houses of the Holy",
-    "paragraphs": [
-      "Houses of the Holy is the fifth album from rock band Led Zeppelin, released on March 28 1973, but recorded in 1972.",
-      "This album has many different music styles on it, like reggae, funk, acoustic songs and folk-like rock songs.",
-      "Many fans and critics thought when the album was released, that it was not as good as the album they made two years earlier, Led Zeppelin IV, but today it is seen as one of their best albums.",
-      "Songs like \"The Song Remains the Same\", \"No Quarter\", \"Over the Hills and Far Away\" and \"The Rain Song\" were performed for almost all tours after the release of the album.",
-      "\"The Song Remains the Same\" is also the title of their 1976 movie, but recorded in 1973 and 1974."
     ],
     "fetchedAt": "2026-06-05"
   }
