@@ -1,5 +1,88 @@
 [
   {
+    "title": "Chirality",
+    "paragraphs": [
+      "Chirality is when an object has two forms which are mirror images of each other. In a pair of chiral objects, neither one can be made to look exactly like the other one by just moving or rotating it.",
+      "Human hands are chiral objects. The left hand is a mirror image of the right hand. You cannot turn or move one of your hands to look exactly the same as the other.",
+      "This is why you can not put a left handed glove on your right hand, or shake the right hand of a person using your left hand. == In chemistry == In chemistry, chirality refers to molecules.",
+      "If a molecule is chiral it has two forms that are mirror images of each other but otherwise identical. Chemists call these enantiomers or optical isomers.",
+      "Because the difference between right and left hands is easy to understand, chemists call enantiomers either 'right-' or 'left-handed'.",
+      "A mixture of equal amounts of the two enantiomers is called a racemic mixture. Molecular chirality is quite common."
+    ],
+    "fetchedAt": "2026-07-05"
+  },
+  {
+    "title": "Desert locust",
+    "paragraphs": [
+      "The desert locust (Schistocerca gregaria) is a species of locust. Plagues of desert locusts threaten agricultural production in Africa, the Middle East, and Asia. They have done so for centuries.",
+      "The livelihood of one-tenth of the world’s human population may be affected by this voracious insect.",
+      "The destructive swarms of locusts do not form every year, but only when conditions are right for them.",
+      "The desert locust is potentially the most dangerous of the locust pests because of the ability of swarms to fly rapidly across great distances. It has two to five generations per year.",
+      "The last major desert locust upsurge in 2004–05 caused crop loss in West Africa and reduced food supply in the area.",
+      "The desert locust alone is not responsible for famines, but it is a contributing factor. == Development == The insect does not have complete metamorphosis."
+    ],
+    "fetchedAt": "2026-07-05"
+  },
+  {
+    "title": "Fujisawa, Kanagawa",
+    "paragraphs": [
+      "Fujisawa (藤沢市, Fujisawa-shi) is a Japanese city in Kanagawa Prefecture on the island of Honshū.",
+      "== History == In the Edo period, Fujisawa-shuku was 6th of the 53 shogunate-maintained waystations (shuku-eki) along the Tōkaidō road which connected Edo and Kyoto.",
+      "The area of the city expanded around Yugyō-ji temple (遊行寺) after 1325. == Related pages == The Fifty-three Stations of the Tōkaidō == References == == Other websites == http://www. city. fujisawa."
+    ],
+    "fetchedAt": "2026-07-05"
+  },
+  {
+    "title": "Brad Pye Jr.",
+    "paragraphs": [
+      "Brad Pye Jr. (June 11, 1931 – July 5, 2020) was an American sports journalist, broadcaster, and Los Angeles community activist.",
+      "He was the first recognized African-American sportswriter in Southern California and the first African-American scout for the Los Angeles/San Diego Chargers. He was born in Plain Dealing, Louisiana.",
+      "He was sports director for major African-American radio stations KGFJ, KACE, KDAY, and KJLH, and was sports editor for the Los Angeles Sentinel for nearly 30 years.",
+      "Pye died in his sleep on July 5, 2020, at his home in Los Angeles, aged 89."
+    ],
+    "fetchedAt": "2026-07-05"
+  },
+  {
+    "title": "King Gizzard & the Lizard Wizard",
+    "paragraphs": [
+      "King Gizzard & the Lizard Wizard are an Australian rock band. They were made in Melbourne, Victoria in 2010.",
+      "The band's members are Stu Mackenzie, Ambrose Kenny-Smith, Cook Craig, Joey Walker, Lucas Harwood and Michael Cavanagh. They are known for making many different types of music.",
+      "They are also known for the large amount of music they have made. As of August 2024, the band has made 26 studio albums and three extended plays (EPs).",
+      "When the band started, they made music that sounded similar to garage rock. Later, they started making music that sounded more similar to psychedelic rock.",
+      "Some of their first psychedelic rock albums are Float Along – Fill Your Lungs, Oddments and I'm in Your Mind Fuzz.",
+      "Other music the band has made has been jazz, progressive rock, thrash metal, folk rock, and funk. The band's first popular album was Nonagon Infinity (2016)."
+    ],
+    "fetchedAt": "2026-07-05"
+  },
+  {
+    "title": "Drive Slow",
+    "paragraphs": [
+      "Drive Slow is a song on the Late Registration album released by rapper Kanye West on August 30, 2005 and published by Rock-A-Fella Records, the fifth song in the album.",
+      "The track goes is 4 minutes 32 seconds long and its signature 1 beat a second sets the tone for the song."
+    ],
+    "fetchedAt": "2026-07-05"
+  },
+  {
+    "title": "Stephen Leather",
+    "paragraphs": [
+      "Stephen Leather (born 25 October 1956) is a British author. He writes in the thriller genre. His works are published by Hodder & Stoughton.",
+      "He began his writing career as a journalist, working for newspapers such The Glasgow Herald, Daily Mirror, The Times, Daily Mail and the South China Morning Post in Hong Kong.",
+      "He has written for television shows such as London's Burning, The Knock and Murder in Mind. Leather's 1992 novel The Chinaman was made into a movie, called The Foreigner (2017).",
+      "It stars Jackie Chan and Pierce Brosnan. Leather was born in Manchester. He grew up in Sale and Chorlton-cum-Hardy."
+    ],
+    "fetchedAt": "2026-07-05"
+  },
+  {
+    "title": "Adlai Stevenson III",
+    "paragraphs": [
+      "Adlai Ewing Stevenson III (October 10, 1930 – September 6, 2021) was an American politician of the Democratic Party.",
+      "He represented the state of Illinois in the United States Senate from 1970 until 1981. His father was Governor Adlai Stevenson II and his grandfather was Vice President Adlai E. Stevenson.",
+      "Stevenson III was born in Chicago, Illinois on October 10, 1930. He went to Milton Academy in Massachusetts, Harrow School, in England, and Harvard College.",
+      "Stevenson had one son with his wife Nancy Anderson. Stevenson died from problems caused by Lewy body dementia at his home in Chicago on September 6, 2021, at age 90."
+    ],
+    "fetchedAt": "2026-07-05"
+  },
+  {
     "title": "SquareTrade",
     "paragraphs": [
       "SquareTrade Inc. , is a company based in the United States that provides extended warranty services for electronics and appliances. It is a subsidiary of Allstate since 2016.",
@@ -2925,82 +3008,5 @@
       "Hitler had Blondi killed to test if a cyanide pill would work on himself and her puppies were killed to prevent them being taken by the Soviets."
     ],
     "fetchedAt": "2026-06-14"
-  },
-  {
-    "title": "Equality (mathematics)",
-    "paragraphs": [
-      "In mathematics, two things are equal if and only if they are exactly the same in every way. That is, they have the same (mathematical) value and the same mathematical properties.",
-      "Mathematicians use the equals sign (=) to say this. This defines a binary relation, equality. The statement \"x = y\" means that x and y are equal.",
-      "Equivalence in a more general sense is provided by the construction of an equivalence relation between two mathematical objects, that is, two mathematical objects are equivalent if they are related by this relation.",
-      "In which case, the equivalence is often represented using the symbols ∼ {\\displaystyle \\sim } or ≡ {\\displaystyle \\equiv } .",
-      "A statement that two expressions denote equal quantities is an equation (or an equality). Equations are equal. Inequalities are unequal. An equality is also a transitive relation.",
-      "This means that if one object is equal to a second object, and the second object is equal to a third object, then the first object is equal to the third object as well."
-    ],
-    "fetchedAt": "2026-06-14"
-  },
-  {
-    "title": "Jok Church",
-    "paragraphs": [
-      "Jok Richard Church (November 28, 1949 – April 29, 2016) was an American cartoonist. He was born in Akron, Ohio.",
-      "He created the Universal Press Syndicate comic strip You Can With Beakman and Jax which was later made into the TV series Beakman's World.",
-      "Church died of a heart attack in San Francisco, California on April 29, 2016, aged 67."
-    ],
-    "fetchedAt": "2026-06-14"
-  },
-  {
-    "title": "Manna",
-    "paragraphs": [
-      "Manna, sometimes spelled mana, is the name of a food which, according to the Pentateuch of the Bible, the Israelites ate while they were traveling 40 years in the desert after leaving Egypt, which God provided because they had nothing to eat.",
-      "Every morning they would gather the white flakes that covered the ground. It is said to have a sweet taste. When they got tired of manna, God gave them quail (bird). == Where did they come from?",
-      "== Manna was called the \"bread of heaven\" because it seemed to come from Heaven, according to the Bible.",
-      "Some suggest that they were a type of locust; some say that it was the sap of a tree which is known to satisfy hunger.",
-      "In the Mishna, it is said that it was made during twilight of the sixth day of Creation."
-    ],
-    "fetchedAt": "2026-06-14"
-  },
-  {
-    "title": "Omonville-la-Petite",
-    "paragraphs": [
-      "Omonville-la-Petite is a former commune. It is in Normandy in the Manche department in northwest France. On 1 January 2017, it was merged into the new commune of La Hague.",
-      "Ormonville is known to be the place where French poet Jacques Prévert (1900–1977) lived the last years of his life and where he is buried."
-    ],
-    "fetchedAt": "2026-06-13"
-  },
-  {
-    "title": "Claude Fagedet",
-    "paragraphs": [
-      "Claude Fagedet (30 March 1928 – 26 June 2017) was a French photographer. He took many photographs of Occitanie, including his birthplace of Narbonne and the chalets in Gruissan.",
-      "He also took photographs on his many trips abroad. Fagedet was awarded the Meilleur Ouvrier de France. Fagedet died in Narbonne, France on 26 June 2017, aged 89."
-    ],
-    "fetchedAt": "2026-06-13"
-  },
-  {
-    "title": "Esmonts",
-    "paragraphs": [
-      "Esmonts is a village of the district Glâne in the canton of Fribourg in Switzerland.",
-      "On 1 January 2006, Vuarmarens incorporated the formerly independent municipality of Esmonts and on 1 January 2012, it has been with Vuarmarens merged to form Ursy."
-    ],
-    "fetchedAt": "2026-06-13"
-  },
-  {
-    "title": "André Jagendorf",
-    "paragraphs": [
-      "André Tridon Jagendorf (October 21, 1926 – March 13, 2017) was an American plant biologist and educator.",
-      "He was a Liberty Hyde Bailey Professor Emeritus in the Section of Plant Biology at Cornell University.",
-      "He was known for providing direct evidence that chloroplasts synthesize adenosine triphosphate (ATP) using the chemiosmotic mechanism proposed by Peter Mitchell.",
-      "Jagendorf was born in New York City on October 21, 1926. He studied at Cornell University, at Yale University and at the University of California, Los Angeles.",
-      "Jagendorf died in Ithaca, New York from a heart attack on March 13, 2017, aged 90. == References == == Other websites == Obituary in Ithaca Journal Obituary at Legacy."
-    ],
-    "fetchedAt": "2026-06-13"
-  },
-  {
-    "title": "Battle of Patay",
-    "paragraphs": [
-      "The Battle of Patay (18 June 1429) was an important battle in the Hundred Years' War between the French and the English in north-central France.",
-      "The consequences were that the French won and the English lost badly, historical accounts report that the English army was four times as large as the French army.",
-      "Many men in the English longbow corps died. Many English leaders of the battle were killed or taken as war prisoners. This battle changed the course of the war and made the French more powerful.",
-      "Joan of Arc was the head of the battle leading the French and was the reason that the French won the battle and the Hundred Years' War."
-    ],
-    "fetchedAt": "2026-06-13"
   }
 ]
