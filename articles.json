@@ -1,5 +1,85 @@
 [
   {
+    "title": "The world of funghi – level 3",
+    "paragraphs": [
+      "The fungal kingdom is a vast and wild world. Scientists estimate that up to 12 million species remain undiscovered.",
+      "Often called dark fungi, these microscopic or hidden organisms elude discovery but are all around us.",
+      "Although historically misclassified as plants due to their root-like networks, fungi are biologically closer to animals. Over a billion years, they evolved diverse."
+    ],
+    "fetchedAt": "2026-07-07"
+  },
+  {
+    "title": "Why people have hair – level 3",
+    "paragraphs": [
+      "The question of why humans have hair on their heads beyond aesthetic concerns has intrigued many. While we’ve evolved to lose body fur, our hairy scalps serve a practical purpose.",
+      "Christian Skorik, a lab scientist and biologist, explains that hair protects the brain, acting as insulation in cold and preventing overheating in heat. It also absorbs sweat, shields."
+    ],
+    "fetchedAt": "2026-07-07"
+  },
+  {
+    "title": "Diosdado Peralta",
+    "paragraphs": [
+      "Diosdado \"Dado\" Madarang Peralta (born March 27, 1952) is a Filipino jurist.",
+      "He was appointed as the 26th Chief Justice of the Supreme Court of the Philippines by President Rodrigo Duterte on October 23, 2019.",
+      "He was Associate Justice of the Supreme Court of the Philippines from January 13, 2009 to October 22, 2019."
+    ],
+    "fetchedAt": "2026-07-07"
+  },
+  {
+    "title": "Garnet",
+    "paragraphs": [
+      "A garnet is one kind of silicate mineral. There are many different kinds of garnets, containing different metals. Crystals of garnet are often large and pretty.",
+      "Their most common color is red or purple, but they can be found in almost all colors and are often used in jewelry.",
+      "In the United States, garnet is the birthstone for people born in the month of January.",
+      "== Related pages == List of minerals List of birthstones == Sources == == Further reading == Hurlbut, Cornelius S. ; Klein, Cornelis, 1985, Manual of Mineralogy, 20th ed.",
+      ", Wiley, ISBN 0-471-80580-7 Color Encyclopedia of Gemstones ISBN 0-442-20333-0 == Other websites == http://www. gemstonemagnetism.",
+      "com contains a comprehensive section about garnets and garnet magnetism. USGS Garnet locations – USA Archived 2008-06-01 at the Wayback Machine http://www. gemstone. org/gem-by-gem/english/garnet."
+    ],
+    "fetchedAt": "2026-07-07"
+  },
+  {
+    "title": "Johnny Shines",
+    "paragraphs": [
+      "Johnny Shines (April 26, 1915 – April 20, 1992) was an American blues singer and guitarist. == Life == He was called John Ned Shines when he was born, in Frayser, Tennessee.",
+      "He spent most of his childhood in Memphis playing slide guitar for money on the streets.",
+      "He listened to and was inspired by Blind Lemon Jefferson and Howlin’ Wolf, but he was taught to play the guitar by his mother.",
+      "Shines moved to Hughes, Arkansas in 1932 and worked on farms for three years. \"First time I came to Helena was 1932, I think it was. That's the time I met Robert the first time.",
+      "\" When he met Robert Johnson, his greatest influence, that gave him inspiration to return to music.",
+      "In 1935, Shines began playing with Johnson around the south and heading as far north as Ontario where they appeared on a local radio program. The two split up in 1937, one year before Johnson died."
+    ],
+    "fetchedAt": "2026-07-07"
+  },
+  {
+    "title": "1948 FIFA Youth Tournament Under-18",
+    "paragraphs": [
+      "The 1948 FIFA Youth Tournament, was the first edition of what would later be called the UEFA European Under-19 Championship, a yearly international men's football tournament organised by FIFA.",
+      "It was held in England from 15 to 17 April 1948 with five different locations hosting the matches.",
+      "Eight teams competed in a knockout competition with England defeating the Netherlands 3–2 in the final.",
+      "== Teams == The following teams entered the tournament: Austria Belgium England (host) Republic of Ireland (Football Association of Ireland) Italy Netherlands Ireland (Irish Football Association) Wales == First round == == Supplementary Round == In this round the losing teams from the first round participated."
+    ],
+    "fetchedAt": "2026-07-07"
+  },
+  {
+    "title": "Cassiopeia (mythology)",
+    "paragraphs": [
+      "Cassiopeia was a woman in Macedonian mythology. She was the wife of Cepheus who was king of Ethiopia. They had a daughter called Andromeda.",
+      "Cassiopeia was very beautiful but also very arrogant and vain. She thought that she was better than other people.",
+      "One day, Cassiopeia said that her daughter Andromeda was more beautiful than all of the Nereids. The Nereids were sea-nymphs.",
+      "When the sea-god Poseidon heard what Cassiopeia had said, he was very angry. He sent floods and a sea monster called Cetus to destroy Ethiopia.",
+      "Cassiopeia and her husband Cepheus asked an oracle what to do. The oracle said that they must sacrifice their daughter so they chained Andromeda to a rock.",
+      "A hero named Perseus came and rescued Andromeda. Later, they got married. Poseidon was still angry with Cassiopeia and wanted to punish her. He placed her in the sky."
+    ],
+    "fetchedAt": "2026-07-07"
+  },
+  {
+    "title": "Jacques Sernas",
+    "paragraphs": [
+      "Jacques Sernas (Lithuanian: Jokūbas Šernas; sometimes credited as Jack Sernas; 30 July 1925 – 3 July 2015) was a Lithuanian-born French actor with an international movie career.",
+      "He was known for his roles in Lost Youth, Helen of Troy, The Dirty Game, and in Midas Run."
+    ],
+    "fetchedAt": "2026-07-07"
+  },
+  {
     "title": "Pablo Ruiz (singer)",
     "paragraphs": [
       "Pablo Maximiliano Miguel Coronel Vidoz, also known as Pablito Ruiz and Pablo Ruiz, born on 4 May 1975 in Buenos Aires, Argentina, is an Argentine singer, actor and dancer.",
@@ -2925,85 +3005,5 @@
       "After his family dies in the Blip, Barton becomes a vigilante known as the Ronin."
     ],
     "fetchedAt": "2026-06-17"
-  },
-  {
-    "title": "2022 Formula One World Championship",
-    "paragraphs": [
-      "The 2022 FIA Formula One World Championship was a motor racing championship for Formula One cars, which was the 73rd running of the Formula One World Championship.",
-      "It is recognised by the Fédération Internationale de l'Automobile (FIA), the governing body of international motorsport, as the highest class of competition for open-wheel racing cars.",
-      "The championship was contested over twenty-two Grands Prix, which were held around the world, and ended earlier than in recent years to avoid overlapping with the FIFA World Cup.",
-      "Drivers and teams competed for the titles of World Drivers' Champion and World Constructors' Champion, respectively.",
-      "The 2022 championship saw the introduction of significant changes to the sport's technical regulations.",
-      "These changes had been intended to be introduced in 2021, but were delayed until 2022 in response to the COVID-19 pandemic."
-    ],
-    "fetchedAt": "2026-06-17"
-  },
-  {
-    "title": "Crispin Tickell",
-    "paragraphs": [
-      "Sir Crispin Tickell (25 August 1930 – 25 January 2022) was a British politician, environmentalist, and academic.",
-      "He was the Ambassador to Mexico between 1981 until 1983 and later the Permanent Representative to the United Nations between 1987 until 1990.",
-      "Tickell died on 25 January 2022 from pneumonia at a London hospital, aged 91."
-    ],
-    "fetchedAt": "2026-06-17"
-  },
-  {
-    "title": "Niki de Saint Phalle",
-    "paragraphs": [
-      "Niki de Saint Phalle (Catherine-Marie-Agnès Fal de Saint Phalle, 29 October 1930 – 21 May 2002) was a French sculptor, painter, and filmmaker.",
-      "She was born in Neuilly-sur-Seine, Hauts-de-Seine, France. Saint Phalle created a series of works in the early 1960s called Tirs (\"Shots\").",
-      "These pieces of art included polythene bags of paint in human forms covered in white plaster. After this, Saint Phalle, made life-size dolls of women, such as brides and mothers giving birth.",
-      "They were primarily made of plaster over a wire framework and plastic toys, then painted all white. In 1949, Saint Phalle eloped with her childhood friend and American writer Harry Mathews.",
-      "They had two children. They separated in 1960. Saint Phalle died on 21 May 2002 in San Diego, California from emphysema, aged 71."
-    ],
-    "fetchedAt": "2026-06-17"
-  },
-  {
-    "title": "People in Albania protest against a resort for the rich – level 3",
-    "paragraphs": [
-      "Lots of people in Albania are really angry and are protesting in the streets of their capital city. They are trying to stop a huge 1. 6 billion dollar project on Sazan Island.",
-      "The project is led by an investment firm that belongs to Jared Kushner, the son-in-law of Donald Trump. Kushner wants to build a luxury resort for."
-    ],
-    "fetchedAt": "2026-06-16"
-  },
-  {
-    "title": "Social media makes Scotland popular – level 3",
-    "paragraphs": [
-      "Tourism is a huge multi-billion-dollar business in Scotland, but social media platforms like TikTok and Instagram are changing things fast.",
-      "Beautiful videos are going viral, and they turn quiet and remote natural places into famous hotspots overnight.",
-      "This brings a lot of money to local businesses, but it also creates massive problems for the people who live there."
-    ],
-    "fetchedAt": "2026-06-16"
-  },
-  {
-    "title": "British Rail Class 937",
-    "paragraphs": [
-      "The British Rail Class 937 was reserved for former AC electric multiple units, converted for departmental use.",
-      "Units were converted for various tasks, including application of sandite, and use as tractor units to tow other trains."
-    ],
-    "fetchedAt": "2026-06-16"
-  },
-  {
-    "title": "Meju",
-    "paragraphs": [
-      "Meju is a brick of fermented soybeans in Korean cuisine.",
-      "It is used in Korean cuisine to make essential condiments such as soy sauce (kanjang), soybean paste (doenjang) and red chilli pepper paste (gochujang). Meju is produced by drying a brick of soybeans.",
-      "The brick of soybeans is naturally fermented while it dries. There are several ways to make a brick of soybeans.",
-      "Traditionally, boiled soybeans were crushed in a mortar and made into a brick shape to be tied up with straw. Meju was commonly made in any Korean home in the past.",
-      "Condiments made with mejus all tasted different because the production of meju was not standardized.",
-      "As many Koreans now buy Korean traditional condiments instead of making them, it is difficult to find the wide variety of unique tasting condiments made from homemade meju."
-    ],
-    "fetchedAt": "2026-06-16"
-  },
-  {
-    "title": "Party of European Socialists",
-    "paragraphs": [
-      "The Party of European Socialists (PES) is a social democratic European political party.",
-      "The PES is made up of parties from all countries in the European Union as well as non-EU countries such as the United Kingdom, Norway, Iceland and Switzerland.",
-      "This includes major parties like the British Labour Party, the Social Democratic Party of Germany (SPD) and the French Socialist Party. The PES has 33 full members.",
-      "The current president is Stefan Löfven who was Prime Minister of Sweden from 2014 to 2021.",
-      "It is represented in the European Parliament through the Progressive Alliance of Socialists and Democrats which is currently the second-largest group."
-    ],
-    "fetchedAt": "2026-06-16"
   }
 ]
