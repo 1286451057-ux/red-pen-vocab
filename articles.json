@@ -1,5 +1,97 @@
 [
   {
+    "title": "Transport in Hong Kong",
+    "paragraphs": [
+      "Hong Kong has a complex transport network. It includes both public and private transport. Over 90% of the daily use is on public transport. That is the highest rate in the world.",
+      "The Octopus card is an electronic money system. It became available in September 1997. Passengers can use it in every station of the Mass Transit Railway (MTR) system.",
+      "The card can be used to pay for public transport, parking meters, convenience stores, supermarkets, fast-food restaurants and most vending machines."
+    ],
+    "fetchedAt": "2026-07-14"
+  },
+  {
+    "title": "Bentley Kassal",
+    "paragraphs": [
+      "Bentley Kassal (February 28, 1917 – December 16, 2019) was an American lawyer and politician. He worked for Skadden, Arps, Slate, Meagher & Flom in New York City.",
+      "He was a New York State Assemblyman from 1957 through 1962. Kassal was born in New York City. He was a member of the Democratic Party.",
+      "Kassal died on December 16, 2019 in New York City at the age of 102."
+    ],
+    "fetchedAt": "2026-07-14"
+  },
+  {
+    "title": "Arambam",
+    "paragraphs": [
+      "Arambam (Old Manipuri: Alampam) is a Meitei family. It is native to Ancient Kangleipak (Antique Manipur). People of this family mainly live in Manipur, India.",
+      "== History == According to the Loiyumpa Silyel Constitution, people of this family often had Maiba priesthood (of traditional Meitei religion). They were responsible for taking care of the bathe.",
+      "== References == == Other websites == http://www. mychildnames. com/mobile/similar-surname. aspx? surname=Arambam Archived 2021-05-20 at the Wayback Machine http://www. indiachildnames."
+    ],
+    "fetchedAt": "2026-07-14"
+  },
+  {
+    "title": "Darrin Patrick",
+    "paragraphs": [
+      "Darrin Patrick (December 4, 1970 – May 7, 2020) was an American author and teaching pastor. He was born in Marion, Illinois. He taught at Seacoast Church in Charleston South Carolina.",
+      "He was a pastor of The Journey, a megachurch in St. Louis, Missouri, which he founded in 2002. He was the chaplain to the St. Louis Cardinals and was the author of several books.",
+      "Patrick was the vice-president of the Acts 29 Network, an international church planting organization, and a council member of The Gospel Coalition.",
+      "Patrick shot himself on May 7, 2020 at the age of 49."
+    ],
+    "fetchedAt": "2026-07-14"
+  },
+  {
+    "title": "Alpine skiing",
+    "paragraphs": [
+      "Alpine skiing is a winter sport. In this sport people try to go down hills which have snow on them with skis. The person who goes down fastest is the winner.",
+      "There are many different types of races that can be done. This sport started around 1850 in Norway. Today, many people can try it because there are many ski resorts around the world to do this.",
+      "For the best athletes there are many important competitions: the FIS Alpine Ski World Cup is the most known of them. Alpine skiing is played in the Olympics.",
+      "Alpine skiing is also sometimes called downhill skiing. However, under this last name there are many more types of skiing, for example freestyle.",
+      "== Types of races == There are four types of races in alpine skiing. In all of them, there is a start and finish line and some gates on the slope between these lines.",
+      "Athletes must go between the gates, otherwise they are disqualified. Downhill: this is the fastest race. It is also the most dangerous one. The gates are very few and the course is very long."
+    ],
+    "fetchedAt": "2026-07-14"
+  },
+  {
+    "title": "Aşgabat",
+    "paragraphs": [
+      "Aşgabat (Turkmen: Aşgabat; Persian: عشق آباد, UniPers: Ešq-âbâd; Russian: Ашхаба́д - Ashkhabád) is the capital city of Turkmenistan. It also spelled as Ashgabat, Ashkabat, Ashkhabad, Ashgabad.",
+      "Aşgabat has a population of 695,300 (2001) and is between the Karakum desert and the Kopet Dag mountain range. The name is believed to borrow from the Persian Ashk-abad meaning \"the City of Arsaces\".",
+      "Another explanation is that the name is a corruption of the Persian Eshq (Love) + abad (natured place or city), and therefore loosely translates as \"The city built by/from love\".",
+      "Aşgabat is at 37°58′N 58°20′E (37. 9667, 58. 333). Aşgabat's major ethnic groups are: Turkmen, Russians, Armenians, and Azeris.",
+      "Arsaces was king of Persia and his name appears between 3 and 4 times in the Bible."
+    ],
+    "fetchedAt": "2026-07-14"
+  },
+  {
+    "title": "Triple DES",
+    "paragraphs": [
+      "In cryptography, Triple DES is a block cipher created from the Data Encryption Standard (DES) cipher by using it three times.",
+      "Triple DES is also known as TDES or, more standard, TDEA (Triple Data Encryption Algorithm ).",
+      "When it was discovered that a 56-bit key of DES is not enough to protect from brute force attacks, TDES was chosen as a simple way to enlarge the key space without a need to switch to a new algorithm.",
+      "The use of three steps is essential to prevent meet-in-the-middle attacks that are effective against double DES encryption.",
+      "In general TDES with three different keys (3-key {k1, k2, k3} TDES) has a key length of 168 bits: three 56-bit DES keys (with parity bits 3-key TDES has the total storage length of 192 bits), but due to the meet-in-the-middle attack the effective security it provides is only 112 bits.",
+      "Another version, called two-key TDES (2-key TDES), uses k1 = k3, thus reducing the key size to 112 bits and the storage length to 128 bits."
+    ],
+    "fetchedAt": "2026-07-14"
+  },
+  {
+    "title": "Endocrinology",
+    "paragraphs": [
+      "Endocrinology studies the working of the endocrine system and hormones. It is the science of the endocrine system and hormones in a wide range of animals. Endocrinology is also a medical specialty.",
+      "This means that when a doctor finishes studying medicine in general, they can choose endocrinology as the part of medicine they work in.",
+      "The endocrine system consists of several glands in different parts of the body. They secrete hormones directly into the blood. Hormones have many different functions and modes of action.",
+      "Hormones are active in metabolism, growth and development, tissue function, sleep, digestion, respiration, excretion, mood, stress, lactation, movement, reproduction, and perception.",
+      "Another field is behavioral endocrinology. == Medical aspects == Medical understanding of hormones began in the 19th century with Graves' disease, caused by a swelling of the thyroid gland.",
+      "Since the mid-19th century many medical conditions have been found caused by hormone imbalance, that is, too much or too little of a hormone."
+    ],
+    "fetchedAt": "2026-07-14"
+  },
+  {
+    "title": "David Levering Lewis",
+    "paragraphs": [
+      "David Levering Lewis (born May 25, 1936) is an American historian. He is a professor of history at New York University.",
+      "He won the Pulitzer Prize two times for part one and part two of his biography of W. E. B. Du Bois in 1994 and 2001."
+    ],
+    "fetchedAt": "2026-07-14"
+  },
+  {
     "title": "Why is handwriting important – level 3",
     "paragraphs": [
       "In today’s digital era where screens and keyboards dominate, we often underestimate the importance of handwriting.",
@@ -2919,94 +3011,6 @@
     "paragraphs": [
       "Anandhi also known as Balika Vadhu is an Indian TV series broadcast by Colors TV.",
       "The story focused on Anandhi (played by Avika Gor, Pratyusha Banarjee and Toral Rasputra) and Jagdish (played by Shashank Vyas and Shakti Anand), where finding love in earlier years."
-    ],
-    "fetchedAt": "2026-06-25"
-  },
-  {
-    "title": "Macleans College",
-    "paragraphs": [
-      "Macleans College is a secondary school in Bucklands Beach, Auckland, New Zealand. The school was opened in 1980 by the Governor General Sir David Beattie. The current principal is Byron J Bentley.",
-      "Students have a choice of which qualifications they want to do - NCEA (National Certificate of Educational Achievement), and CIE (Cambridge International Examinations).",
-      "== House system == Macleans was the first public school in New Zealand to use the \"Whanau House System\". This is dividing the school up into nine 'houses'.",
-      "Each house contains about 300 students in total, with two classes of 30 students in each year. These nine houses are named after some famous people from New Zealand.",
-      "The names are: Batten, Mansfield, Nieto, Rutherford, Kupe, Hillary, Te Kanawa, Snell and Upham. The school began with only 4 of these houses, but has got bigger over the years.",
-      "The newest house is Upham house, which opened in 2003. == Teachers == Some of the teachers at Macleans College are Dr Holborow (Physics Teacher). Mr Fletcher (History and Social Sciences teacher)."
-    ],
-    "fetchedAt": "2026-06-25"
-  },
-  {
-    "title": "Day Planner",
-    "paragraphs": [
-      "Day Planner was a program on The Weather Channel airing Mondays to Fridays from 11:00 a. m. to 2:00 p. m. Eastern Time from September 29, 2003 until November 11, 2013.",
-      "It was hosted by Vivian Brown and Nick Walker."
-    ],
-    "fetchedAt": "2026-06-25"
-  },
-  {
-    "title": "Brussels bans e-scooters – level 3",
-    "paragraphs": [
-      "Brussels will completely ban shared e-scooters from its streets starting January 2027 due to growing safety concerns.",
-      "The Belgian capital joins other major European cities like Paris, Madrid, and Prague that have already outlawed them.",
-      "The local government decided not to renew the licences of the operators, Bolt and Dott, after a 26% increase in accidents in 2025."
-    ],
-    "fetchedAt": "2026-06-25"
-  },
-  {
-    "title": "Pithecopus rohdei",
-    "paragraphs": [
-      "Rohde's frog, Rohde's leaf frog, or Marten's leaf frog (Pithecopus rohdei) is a frog that lives in southern Brazil, not high in the hills. People have seen it as high as 1000 meters above sea level.",
-      "This frog is not in danger of dying out. Scientists say this is because it can live in different kinds of places. This frog lays its eggs on leaves hanging over streams.",
-      "When the eggs hatch, the tadpoles fall into the stream."
-    ],
-    "fetchedAt": "2026-06-25"
-  },
-  {
-    "title": "Homosociality",
-    "paragraphs": [
-      "Homosociality is a term used in sociology, which describes a same-sex relationship which is not romantic or sexual in nature. These relationships might be called friendships, mentorships, or other.",
-      "Heterosociality is the opposite. It means that one prefers socializing with members of the opposite sex without bringing romance or sex into the relationship.",
-      "Eve Sedgwick made the term popular in her discussion of male homosocial desire, but Jean Lipman-Blumen had defined homosociality in 1976 as a preference for members of one's own sex.",
-      "For example, a close relationship between two men (such as George and Lennie in Of Mice and Men (and indeed most of the characters in that book) would be a homosocial relationship.",
-      "It can apply to single sex schools, prisons, monasteries, but also to simple friendships.",
-      "The relationship can be a sexual one, but a homosocial relationship can occur between homosexuals, heterosexuals or both."
-    ],
-    "fetchedAt": "2026-06-25"
-  },
-  {
-    "title": "Peter Hansborough Bell",
-    "paragraphs": [
-      "Peter Hansborough Bell (May 11, 1810 – March 8, 1898) was an American military officer and politician. He was the 3rd governor of Texas from 1849 to 1853.",
-      "He also represented Texas in the House of Representatives for 2 terms (1853-1857). He was a Democrat. Bell died on March 8, 1898, in Littleton, North Carolina. He was 87."
-    ],
-    "fetchedAt": "2026-06-25"
-  },
-  {
-    "title": "Dream On (Depeche Mode song)",
-    "paragraphs": [
-      "\"Dream On\" is a 2001 song by British band Depeche Mode and is the leading single from their 10th studio album Exciter. It topped the charts in Denmark, Germany, Italy and Spain.",
-      "It went to the top ten in Austria, Belgium, Canada, Finland, Greece, Hungary, Norway, Portugal, Sweden and the United Kingdom and went to number 85 in the United States."
-    ],
-    "fetchedAt": "2026-06-25"
-  },
-  {
-    "title": "Lavrentije Trifunović",
-    "paragraphs": [
-      "Lavrentije Trifunović (Serbian Cyrillic: Лаврентије Трифуновић; 27 January 1935 – 23 January 2022) was a Serbian Orthodox bishop. He was born in Bogoštica, Yugoslavia.",
-      "Trifunović was the Bishop of Šabac between 2006 and his death.",
-      "He was Bishop of Šabac and Valjevo (1989–2006), Bishop of Western Europe (1973–1989), Bishop of Western Europe and Australia (1969–1973) and Vicar Bishop of Moravica (1967–1969).",
-      "Trifunović died on 23 January 2022 at a military hospital in Belgrade, Serbia, four days before his 87th birthday."
-    ],
-    "fetchedAt": "2026-06-25"
-  },
-  {
-    "title": "Coeliac disease",
-    "paragraphs": [
-      "Coeliac disease (Celiac disease in American English) is an autoimmune disorder in people when the indigestion of gluten leads to problems in the body.",
-      "If someone with coeliac disease eats something with gluten (for example, wheat, rye, barley), cells inside the body attack the lining of the intestine.",
-      "This means that they cannot digest food properly, making them unable to have enough energy, vitamins, or minerals. Children may be unable to grow taller or gain weight properly.",
-      "People with coeliac disease often lose weight. They are also often tired. == Overview == People with coeliac disease often have bloating and pain in their stomach area, diarrhoea or steatorrhea.",
-      "Their stomachs also start to hurt and they might suffer from joint pains, seizures, rashes, fatigue, slowness in growth and puberty, loss in weight, loss of bone density and fertility issues.",
-      "Since many people feel sick after eating wheat, coeliac disease is not the only possible disease."
     ],
     "fetchedAt": "2026-06-25"
   }
