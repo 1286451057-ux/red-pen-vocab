@@ -1,5 +1,110 @@
 [
   {
+    "title": "Lionel Messi holds a baby Lamine Yamal – level 3",
+    "paragraphs": [
+      "Ahead of the highly anticipated World Cup final between Argentina and Spain, Lionel Messi reflected on his connection with the rising Spanish star, Lamine Yamal.",
+      "Messi described a viral photograph taken years ago, showing him holding Yamal as a tiny baby, as completely crazy. He noted how remarkable it is that the baby from the photo has now."
+    ],
+    "fetchedAt": "2026-07-23"
+  },
+  {
+    "title": "A man wants to eat every animal on Earth – level 3",
+    "paragraphs": [
+      "In the 1830s, William Buckland, a prominent British scientist, hosted unique dinner parties where he served exotic dishes like a mouse on toast.",
+      "Despite his eccentricities, Buckland made significant contributions to geology and paleontology. He became the first person to study geology at the University of Oxford.",
+      "He challenged traditional beliefs, including the biblical account of the Great."
+    ],
+    "fetchedAt": "2026-07-23"
+  },
+  {
+    "title": "Discriminant",
+    "paragraphs": [
+      "In algebra, the discriminant, sometimes represented by the symbol Δ {\\displaystyle \\Delta } , is an algebraic expression used to determine the number of roots a polynomial have.",
+      "For example, the discriminant of the quadratic polynomial a x 2 + b x + c {\\displaystyle ax^{2}+bx+c\\,} is b 2 − 4 a c {\\displaystyle \\,b^{2}-4ac} .",
+      "If the discriminant is larger than zero, then the polynomial has two (distinct) real numbers as roots.",
+      "If the discriminant is equal to zero, then the polynomial has two repeating real numbers as roots (i. e. , exactly one real root).",
+      "If the discriminant is smaller than zero, then the polynomial has two (purely) complex numbers as roots (i. e. , zero real root).",
+      "Apart for quadratic polynomials, discriminants can be defined for cubic polynomials, general conic equations, and other mathematical entities such as differential equations and quadratic forms as well."
+    ],
+    "fetchedAt": "2026-07-23"
+  },
+  {
+    "title": "Governor of New Mexico",
+    "paragraphs": [
+      "The Governor of the State of New Mexico is the chief executive of the state of New Mexico.",
+      "The governor is the head of the executive branch of New Mexico's state government and the commander-in-chief of the state's military forces.",
+      "They also make annual State of the State addresses to the New Mexico State Legislature, submitting the budget, and ensuring that state laws are enforced.",
+      "The current governor is Michelle Lujan Grisham, a Democrat. Grisham won the November 2018 gubernatorial election and was sworn in as the 32nd Governor of the state of New Mexico on January 1, 2019.",
+      "== List of governors == == Living former governors of New Mexico == As of September 2023, there were four former governors of New Mexico living, the oldest being Jerry Apodaca (1975–1979, born 1934).",
+      "The most recent governor of New Mexico to die and most recent to serve to die was Bill Richardson (2003–2011), who died on September 1, 2023."
+    ],
+    "fetchedAt": "2026-07-23"
+  },
+  {
+    "title": "Atmel AVR",
+    "paragraphs": [
+      "The AVR microcontroller architecture was developed by Atmel in 1996. It is based on the Harvard microcontroller architecture.",
+      "The AVR was one of the first microcontroller families to use on-chip flash memory for program storage, as opposed to one-time programmable ROM, EPROM, or EEPROM used by other microcontrollers at the time.",
+      "Many people think that AVR stands for Alf (Egil Bogen) and Vegard (Wollan)'s Risc processor\". This architecture replaces older MCS-51 architecture.",
+      "One machine cycle of MCS-51 takes 12 clock cycles and most of instructions are executed in one machine cycle.",
+      "AVR microcontrollers (MCUs) can execute most of instructions in single machine cycle too, but one machine cycle takes only one clock cycle. Performance per clock cycle is 12 times higher with AVR.",
+      "The core has 32 general purpose registers directly connected to ALU. It allowing two independent registers to be accessed and instruction with them executed in one machine cycle."
+    ],
+    "fetchedAt": "2026-07-23"
+  },
+  {
+    "title": "Goniatite",
+    "paragraphs": [
+      "Goniatites are a type of ammonite. They are cephalopods from the Order Goniatitida. They evolved from earlier forms in the Middle Devonian some 390 million years ago.",
+      "All goniatites had an external shell like other ammonites. It was divided internally into chambers filled with gas, giving it buoyancy.",
+      "An open chamber at the front of the shell was where the animal lived. It drew in and expelled water through a ventral spout called a siphuncle.",
+      "They had a head with two well developed eyes, and arms (or tentacles). They were free-swimming.",
+      "Almost any fossil-bearing limestone or shale from inland seas of the late Paleozoic tropics or subtropics is likely to contain some goniatites."
+    ],
+    "fetchedAt": "2026-07-23"
+  },
+  {
+    "title": "Metropolitan City of Naples",
+    "paragraphs": [
+      "The Metropolitan City of Naples (Italian: Città metropolitana di Napoli) is an Italian metropolitan city in Campania region. It was established on 1 January 2015.",
+      "Its capital city is Naples; within the city there are 92 comunes (municipalities).",
+      "It was first created by the reform of local authorities (Law 142/1990) and established by Law 56/2014, thus replacing the Province of Naples in 2015."
+    ],
+    "fetchedAt": "2026-07-23"
+  },
+  {
+    "title": "Carlos Ferrero",
+    "paragraphs": [
+      "Carlos Ernesto Fernando Ferrero Costa (7 February 1941 – 31 January 2025) was a Peruvian politician. He was a member of Perú Posible. He represented Lima in congress from 1995 until 2006.",
+      "He was the President of the Congress from late-2000 until 2003. He was the Prime Minister of Peru from December 2003 until his resignation in August 2005.",
+      "Ferrero died on 31 January 2025 in Lima at the age of 83."
+    ],
+    "fetchedAt": "2026-07-23"
+  },
+  {
+    "title": "Clones",
+    "paragraphs": [
+      "Clones ( KLOH-nis; from Irish: Cluain Eois) is a small town in western County Monaghan, Ireland. The area is part of the Border Region with Northern Ireland.",
+      "Historically Clones was also spelt Clonis, Clonish and Clownish. These are English language versions of the Irish Cluain Eois, meaning \"Eos's meadow\".",
+      "== History == An abbey was built at Clones by Tigernach (also known as Tierney in English). It was built in the early 6th century. It was dedicated to St. Peter and St. Paul.",
+      "The ruins of a 12th-century abbey building can still be found in the town. There is also a sarcophagus. They say it was built for Saint Tighearnach after he died.",
+      "Clones also has a 9th-century round tower and high cross.",
+      "== Ulster Canal restoration == The national inland waterways agency, Waterways Ireland, is planning to restore the Ulster Canal from the Newtownbutler area of Lough Erne to Clones."
+    ],
+    "fetchedAt": "2026-07-23"
+  },
+  {
+    "title": "Anthony Head",
+    "paragraphs": [
+      "Anthony Stewart Head (20 February 1954 – 1 June 2026) was an English actor and singer who appeared in theatre, television and movies.",
+      "Head was most well known for his role as Rupert Giles in the American television drama series Buffy the Vampire Slayer, as the Prime Minister in the British comedy show Little Britain, as Dr.",
+      "Frank N Furter in the London revival of The Rocky Horror Show and for a series of coffee adverts in the United Kingdom and the United States.",
+      "Head was credited by his full name on American television, and sometimes as Tony Head elsewhere. He also played Phil Norton in 5 episodes of the first season Howards' Way.",
+      "Head played Lord Sheffield in an episode of the second season of the Netflix series Bridgerton. Head died on 1 June 2026 from problems caused by pneumonia at the age of 72."
+    ],
+    "fetchedAt": "2026-07-23"
+  },
+  {
     "title": "Haukipudas",
     "paragraphs": [
       "Haukipudas is a former municipality in Northern Ostrobothnia, Finland. As of 31 December 2012, 19,053 people lived there.",
@@ -2900,105 +3005,5 @@
       "Pye died in his sleep on July 5, 2020, at his home in Los Angeles, aged 89."
     ],
     "fetchedAt": "2026-07-05"
-  },
-  {
-    "title": "King Gizzard & the Lizard Wizard",
-    "paragraphs": [
-      "King Gizzard & the Lizard Wizard are an Australian rock band. They were made in Melbourne, Victoria in 2010.",
-      "The band's members are Stu Mackenzie, Ambrose Kenny-Smith, Cook Craig, Joey Walker, Lucas Harwood and Michael Cavanagh. They are known for making many different types of music.",
-      "They are also known for the large amount of music they have made. As of August 2024, the band has made 26 studio albums and three extended plays (EPs).",
-      "When the band started, they made music that sounded similar to garage rock. Later, they started making music that sounded more similar to psychedelic rock.",
-      "Some of their first psychedelic rock albums are Float Along – Fill Your Lungs, Oddments and I'm in Your Mind Fuzz.",
-      "Other music the band has made has been jazz, progressive rock, thrash metal, folk rock, and funk. The band's first popular album was Nonagon Infinity (2016)."
-    ],
-    "fetchedAt": "2026-07-05"
-  },
-  {
-    "title": "Drive Slow",
-    "paragraphs": [
-      "Drive Slow is a song on the Late Registration album released by rapper Kanye West on August 30, 2005 and published by Rock-A-Fella Records, the fifth song in the album.",
-      "The track goes is 4 minutes 32 seconds long and its signature 1 beat a second sets the tone for the song."
-    ],
-    "fetchedAt": "2026-07-05"
-  },
-  {
-    "title": "Stephen Leather",
-    "paragraphs": [
-      "Stephen Leather (born 25 October 1956) is a British author. He writes in the thriller genre. His works are published by Hodder & Stoughton.",
-      "He began his writing career as a journalist, working for newspapers such The Glasgow Herald, Daily Mirror, The Times, Daily Mail and the South China Morning Post in Hong Kong.",
-      "He has written for television shows such as London's Burning, The Knock and Murder in Mind. Leather's 1992 novel The Chinaman was made into a movie, called The Foreigner (2017).",
-      "It stars Jackie Chan and Pierce Brosnan. Leather was born in Manchester. He grew up in Sale and Chorlton-cum-Hardy."
-    ],
-    "fetchedAt": "2026-07-05"
-  },
-  {
-    "title": "Adlai Stevenson III",
-    "paragraphs": [
-      "Adlai Ewing Stevenson III (October 10, 1930 – September 6, 2021) was an American politician of the Democratic Party.",
-      "He represented the state of Illinois in the United States Senate from 1970 until 1981. His father was Governor Adlai Stevenson II and his grandfather was Vice President Adlai E. Stevenson.",
-      "Stevenson III was born in Chicago, Illinois on October 10, 1930. He went to Milton Academy in Massachusetts, Harrow School, in England, and Harvard College.",
-      "Stevenson had one son with his wife Nancy Anderson. Stevenson died from problems caused by Lewy body dementia at his home in Chicago on September 6, 2021, at age 90."
-    ],
-    "fetchedAt": "2026-07-05"
-  },
-  {
-    "title": "SquareTrade",
-    "paragraphs": [
-      "SquareTrade Inc. , is a company based in the United States that provides extended warranty services for electronics and appliances. It is a subsidiary of Allstate since 2016.",
-      "== Early history and dispute resolution == Founded in 1999 by Ahmed Khaishgi, SquareTrade began as an online service to help settle e-commerce disputes, working with sites like eBay.",
-      "Its service included a verification seal called the SquareTrade Seal. The company later stopped offering these services.",
-      "== Warranty services == In 2006, SquareTrade started selling warranty plans for electronics and other devices, including protection plans sold through large retailers.",
-      "The company gained attention and, in 2012, received a large investment from Bain Capital and Bain Capital Ventures. SquareTrade's main underwriter was AmTrust Financial Services, Inc.",
-      ", but it shifted to Starr Indemnity in 2013. == Allstate acquisition == In 2016, Allstate bought SquareTrade for $1. 4 billion, adding it to its range of consumer protection services."
-    ],
-    "fetchedAt": "2026-07-05"
-  },
-  {
-    "title": "Dennis Moore (politician)",
-    "paragraphs": [
-      "Dennis Moore (November 8, 1945 – November 2, 2021) was an American politician and lawyer. He was a U. S. Representative for Kansas's 3rd congressional district, from 1999 until 2011.",
-      "He was a member of the Kansas Democratic Party. Moore was born in Anthony, Kansas. In 2012, Moore was diagnosed with Alzheimer's disease. In 2018, he was diagnosed with cancer.",
-      "Moore died on November 2, 2021 from cancer in Overland Park, Kansas, aged 75.",
-      "== References == == Other websites == Biography at the Biographical Directory of the United States Congress Voting record maintained by The Washington Post Campaign finance reports and data at the Federal Election Commission KS 3: Democrat’s Unusual Support Stems From Centrist Efforts, CQ Politics, June 18, 2006 Mr.",
-      "Moore Runs for Washington Archived 2021-12-14 at the Wayback Machine, BBC TV documentary for The Open University. Follows Moore's 1998 campaign."
-    ],
-    "fetchedAt": "2026-07-05"
-  },
-  {
-    "title": "Creativity (religion)",
-    "paragraphs": [
-      "Creativity is an atheistic religion for white people formed by Ben Klassen in 1973 with his book Nature's Eternal Religion. Its religious orientation is Naturalism.",
-      "Many consider the religion to be a hate group because they hate black people and Jews. They claim it is a law of Nature for the continuation of the different races and species.",
-      "They also believe white people are worth more than the other races."
-    ],
-    "fetchedAt": "2026-07-05"
-  },
-  {
-    "title": "Mettmann Rural District",
-    "paragraphs": [
-      "Mettmann is a Kreis (district) in the middle of North Rhine-Westphalia, Germany.",
-      "In the district is the valley of the small river Düssel, the Neanderthal, where the fossils of the human species Neanderthals were first found."
-    ],
-    "fetchedAt": "2026-07-05"
-  },
-  {
-    "title": "Multiracial identity denial in the United States",
-    "paragraphs": [
-      "Multiracial identity denial in the United States is also named multiracial identity invalidation in the United States.",
-      "Multiracial identity denial in the United States does things to the lives of many people in the United States of America.",
-      ":61 Multiracial identity denial in the United States is a common wrong thought about people in that country.",
-      ":61 It is a way of thinking among some people which makes them think that people in the United States of America who have more than one race are really of only one race.",
-      ":39 == Making the idea == Cheryan and Monin (2005) coined this term. That means: Cheryan and Monin (2005) made the string of words that give us the title of this article.",
-      ":188 == What this does == Multiracial identity denial in the United States worsens the way science about identifying multiraciality is done."
-    ],
-    "fetchedAt": "2026-07-05"
-  },
-  {
-    "title": "The Idiot (1958 movie)",
-    "paragraphs": [
-      "The Idiot (Russian: Идиот) is a 1958 Soviet drama movie directed by Ivan Pyryev. It stars Yuri Yakovlev, Yuliya Borisova, and Nikita Podgorny.",
-      "The movie is based on Part 1 of the eponymous 1869 novel by Fyodor Dostoevsky."
-    ],
-    "fetchedAt": "2026-07-04"
   }
 ]
