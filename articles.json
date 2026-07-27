@@ -1,5 +1,91 @@
 [
   {
+    "title": "Spain wins the World Cup – level 3",
+    "paragraphs": [
+      "Spain is celebrating a huge victory after defeating Argentina in the World Cup final, with over a million fans gathering in Madrid for a parade.",
+      "A goal scored in extra time secured Spain’s triumph and ended Argentina’s hopes of winning consecutive titles.",
+      "According to experts, Spain truly deserved to win because they functioned as a complete, well-organized team."
+    ],
+    "fetchedAt": "2026-07-27"
+  },
+  {
+    "title": "Children and social media – level 3",
+    "paragraphs": [
+      "Kara Swisher is a tech journalist, a podcast host, and a mother of four. She wrote a popular book called ‘Burn Book: A Tech Love Story’.",
+      "She talks about a new measure that says children under 14 can’t have social media without permission. According to Swisher, social media can be addictive just like cigarettes, and they aren’t good."
+    ],
+    "fetchedAt": "2026-07-27"
+  },
+  {
+    "title": "William S. Paley",
+    "paragraphs": [
+      "William Samuel Paley (September 28, 1901 – October 26, 1990) was an American businessman, philanthropist, broadcaster and founder of CBS. He was a Chicago-born cigar salesman.",
+      "In 1928 he purchased a small group of radio stations. From that start he built CBS into a dominant force in radio and television.",
+      "Paley died in New York City on October 26, 1990 from kidney failure, aged 89."
+    ],
+    "fetchedAt": "2026-07-27"
+  },
+  {
+    "title": "Frans Derks",
+    "paragraphs": [
+      "Frans Derks OON (1 November 1930 – 25 September 2020) was a Dutch football referee and sports executive. He was born in Vaals, Netherlands. He was Chairman of FC Dordrecht.",
+      "From 1956 to 1978, he was a referee for Eredivisie. Derks died of a short-illness on 25 September 2020 in Breda, Netherlands at the age of 89."
+    ],
+    "fetchedAt": "2026-07-27"
+  },
+  {
+    "title": "Degree (angle)",
+    "paragraphs": [
+      "In mathematics, a degree is a common way to measure plane angle. It is written with the symbol ∘ {\\displaystyle ^{\\circ }} , where 360 ∘ {\\displaystyle 360^{\\circ }} corresponds to the entire circle.",
+      "It is not an SI unit. The SI uses radian to measure plane angle. However, according to the SI brochure, it is an accepted unit by SI.",
+      "== History == The actual reason of choosing the degree as a way to measure plane angle is unknown. One theory says that it is related with the fact that a year is approximately 360 days.",
+      "Some ancient calendars, for example the Persian calendar and the Babylonian calendar used 360 days for a year.",
+      "Another theory says that the Babylonians divided the circle using the angle of an equilateral triangle. The angle was then divided into 60 parts.",
+      "This is because they used sexagesimal or base-60 numeral system."
+    ],
+    "fetchedAt": "2026-07-27"
+  },
+  {
+    "title": "Isoroku Yamamoto",
+    "paragraphs": [
+      "Isoroku Yamamoto (山本 五十六, Yamamoto Isoroku; April 4, 1884 – April 18, 1943) was a Japanese Marshal Admiral of the Imperial Japanese Navy (IJN).",
+      "He was the commander-in-chief of the Combined Fleet during World War II.",
+      "He was the commander-in-chief during the early years of the Pacific War and was in charge during the attack on Pearl Harbor and the Battle of Midway.",
+      "Yamamoto was killed on April 18, 1943 after American forces shoot down his aircraft near Panguna, Territory of New Guinea. American forces were able to discover his flight plans through codebreakers."
+    ],
+    "fetchedAt": "2026-07-27"
+  },
+  {
+    "title": "Fitness (biology)",
+    "paragraphs": [
+      "Fitness in biology is the relative ability of an organism to survive and pass on its genes to the next generation. p160 It is a central idea in evolutionary theory.",
+      "Fitness is usually equal to the proportion of the individual's genes in all the genes of the next generation.",
+      "Like all terms in evolutionary biology, fitness is defined in terms of an interbreeding population, which might or might not be a whole species.",
+      "If differences in individual genotypes affect fitness, then the frequencies of the genotypes will change over generations; the genotypes with higher fitness become more common.",
+      "This is the process called natural selection. An individual's fitness is caused by its phenotype, and passed on by its genotype.",
+      "The fitness of different individuals with the same genotype are not necessarily equal. It depends on the environment in which the individuals live, and on accidental events."
+    ],
+    "fetchedAt": "2026-07-27"
+  },
+  {
+    "title": "Sweden at the 1926 Women's World Games",
+    "paragraphs": [
+      "Sweden competed at the 1926 Women's World Games in Gothenburg, Sweden from 27 to 29 August. It was the first appearance of the European nation at the Women's World Games.",
+      "The Swedish team consisted of thirteen athletes. With a total of 20 points, Sweden finished third. == Medals == == Athletes == On 29 August 1926 an entry list 16 Swedish athletes was published.",
+      "However, only 13 were present on the group image."
+    ],
+    "fetchedAt": "2026-07-27"
+  },
+  {
+    "title": "Total depravity",
+    "paragraphs": [
+      "Total depravity (also called total inability or total corruption) is a theological teaching that comes from Augustine's teachings on original sin.",
+      "It is the teaching that, since the Fall of Man, every person who has been born into the world is a slave of sin and, without the irresistible grace of God, it is not possible for man to choose to follow God or accept salvation as He freely offers it.",
+      "Total depravity is taught by many Protestant confessions of faith, including Lutheranism, and Methodism, Arminianism, and Calvinism."
+    ],
+    "fetchedAt": "2026-07-27"
+  },
+  {
     "title": "Charlie Watts",
     "paragraphs": [
       "Charles Robert Watts (2 June 1941 – 24 August 2021) was an English drummer and composer. He was known for being the main drummer of the Rolling Stones.",
@@ -2905,91 +2991,5 @@
       "Sgreccia died on 5 June 2019, a day before his 91st birthday."
     ],
     "fetchedAt": "2026-07-09"
-  },
-  {
-    "title": "Western Armenia",
-    "paragraphs": [
-      "Western Armenia (Armenian: Արևմտյան Հայաստան), also referred to as Byzantine Armenia, later Turkish Armenia, or Ottoman Armenia is a term coined following the division of Greater Armenia between Byzantine Empire (Western Armenia) and Persia (Eastern Armenia) in 387 AC.",
-      "Today, it is mostly a term used for eastern parts of Turkey (formerly the Ottoman Empire) that were part of the historical homeland of Armenians.",
-      "== History == After the death of Armenian king Arshak III, in 390 AC, the Western Armenia was governed by Greek generals.",
-      "In the 7th century Western Armenia was one of the centers of Pavlikian Christian popular sect.",
-      "Since 9th century the most part of Western Armenia included Vaspurakan and Taron was under the rule of Bagratid dynasty of Armenia.",
-      "Then the Zakarid Armenia of 13-14th centuries included some parts of Western Armenia. After Turkish-Persian wars of 1602-1639 Western Armenia became part of Ottoman Empire."
-    ],
-    "fetchedAt": "2026-07-09"
-  },
-  {
-    "title": "Marlon Bundo",
-    "paragraphs": [
-      "Marlon Bundo (2012/2013 – c. January 15, 2022), also known as Bunny of the United States (BOTUS), was a rabbit belonging to the family of Mike Pence, the 48th Vice President of the United States.",
-      "He was the first rabbit to travel on Air Force Two, has a popular Instagram account, and is the subject of two children's books. He was born in Chicago and named after Marlon Brando.",
-      "In 2013, the Pence family bought the rabbit from Craigslist for their daughter Charlotte. Marlon Bundo's death was announced on social media by Charlotte on January 15, 2022."
-    ],
-    "fetchedAt": "2026-07-09"
-  },
-  {
-    "title": "Windows on the World",
-    "paragraphs": [
-      "Windows on the World was a group of venues at the top floors (106th and 107th) of the North Tower of the World Trade Center.",
-      "It included Windows on the World, a smaller restaurant which was called Wild Blue, and a bar which was called The Greatest Bar on Earth. The restaurant was destroyed in the September 11 attacks.",
-      "In 2000, Windows on the World was the highest-earning restaurant in the United States. It earned a total of US$37 million.",
-      "It has also been speculated that \"The Falling Man\" was Jonathan Briley, an audio technician at the Windows on the World restaurant but his identity was never released.",
-      "There were plans to rebuild Windows on the World during the building of One World Trade Center but those plans were scrapped on March 7, 2011."
-    ],
-    "fetchedAt": "2026-07-09"
-  },
-  {
-    "title": "Roger H. Zion",
-    "paragraphs": [
-      "Roger Herschel Zion (September 17, 1921 – September 24, 2019) was an American politician.",
-      "He was elected as a Republican to the United States House of Representatives from Indiana in the 1966 election to the 90th Congress and was re-elected to the three succeeding Congresses, serving from January 3, 1967 to January 3, 1975.",
-      "Zion was an unsuccessful candidate for reelection in 1974 to the 94th Congress, losing to Philip H. Hayes. Zion died at his home in Evansville, Indiana on September 24, 2019 at the age of 98.",
-      "== References == == Other websites == United States Congress. \"Roger H. Zion (id: Z000010)\". Biographical Directory of the United States Congress."
-    ],
-    "fetchedAt": "2026-07-09"
-  },
-  {
-    "title": "Karuyo Matsukawa",
-    "paragraphs": [
-      "Kazuyo Matsukawa (松川一代, born 7 January 1970) is a Japanese volleyball player. She was part of the Japan women's national volleyball team.",
-      "She competed at the 1990 Asian Games winning a bronze medal, 1994 Asian Games, and 1994 Goodwill Games. On club level she played with Orange Attackers."
-    ],
-    "fetchedAt": "2026-07-09"
-  },
-  {
-    "title": "The EU taxes cheap parcels from China – level 3",
-    "paragraphs": [
-      "The EU has introduced a new 3-euro fee on low-value e-commerce parcels from China, which targets major online retailers like Shein, Temu, and AliExpress.",
-      "Previously, these platforms entered the EU bloc duty-free under a long-standing exemption for goods under 150 euros.",
-      "However, policymakers and European retailers complained about unfair competition after the number of exempt parcels surged from."
-    ],
-    "fetchedAt": "2026-07-08"
-  },
-  {
-    "title": "Dogs help travelers – level 2",
-    "paragraphs": [
-      "Istanbul Airport now has therapy dogs to help travelers relax before flights. Some people are anxious before flying and therapy dogs are a great help.",
-      "Passengers like Anastasia Podmazova welcome the service, and they find comfort in petting dogs like Kuki. Because of positive feedback, the airport is thinking of having five more dogs."
-    ],
-    "fetchedAt": "2026-07-08"
-  },
-  {
-    "title": "Volkswagen Vento",
-    "paragraphs": [
-      "Volkswagen Vento was a car made by Volkswagen from 1992 through 1998. It is the European version of the Third Generation Volkswagen Jetta. == Engines == === Petrol engines === 1.",
-      "6 55 kW (75 hp) and 74 kW (100 hp) 1. 8 55 kW (75 hp) and 66 kW (90 hp) 2. 0 85 kW (115 hp) 2. 8 VR6 128 kW (174 hp) === Diesel engines === 1. 9 D 47 kW (64 hp) 1. 9 SDI 47 kW (64 hp) 1."
-    ],
-    "fetchedAt": "2026-07-08"
-  },
-  {
-    "title": "Onward",
-    "paragraphs": [
-      "Onward or onwards may refer to: == Entertainment == === Movie === Onward (movie), an animated Pixar movie === Music === \"Onward\" (1978 Yes song), from the 1978 album Tormato by the British band Yes \"Onwards\", a song by the Afro Celt Sound System from the 2001 album Volume 3: Further in Time Onwards (album), 2006, by the Norwegian band Triosphere \"Onwards!",
-      "\", a 2010 song from the fifth series of Doctor Who.",
-      "Onward (album), 2012, by the British band Hawkwind Onward Brass Band, the name of two orchestras in New Orleans == Places == Onward, Indiana, a town in the United States Onward, Mississippi, an unincorporated community in the United States == Vehicles == USS Onward, U.",
-      "Navy shipname USS Onward (1852), clipper ship, served as US Navy ship in the Civil War USS Onward (SP-311), WWI patrol yacht USS Onward II (SP-728), WWI patrol motorboat Onward (locomotive), a steam locomotive with polygonal driving wheels Onward (sternwheeler 1858), a steamboat on the Willamette River Onward (sternwheeler 1867), a steamboat on the Tualatin River == Other uses == En Marche!",
-      ", political movement founded by Emmanuel Macron, President of France, frequently called \"Onwards! \" in English."
-    ],
-    "fetchedAt": "2026-07-08"
   }
 ]
