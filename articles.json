@@ -1,5 +1,80 @@
 [
   {
+    "title": "European children are not strong anymore – level 3",
+    "paragraphs": [
+      "A new study has revealed European children and adolescents are in worse physical shape today than at almost any point over the last 60 years.",
+      "Researchers from the University of Zaragoza analyzed physical fitness data from over 417,000 young people aged 6 to 16 across 20 European countries.",
+      "The findings show a worrying long-term decline in key health."
+    ],
+    "fetchedAt": "2026-08-07"
+  },
+  {
+    "title": "Read-only memory",
+    "paragraphs": [
+      "Read-only memory (or simply ROM) is a type of computer memory. Unlike RAM, it keeps its contents even when the computer or device is turned off.",
+      "Usually, ROM cannot be written to when the computer runs normally.",
+      "ROM is used for the BIOS which tells the computer how to start, or important programs like the firmware of certain devices, which usually does not need to be modified.",
+      "Usually, ROM comes on computer chips. There are different kinds of ROMs: Masked ROM: This kind is written once, at the factory. It cannot be changed at all later on.",
+      "Its main benefit is that it is very cheap to make. PROM: Can be programmed once. Comes unprogrammed from the factory. Programming consists in removing connections.",
+      "Invented in 1956, it has been replaced by EPROMs. EPROM: This kind can be erased with UV light. Invented in 1972, it became rare early in the 21st century."
+    ],
+    "fetchedAt": "2026-08-07"
+  },
+  {
+    "title": "Elektra (character)",
+    "paragraphs": [
+      "Elektra Natchios, mainly referred to as Elektra, is a fictional character.",
+      "She appears in American comic books published by Marvel Comics, appearing as the main protagonist of the titular comics, and a supporting character in the Daredevil comics.",
+      "She was created by Frank Miller, and first appeared in Daredevil #168 in January of 1981.",
+      "== Fictional character biography == She is known to be an on-and-off ally and love-interest of the vigilante of Hell's Kitchen, Daredevil.",
+      "Elektra has peak athletic abilities, martial arts skills, enhanced agility, and a master assassin. She also has been a member of the Heroes for Hire, Code Red, Red Hulk's Thunderbolts, S. H. I. E. L.",
+      "D. , Savage Avengers and the Hand. == In other media == Jennifer Garner portrayed Elektra in the movies Daredevil (2003) and Elektra (2005)."
+    ],
+    "fetchedAt": "2026-08-07"
+  },
+  {
+    "title": "Bath, Somerset",
+    "paragraphs": [
+      "Bath is a city in the county of Somerset in England. It is 97 miles (156 km) west of London, and 13 miles (21 km) southeast of Bristol. Bath is a UNESCO World Heritage Site.",
+      "The city has preserved some of its Roman remains and its 18th century architecture. == History == The city gets its name from the famous Roman baths in the town.",
+      "The Romans built the baths as part of a spa, in the year 43 BC. They called it Aquae Sulis, which means \"The waters of Sulis\". Sulis was a local goddess.",
+      "During the Middle Ages, it was an important city for buying and selling wool. Bath became a city in 1585, when Queen Elizabeth I declared it to be one.",
+      "Bath has two universities and several schools and colleges. Bath is where Roald Dahl's short story \"The Landlady\" takes place.",
+      "The city is also mentioned in many of Jane Austen's books, like Northanger Abbey, Sense and Sensibility, and Pride and Prejudice."
+    ],
+    "fetchedAt": "2026-08-07"
+  },
+  {
+    "title": "Nolan Ryan",
+    "paragraphs": [
+      "Lynn Nolan Ryan (born January 31, 1947) is a former Major League Baseball pitcher. He played in the major leagues from 1966 to 1993.",
+      "He played for the New York Mets, California Angels, Houston Astros, and Texas Rangers. As a pitcher, Ryan struck out 5,714 batters. This is the most all-time.",
+      "Ryan is the only pitcher in the MLB to strike out 5,000 batters. Ryan has also walked more batters and thrown more no-hitters than anyone else.",
+      "He is now the president and one of the owners of the Texas Rangers. Ryan is from Refugio, Texas."
+    ],
+    "fetchedAt": "2026-08-07"
+  },
+  {
+    "title": "Daniel Blatman",
+    "paragraphs": [
+      "Daniel Blatman (born 31 January 1953 in Tel Aviv) is an Israeli historian. He studies the history of the Holocaust.",
+      "Blatman is the head of the Institute for Contemporary Jewry at the Hebrew University of Jerusalem.",
+      "== Career History == Blatman was a visiting scholar at the Centre for European Studies at Harvard University, 2012–13.",
+      "== Life == Daniel Blatman attended school in Kiryat Shmona and studied history at the Hebrew University of Jerusalem, where he passed the first exam in 1981, completed his master's degree in 1988 and received his doctorate under Israel Gutman in 1992.",
+      "From 1981 to 1992 he worked as a high school teacher in Kiryat Shmona.",
+      "Blatman became a research fellow at the Hebrew University in 1997 and an associate professor at the Institute for Contemporary Judaism in 2009."
+    ],
+    "fetchedAt": "2026-08-07"
+  },
+  {
+    "title": "British Rail Class 155",
+    "paragraphs": [
+      "The British Rail Class 155 \"Super-Sprinter\" is a diesel multiple unit.",
+      "These DMUs were built by British Leyland at Workington (using Leyland National bus components) between 1987 and 1988 as part of British Rail's replacement of its ageing diesel fleet which were First-Generation."
+    ],
+    "fetchedAt": "2026-08-07"
+  },
+  {
     "title": "Crabs wear plastic shells – level 3",
     "paragraphs": [
       "Scientists have observed a new behavior in terrestrial hermit crabs globally – they are choosing plastic shells over natural ones for protection.",
@@ -2873,74 +2948,5 @@
       "She was a member of the Jatiya Sangshad from 2001 to 2006, from women's reserved seat-31 (national 331) for the Bangladesh Jamaat-e-Islami."
     ],
     "fetchedAt": "2026-07-20"
-  },
-  {
-    "title": "Taibang Khaiba",
-    "paragraphs": [
-      "Taibang Khaiba (ꯇꯥꯏꯕꯪ ꯈꯥꯏꯕ) is a deity in traditional Meitei religion of Sanamahism and ancient Meitei literature, especially known from the classical texts such as the Sanamahi Laikan, the Sanamahi Laihui and the Khagemba Langjei.",
-      "He is also identified with Lainingthou Sanamahi and Awang Phatlou Laimakhomba, and is believed to be the first son of the Supreme Being.",
-      "He plays a central role in Meitei mythology and folklore as the creator of the world, the protector of humanity, and a guardian deity of the Meitei royal family (Ningthouja dynasty).",
-      "== Creator and divine son == According to Meitei belief, Taibang Khaiba created the earth and filled it with life, overcoming many difficulties.",
-      "As the first-born son of the Almighty, he was given the responsibility of watching over mankind. He is also recognized as a presiding ancestral deity in Meitei tradition.",
-      "== Rebirth in human form == In the classical Meitei texts, Taibang Khaiba is described as being born again in human form as the son of King Khagemba and Queen Nongthil Chaibi."
-    ],
-    "fetchedAt": "2026-07-20"
-  },
-  {
-    "title": "Oscar Gamble",
-    "paragraphs": [
-      "Oscar Charles Gamble (December 20, 1949 – January 31, 2018) was an American professional baseball player. He was born in Ramer, Arkansas.",
-      "Gamble played as an outfielder and designated hitter in Major League Baseball from 1969 to 1985.",
-      "He played for seven different teams: the Chicago White Sox and New York Yankees on two separate occasions, as well as the Chicago Cubs, Philadelphia Phillies, Cleveland Indians, San Diego Padres, and Texas Rangers.",
-      "Gamble died on January 31, 2018 in Birmingham, Alabama of jaw cancer at the age of 68."
-    ],
-    "fetchedAt": "2026-07-20"
-  },
-  {
-    "title": "Manuel Marulanda",
-    "paragraphs": [
-      "Pedro Antonio Marín, (1930-2008) known by his pseudonym, Manuel Marulanda Vélez, and nicknamed by his comrades \"Tirofijo\" (English: Sureshot), apparently because of a reputed ability to accurately aim firearms.",
-      "He was the main leader of the FARC-EP (\"Fuerzas Armadas Revolucionarias de Colombia - Ejército del Pueblo\").",
-      "He was born on May 13, 1930 (a date that has been disputed), in a coffee-growing region of west-central Colombia in the Quindío Department, to a peasant family politically aligned with the Liberal Party during La Violencia.",
-      "Marulanda himself changed his political and ideological inclinations to the Communist Party (PCC) sometime during the period of \"La Violencia\" (roughly 1948 to 1958) that followed the assassination of the Liberal Party's leader Jorge Eliécer Gaitán.",
-      "He has been considered to be seriously ill, and his death has been reported several times throughout his long career as a guerrilla, but the status of his health remains uncertain.",
-      "In March 2006, Alberto Gonzales, the Attorney General of the United States, announced in conjunction with DEA and Department of Justice officials that the State Department had placed a $5 million dollar reward on Tirofijo's head, or for information leading to his capture."
-    ],
-    "fetchedAt": "2026-07-20"
-  },
-  {
-    "title": "HOT Animation",
-    "paragraphs": [
-      "HOT Animation was a British animation studio owned by HIT Entertainment that specialised in stop-motion animation, cel animation, and computer animation.",
-      "It was established on 16 September 1997 by Jackie Cockle, Brian Little, and Joe Dembinski. One of the famous productions was Bob the Builder.",
-      "The studio closed and disestablished due to HIT's purchase right to Mattel on 18 August 2012."
-    ],
-    "fetchedAt": "2026-07-20"
-  },
-  {
-    "title": "Excitebike",
-    "paragraphs": [
-      "Excitebike (エキサイトバイク, Ekisaitobaiku) is a motocross racing video game made by Nintendo. It first appeared as a game for the Famicom in Japan in 1984 for a price of 5000 yen.",
-      "It is the first game in the Excite series. The second game in the series is Excitebike 64 and the third is Excite Truck.",
-      "In 2011, a re-release of Excitebike called 3D Classics: Excitebike was released for the Nintendo 3DS. It is a 3D version of the original game."
-    ],
-    "fetchedAt": "2026-07-19"
-  },
-  {
-    "title": "North Dakota House of Representatives",
-    "paragraphs": [
-      "The North Dakota House of Representatives is the lower house of the North Dakota Legislative Assembly and is larger than the North Dakota Senate.",
-      "North Dakota is divided into between 40 and 54 legislative districts. Representatives serve four-year terms. Every two years half the districts elect both their representatives by block voting."
-    ],
-    "fetchedAt": "2026-07-19"
-  },
-  {
-    "title": "Dmitry Yazov",
-    "paragraphs": [
-      "Dmitry Timofeyevich Yazov (Russian: Дми́трий Тимофе́евич Я́зов; 8 November 1924 – 25 February 2020) was a Soviet military personnel. He served during World War II and the Soviet–Afghan War.",
-      "He was born in Omsk Oblast, Soviet Union. He was the last Marshal of the Soviet Union to be appointed before the fall. He was the only Marshal of the Soviet Union to be born in Siberia.",
-      "He is veteran of the Great Patriotic War. Yazov was the last surviving Soviet Marshal and the only military marshal not to have been awarded the title Hero of the Soviet Union."
-    ],
-    "fetchedAt": "2026-07-19"
   }
 ]
