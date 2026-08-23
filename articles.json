@@ -1,5 +1,89 @@
 [
   {
+    "title": "Strict weak ordering",
+    "paragraphs": [
+      "Strict weak ordering is a binary relation on a set. Such relations define a strict ordering, but they contain several elements of the same type.",
+      "An example might be the relation \"costs less than\", or \"is cheaper than\". For any two elements that are of different types, the relation holds.",
+      "On the other hand, there are some elements that cannot be ordered that way, because they are of the same type.",
+      "An example for such a relation may be the relation, costs less than: milk may cost less than bread, and bread may cost less than cake.",
+      "Two items of different types may cost less than another, but they can otherwise have the same price.",
+      "Two different algorithms that sort words by the number of letters in the word may not give the same ordering of the words with the same number of letters, but they will always give an ordering where the four-letter words come before the five-letter-words, and after the three-letter-words."
+    ],
+    "fetchedAt": "2026-08-23"
+  },
+  {
+    "title": "Alice in Videoland",
+    "paragraphs": [
+      "Alice in Videoland is an electroclash band from Sweden. The band started in 2002. Toril Lindqvist is the singer. == History == In 2003 the band released their first album Maiden Voyage in Sweden.",
+      "In 2005 they released their second album Outrageous!. The band was signed by the American record label Storming The Base. In 2008 the band's third album She's a Machine! was released.",
+      "\"She's a Machine\" was released as the album's first single. In 2010 the band's fourth album A Million Thoughts and They're All About You was released."
+    ],
+    "fetchedAt": "2026-08-23"
+  },
+  {
+    "title": "David Abulafia",
+    "paragraphs": [
+      "David Samuel Harvard Abulafia (12 December 1949 – 24 January 2026) was an English historian.",
+      "He was known for his written works about Italy, Spain and the rest of the Mediterranean during the Middle Ages and Renaissance. He spent most of his career at the University of Cambridge.",
+      "He became a professor at the age of 50. He retired in 2017. He was a Fellow of Gonville and Caius College, Cambridge. He was a Fellow of the British Academy and a member of the Academia Europaea.",
+      "Abulafia died on 24 January 2026 in Cambridge, Cambridgeshire at the age of 76."
+    ],
+    "fetchedAt": "2026-08-23"
+  },
+  {
+    "title": "Forgot About Dre",
+    "paragraphs": [
+      "\"Forgot About Dre\" is the second single off American rapper Dr. Dre's second studio album 2001. The song was released in January 29, 2000 and features vocals from Eminem.",
+      "The song won a Grammy Award for Best Rap Performance by a Duo or Group in 2001. It was called a stand-out track by Stephen Thomas Erlewine.",
+      "NME said of the song: \"In case folks been smoking too much heavy 'chronic' lately, West Coast rap founder and scary legend Andre Young, aka Dr Dre, jogs their memories on 'Forgot About Dre'.",
+      "\"Who you think brought you the Eazy Es, Ice Cubes and DOCs, the Snoop- D-O-G-Gs and the group that said motherf-- the police?",
+      "\" yammers the one-time NWA lynchpin, ex Death Row playa, inventor of - G-Funk and occasional breaker of rival producers' jaws.",
+      "Yo, indeed, big bad Dre's back and, despite a four-year gap since his last hardcore missive, the Doc's recent collaboration with Eminem on 'The Slim Shady LP' has kept his legend simmering."
+    ],
+    "fetchedAt": "2026-08-23"
+  },
+  {
+    "title": "Lille",
+    "paragraphs": [
+      "Lille is a city in the northern part of France with a population of about 226,800 inhabitants. It is the capital of the region Hauts-de-France and the Nord department.",
+      ", and is not far from the border with Belgium, where in Dutch it is called Rijsel.",
+      "About two million people live in the urban area (conurbation) shared with Kortrijk and Tournai, which is the fifth largest in France behind Paris, Lyon, Marseille, and Toulouse.",
+      "== Climate == Lille has an oceanic climate (Cfb in the Koeppen climate classification).",
+      "== Education == École pour l'informatique et les nouvelles technologies École spéciale de mécanique et électricité EDHEC Business School E-Artsup IÉSEG School of Management Institut catholique d'arts et métiers Institut supérieur européen de gestion group Institut supérieur européen de formation par l'action == Transport == There are two big railway stations in Lille with many trains to and from different places around France and Belgium.",
+      "Most of these serve Lille-Flandres station and are operated by SNCF, including the TGV high-speed service."
+    ],
+    "fetchedAt": "2026-08-23"
+  },
+  {
+    "title": "2021 Western North America heat wave",
+    "paragraphs": [
+      "An extreme heat wave affected much of western North America in late June and early July of 2021.",
+      "The heat affected Northern California, Idaho, western Nevada, Oregon, and Washington in the United States, as well as British Columbia, and, later, Alberta, Manitoba, the Northwest Territories, Saskatchewan, and Yukon, all in Canada.",
+      "It resulted in some of the highest temperatures ever recorded in the region, including the highest temperature ever measured in Canada at 49. 6 °C (121.",
+      "3 °F), as well as the highest temperatures in British Columbia, in the Northwest Territories, and Washington.",
+      "The heat wave caused many huge wildfires, some reaching hundreds of square kilometers in area, which led to widespread disruption on the roads.",
+      "One of them largely destroyed Lytton in British Columbia, the village where the record-high temperature for Canada had been set."
+    ],
+    "fetchedAt": "2026-08-23"
+  },
+  {
+    "title": "John Young, 1st Baron Lisgar",
+    "paragraphs": [
+      "Sir John Young, 1st Baron Lisgar was a British diplomat and politician who served as the second Governor General of Canada from 1869 to 1872. He was the oldest son of Sir William Young.",
+      "The eldest son of Sir William Young, 1st Baronet of Bailieborough Castle, a director of the East India Company, Young was born in Bombay, India, into an Anglo-Irish family.",
+      "After completing his studies at Oxford's Eton and Corpus Christi College, he was admitted to the law in 1834. He graduated in 1829. In 1835, he wed Adelaide Annabella Tuite Dalton."
+    ],
+    "fetchedAt": "2026-08-23"
+  },
+  {
+    "title": "Lake McDonald",
+    "paragraphs": [
+      "Lake McDonald is the largest lake in Glacier National Park. It is in Flathead County, Montana. The lake is named after Duncan McDonald.",
+      "McDonald was a worker for Hudson's Bay Company who carved his name on a tree near the lake in 1878."
+    ],
+    "fetchedAt": "2026-08-23"
+  },
+  {
     "title": "Leningrad Symphony (movie)",
     "paragraphs": [
       "Leningrad Symphony (Russian: Ленинградская симфония) is a 1957 Soviet drama movie directed by Zakhar Agranenko. It stars Vladimir Solovyov, Mark Pertsovsky, and Olga Malko.",
@@ -2914,83 +2998,6 @@
       "SK Rapid Wien won the Austrian football championship for the 25th time. First Vienna FC 1894 and WSG Radenthein were relegated.",
       "These teams were replaced by the three champions of the regional leagues: WSV Donawitz (Central), SC Wacker Wien (East) and WSG Wattens (West) .",
       "So there were 15 first-class teams in the 1968-69 season. == Final table == Table mode (in case of equal points): 1."
-    ],
-    "fetchedAt": "2026-08-03"
-  },
-  {
-    "title": "Zail Singh",
-    "paragraphs": [
-      "Gyani Zail Singh (; born Jarnail Singh, 5 May 1916 – 25 December 1994) was an Indian politician. He was the seventh President of India from 1982 to 1987.",
-      "He was a politician with the Indian National Congress party. Singh was killed in a car crash in Chandigarh, India on 25 December 1994 at the age of 78."
-    ],
-    "fetchedAt": "2026-08-03"
-  },
-  {
-    "title": "Third rail",
-    "paragraphs": [
-      "A third rail is a metal railway track that is placed on either side of a train track to provide electrical power to trains traveling along the tracks.",
-      "They are often used on subways and local train services. Before third rails, electricity was carried in overhead wires.",
-      "== History == In the 19th century engineers found ways to use electricity to power trains. Scottish engineer Robert Davidson designed and built an electric locomotive in 1837 using batteries.",
-      "Locomotives powered by batteries could not be used on the main railways due to the frequent need to charge them.",
-      "German engineer Werner von Siemens in 1879 designed the first reliable electric locomotive to carry passengers. Siemens' design used a 2. 2kW electric motor and had a top speed of just over 13 km/h.",
-      "This new locomotive hauled three passenger cars along a 300 meter circular railway track and carried about 90,000 people in four months during its trail run at the Berlin Industrial Exhibition."
-    ],
-    "fetchedAt": "2026-08-03"
-  },
-  {
-    "title": "Iranian plateau",
-    "paragraphs": [
-      "The Iranian plateau, also known as the Persian plateau is a geological formation in Southwest Asia, Southern Asia and the Caucasus region.",
-      "As a historical region, it includes Parthia, Media and eastern Persia, the heartlands of Greater Persia (mainly Iran, Afghanistan, and Pakistan west of the River Indus)."
-    ],
-    "fetchedAt": "2026-08-03"
-  },
-  {
-    "title": "Many Clouds",
-    "paragraphs": [
-      "Many Clouds (21 April 2007 – 28 January 2017) was a Thoroughbred racehorse. He was best known for winning the Hennessy Gold Cup (2014), the Grand National (2015) and the Cotswold Chase (2015, 2017).",
-      "Many Clouds was bred in Ireland but was trained in United Kingdom. Many Clouds died on 28 January 2017 in Cheltenham, Gloucestershire.",
-      "He collapsed after winning his second Cotswold Chase and died from a pulmonary haemorrhage. He was nine."
-    ],
-    "fetchedAt": "2026-08-03"
-  },
-  {
-    "title": "Britain's Next Top Model, Cycle 2",
-    "paragraphs": [
-      "Britain's Next Top Model, Cycle 2 is the second season of Britain's Next Top Model. This cycle includes 13 contestants. The winner was 18-year old Lianna Fowler from Derby, England.",
-      "== Contestants == (In alphabetical order) Abigail Clancy Amber Niemann Asha Hibbert Georgina Edewor-Thorley Jasmia Robinson Lianna Fowler Lucy Flower Nina Malone Samantha Gerrard Sarah Butler Sophia Price Tamar Higgs Yvette Stubbs == Prizes == A modeling contract with Models 1 A campaign in Ford Fiesta A cover & spread in Company Magazine == Episodes == 1.",
-      "Best: Sarah Butler Worst: Jasmia Robinson & Yvette Stubbs Eliminated: Yvette Stubbs 2. Best: Sophia Price Worst: Nina Malone & Lianna Fowler Eliminated: Nina Malone 3.",
-      "Best: Abbey Clancy Worst: Asha Hibbert & Amber Niemann Eliminated: Asha Hibbert 4. Best: Sarah Butler Worst: Lucy Flower & Tamar Higgs Eliminated: Lucy Flower 5.",
-      "Best: Lianna Fowler Worst: Abbey Clancy & Sophia Price Eliminated: Sophia Price 6. Best: Tamar Higgs Worst: Sarah Butler & Samantha Gerrard Eliminated: Samantha Gerrard 7.",
-      "Best: Jasmia Robinson Worst/Eliminated: Georgina Edewor-Thorley & Tamar Higgs 8. Best: Amber Niemann Worst: Sarah Butler & Lianna Fowler Eliminated: Sarah Butler 9."
-    ],
-    "fetchedAt": "2026-08-03"
-  },
-  {
-    "title": "Wolterstorffina parvipalmata",
-    "paragraphs": [
-      "The Cameroon Wolterstorff toad or montane forest tree toad (Wolterstorffina parvipalmata) is a toad. It lives in Cameroon, Nigeria, and Equatorial Guinea.",
-      "== Home == This toad lives near streams and waterfalls high in the hills and mountains. Scientists saw it between 800 and 2000 meters above sea level.",
-      "Scientists have seen this toad in some protected places. They saw it in Cross River National Park and they saw it near Reserve Scientifique de la Caldera.",
-      "== Young == Scientists think the frog has young in streams. == Danger == Scientists say this toad is in big danger of dying out. Human beings change the places where the toad lives.",
-      "Chemicals from farms can kill the toad too.",
-      "Human beings also killed too many trees in some places, especially to get the bark from the Prunus africanus tree, which pharmaceutical companies use to make medicine."
-    ],
-    "fetchedAt": "2026-08-03"
-  },
-  {
-    "title": "Saint John, Barbados",
-    "paragraphs": [
-      "Saint John (\"St. John\") is a parish of Barbados. It is on the eastern side of the island. It is home to one of the secondary schools on the island, The Lodge School.",
-      "In its southeastern corner, the shoreline turns northward instead of southward, forming the small Conset Bay. == Landmarks == Ashford Bird Park is a bird and animal sanctuary."
-    ],
-    "fetchedAt": "2026-08-03"
-  },
-  {
-    "title": "Alex Ferns",
-    "paragraphs": [
-      "Alexander Ferns (born 13 October 1968) is a Scottish actor and television personality.",
-      "He is best known for his EastEnders role as Trevor Morgan, Rick Harper in BBC Scotland soap opera, River City and as Andrei Glukhov in the miniseries Chernobyl. Ferns was born in Lennoxtown, Scotland."
     ],
     "fetchedAt": "2026-08-03"
   }
