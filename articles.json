@@ -1,5 +1,92 @@
 [
   {
+    "title": "India’s medical tourism – level 3",
+    "paragraphs": [
+      "India has built a multi-billion-dollar medical tourism industry that attracts hundreds of thousands of international patients every year, mainly from South Asia, the Middle East, and Africa.",
+      "Patients choose India because of its highly skilled English-speaking doctors, accredited private hospitals, shorter waiting times, and low treatment costs.",
+      "For example, complex surgeries in India can cost up to ten."
+    ],
+    "fetchedAt": "2026-09-08"
+  },
+  {
+    "title": "A new world map – level 3",
+    "paragraphs": [
+      "The UN General Assembly voted to replace the traditional Mercator world map with the Equal Earth map to show Africa’s true size.",
+      "Proposed by Togo and supported by 164 nations, the non-binding resolution aims to influence education and governments worldwide.",
+      "Critics argue the Mercator map distorts landmasses by making equatorial regions, such as Africa, look much smaller than."
+    ],
+    "fetchedAt": "2026-09-08"
+  },
+  {
+    "title": "Mount Tangkuban Parahu",
+    "paragraphs": [
+      "Tangkuban Parahu is an active volcano in Indonesia. It is in Northern Bandung, Cikole, Lembang. It is about 20 km from the center of Bandung city, West Java.",
+      "Tangkuban Parahu is 2084 meters above sea level or about 6873 feet high. The temperature in this area is 17 degrees Celsius at noon and can reach 2 degrees Celsius at night.",
+      "Unlike other volcanoes, the peak of Tangkuban Parahu looks similar to an overturned boat when looked at from the side.",
+      "There is a legend, the legend of Sangkuriang which tells the origin of Tangkuban Parahu. The volcano has several craters. Some are Ratu crater, Upas crater, and Domas crater."
+    ],
+    "fetchedAt": "2026-09-08"
+  },
+  {
+    "title": "Henry McMaster",
+    "paragraphs": [
+      "Henry Dargan McMaster (born May 27, 1947) is an American politician. He is the 117th and current Governor of South Carolina since January 24, 2017.",
+      "He became governor when Nikki Haley resigned to become the Ambassador to the United Nations. McMaster was born into a wealthy South Carolina family who owned many slaves before the American Civil War.",
+      "His father John was also a politician. He last served as the 91st Lieutenant Governor of South Carolina from 2015 to 2017, as well as Attorney General of South Carolina from 2003 to 2011.",
+      "From 1981 to 1985, McMaster served as United States Attorney, where he was known for Operation Jackpot.",
+      "McMaster served on the South Carolina Commission on Higher Education and chaired the South Carolina Republican Party from 1993 to 2002."
+    ],
+    "fetchedAt": "2026-09-08"
+  },
+  {
+    "title": "Anna and the King",
+    "paragraphs": [
+      "Anna and the King is a 1999 movie, loosely based on Anna and the King of Siam. The movie was directed by Andy Tennant and stars Jodie Foster and Chow Yun-fat. It was mostly shot in Malaysia.",
+      "It was an Academy Award nominee in 2000 for Best Art Direction and Best Costume Design.",
+      "The movie tells the story of the romance between the King of Siam (now Thailand) and the widowed English schoolteacher, Anna Leonowens, during the 1860s.",
+      "It is based on the true story of Anna Leonowens' experiences."
+    ],
+    "fetchedAt": "2026-09-08"
+  },
+  {
+    "title": "Das EFX",
+    "paragraphs": [
+      "Das EFX is an American hip hop duo. They became popular in the early 1990s because of their connection to the EPMD's Hit Squad. Their hit songs include \"They Want EFX\".",
+      "They appeared on \"Check Yo Self\" by rapper Ice Cube. The group is from Brooklyn, New York."
+    ],
+    "fetchedAt": "2026-09-08"
+  },
+  {
+    "title": "Adrian Rogers",
+    "paragraphs": [
+      "Adrian Pierce Rogers, Th. D. (September 12, 1931 – November 15, 2005) was an American pastor, author, and a three-term president of the Southern Baptist Convention (1979-1980 and 1986-1988).",
+      "Rogers was born in West Palm Beach, Florida. He is the starter of Love Worth Finding ministries."
+    ],
+    "fetchedAt": "2026-09-08"
+  },
+  {
+    "title": "Vantaa",
+    "paragraphs": [
+      "Vantaa (Swedish: Vanda) is the fourth largest city in Finland (after Helsinki, Espoo and Tampere). It is part of the Greater Helsinki area.",
+      "The most important parts of Vantaa are Tikkurila, Hakunila, Koivukylä, Korso, Martinlaakso and Myyrmäki.",
+      "Tuusula, Kerava, Sipoo, Helsinki, Espoo and Nurmijärvi are neighbour communities and cities of Vantaa. Vantaa has been a city since 1974. As of April 2014, the population was about 208,800.",
+      "The current mayor is Juhani Paajanen. The biggest airport in Finland, Helsinki-Vantaa, is in Central Vantaa. Finnish and Swedish are the official languages of Vantaa.",
+      "In 2006 Swedish was the mother language of 3. 1 percent of population of Vantaa."
+    ],
+    "fetchedAt": "2026-09-08"
+  },
+  {
+    "title": "Batch processing",
+    "paragraphs": [
+      "Batch processing is when a number of tasks (\"jobs\") are put together over a set period of time. The jobs are then loaded into a computer system (\"job queue\") and done all at once, in a \"batch.",
+      "\" == Process == Once the batch processing starts, the user does not need to do anything else. This type of processing only works when there are timing constraints, i. e.",
+      "files do not need to be updated immediately or a response from the computer is not needed right away.",
+      "== Advantage == One advantage of batch processing is that the computer can wait to process the batch until it is less busy. For example, it can do the jobs in the job queue overnight.",
+      "Fields with batch processing include billing systems (e. g. electricity, gas, water and telephone), payroll systems and processing of bank cheques."
+    ],
+    "fetchedAt": "2026-09-08"
+  },
+  {
     "title": "Gion worship",
     "paragraphs": [
       "Gion worship, or Gion shinkō in Japanese, is a form of Shintoism that used to center around the deity Gozu Tenno.",
@@ -2912,106 +2999,5 @@
       "It is used in geometry proofs to show that two segments are congruent. When a segment is shown to be bisected, it means the two parts created are equal."
     ],
     "fetchedAt": "2026-08-21"
-  },
-  {
-    "title": "GFL Environmental",
-    "paragraphs": [
-      "GFL Environmental Inc. (known as Green For Life) is a Canadian company that deals with waste management. They are headquartered in Vaughan, Ontario.",
-      "GFL Environmental does business across North America. The company was first created by Patrick Dovigi in Vaughan, Ontario in 2007.",
-      "Dovigi had first played as a goaltender with the Erie Otters of the Ontario Hockey League (OHL) and was drafted by the Edmonton Oilers in the 1997 NHL entry draft.",
-      "He decided to instead focus on business and retired from professional ice hockey.",
-      "After starting GFL, they acquired National Waste Services, Direct Line Environmental, and Enviro West before later earning a $186-million, nine-year contract to manage the waste of 155,000 homes in Toronto.",
-      "In February 2016, the company acquired Services Matrec Inc. (Matrec) for $800 million. It was the largest purchase in GFL's history."
-    ],
-    "fetchedAt": "2026-08-21"
-  },
-  {
-    "title": "US teenagers do not sleep enough – level 3",
-    "paragraphs": [
-      "Sleep deprivation among American teenagers is an epidemic, with only one in ten getting the recommended 8 to 10 hours of sleep per night.",
-      "The main factor causing this is public policy, specifically early school start times, which force adolescents to wake up hours before their natural biological clock is ready due to a delayed release of the."
-    ],
-    "fetchedAt": "2026-08-21"
-  },
-  {
-    "title": "Herb",
-    "paragraphs": [
-      "Herbs are plants that are grown either as a food (usually as a condiment), or because they have some use in treating diseases (or making them better), or for spiritual reasons (for example, their smell).",
-      "Some herbs may act as an aphrodisiac. Spices are more often made from other parts of plants, such as seeds, bark, roots, or fruits.",
-      "The word herb comes from the Latin word herba, meaning grass, green stalks, or blades. Botanists use the word to mean any plant with soft, succulent tissues.",
-      "But many people use the word to mean only herbs with some economic value. Herbs are small plants that have a fleshy or juicy stem when they are young.",
-      "The stems of some herbs develop hard, woody tissue when they grow old. Most herbs are perennials.",
-      "This means that the top of each plant die each growing season, but the roots remain alive and produce new plants year after year. Some herbs are annuals."
-    ],
-    "fetchedAt": "2026-08-21"
-  },
-  {
-    "title": "The Blade (wrestler)",
-    "paragraphs": [
-      "Jesse Guilmette (born June 3, 1980) is an American professional wrestler. He currently wrestles for All Elite Wrestling (AEW).",
-      "He is a one-half of the tag team The Butcher and the Blade with The Butcher.",
-      "Guilmette is also known for his time working for Ring of Honor (ROH), Combat Zone Wrestling (CZW), and Total Nonstop Action Wrestling / Impact Wrestling (TNA).",
-      "During his time in CZW, Guilmette was a one-time CZW World Tag Team Champion.",
-      "== Career == === All Elite Wrestling === On the November 27, 2019 episode of Dynamite, The Blade made his debut in All Elite Wrestling (AEW).",
-      "He would emerge from under the ring in a mask and, along with The Butcher and The Bunny, would attack Cody after his match."
-    ],
-    "fetchedAt": "2026-08-21"
-  },
-  {
-    "title": "1969",
-    "paragraphs": [
-      "1969 (MCMLXIX) was a common year starting on Wednesday in the Gregorian calendar. == Events == January 12 – Led Zeppelin's first album is released.",
-      "January 20 – Richard Nixon becomes President of the United States, after Lyndon Johnson.",
-      "February 3 – Yasser Arafat becomes Palestinian Liberation Organization leader at the Palestinian National Congress.",
-      "April 9 – Around 300 students take over Harvard University, because they do not like the Vietnam War being fought. May 10 – Battle of Hamburger Hill in Vietnam.",
-      "May 20 – National Guard helicopters spray skin-stinging powder on Vietnam War protesters in California. May 31 – John Lennon and Yoko Ono record \"Give Peace a Chance\" at their \"Bed-In\" in Montreal.",
-      "June 8 – Nixon announces that 25,000 US troops will start to leave Vietnam before September. July 8 – As promised, some US troops begin to leave Vietnam."
-    ],
-    "fetchedAt": "2026-08-21"
-  },
-  {
-    "title": "Harmonic series (music)",
-    "paragraphs": [
-      "Harmonics in music are notes which are produced in a special way. They are notes which are produced as part of the “harmonic series”.",
-      "In physics, a harmonic is a wave which is added to the basic fundamental wave. This article talks about sound waves, which can be understood clearly by looking at the strings of a musical instrument.",
-      "When a violinist plays a note on a violin string, the string starts to vibrate very fast. This vibration makes the air vibrate and the sound waves travel to our ear so that we can hear it.",
-      "If the note were absolutely pure the string would move in a perfect sinusoidal shape and produce only one frequency, but instead there are multiple frequencies being produced at the same time along with the main one.",
-      "The note played on the violin string makes the string vibrate in a very complicated way.",
-      "There is the basic note (the fundamental), but added to that are lots of other little notes that all add up to a sound in a special way that tells us that it is a violin playing and not a clarinet or a human voice."
-    ],
-    "fetchedAt": "2026-08-21"
-  },
-  {
-    "title": "George Foreman Grill",
-    "paragraphs": [
-      "The George Foreman Lean Mean Fat-Reducing Grilling Machine, commonly known as the George Foreman Grill, is an indoor, electrically-heated grill manufactured by Salton, Inc.",
-      "George Foreman, a former champion boxer, is the main spokesperson for the grill. Since its introduction in 1994, over 80 million Foreman grills have been sold.",
-      "== Reception == Foreman has made over 150 million dollars from the sales of his grills, an amount that is more than he earned as a boxer.",
-      "The company has created many different sizes and designs for the grill since it was first made.",
-      "These include \"The Champ\" which was the first grill produced, a family size grill, and a \"Super Large\" grill that has 144 inches of grilling space. There is also a deep fryer and roaster.",
-      "A website made an April Fools' Day joke by claiming to sell a USB version of the grill called the \"iGrill."
-    ],
-    "fetchedAt": "2026-08-21"
-  },
-  {
-    "title": "Japanese Footbridge",
-    "paragraphs": [
-      "Japanese Footbridge is an oil painting by Claude Monet. It was painted in 1899. It measures 81. 3 x 101. 6 cm (32 x 40 in. ). It hangs in the The National Art Gallery.",
-      "In 1893, Monet moved to a house in rural Giverny. In 1893 and the years following, he turned a swampy area at Giverny into a water lily pool. It became a source of artistic inspiration.",
-      "In 1899 Monet painted 12 works that centered on the garden and the Japanese Footbridge he constructed.",
-      "The National Gallery of Art writes: \"When Monet exhibited these paintings at Durand–Ruel's gallery in 1900, a number of critics mentioned his debt to Japanese art.",
-      "More telling, the impenetrable green enclosure—heightened in the National Gallery painting by the placement of the top of the bridge's arch just below the painting's top edge—harkens back to the hortus conclusus (closed garden) of medieval images, while also evoking a dreamlike contemplative zone consonant with symbolist literature, especially poems such as \"Le Nénuphar blanc\" by Stéphane Mallarmé.",
-      "Gustave Geffroy described this effect in his review of the exhibition (Le Journal, November 26, 1900), speaking of \"this minuscule pool where some mysterious corollas blossom,\" and \"a calm pool, immobile, rigid, and deep like a mirror, upon which white water lilies blossom forth, a pool surrounded by soft and hanging greenery which reflects itself in it."
-    ],
-    "fetchedAt": "2026-08-21"
-  },
-  {
-    "title": "Nuclear power plants do not have enough water – level 3",
-    "paragraphs": [
-      "Europe’s severe drought and heatwaves have caused the Danube River to fall to record lows.",
-      "Due to a lack of cooling water, Romana has been forced to shut down both reactors at its Cernavoda nuclear power plant.",
-      "Neighboring Hungary faced a similar crisis at its nuclear facility, which provides 40 percent of the nation’s power. Extreme summer temperatures."
-    ],
-    "fetchedAt": "2026-08-20"
   }
 ]
