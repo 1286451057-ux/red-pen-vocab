@@ -1,5 +1,61 @@
 [
   {
+    "title": "Paris butter shop – level 3",
+    "paragraphs": [
+      "A specialty butter shop in Paris, France, is highlighting the incredible flavor complexity and diversity of a beloved French staple.",
+      "The shop offers around 30 different flavored varieties that range from savory choices like wild garlic, herbs, onion, and seaweed to sweet options like chocolate, vanilla, and raspberry.",
+      "Different regions produce butter with varying fat percentages, which creates."
+    ],
+    "fetchedAt": "2026-09-10"
+  },
+  {
+    "title": "Genetic tests – level 1",
+    "paragraphs": [
+      "Every person has a genetic code. A code is a list of letters. The genetic code is inside your body. It tells your body and brain how to grow. Every genetic code has three billion letters.",
+      "They are in a specific order. Sometimes, the order of the letters changes. This change is called a variation. Scientists study these."
+    ],
+    "fetchedAt": "2026-09-10"
+  },
+  {
+    "title": "Tina Kotek",
+    "paragraphs": [
+      "Tina Kotek (born September 30, 1966) is an American politician who is the 39th Governor of Oregon since 2023. She was the speaker of the Oregon House of Representatives from 2013 to 2022.",
+      "She is a member of the Democratic Party. Along with Maura Healey, she will be one of the first two openly lesbian governors in the United States.",
+      "Kotek, a lesbian, was one of the only openly-gay members of the Oregon Legislative Assembly."
+    ],
+    "fetchedAt": "2026-09-10"
+  },
+  {
+    "title": "Nicolette Poulos",
+    "paragraphs": [
+      "Nicolette Poulos is a South African women's national team water polo player and former national team captain.",
+      "She represented South Africa in its first international competition in the Netherlands in 1997 and retired from international play in 2012.",
+      "During her career, she competed in multiple international events, including the 2009 World Aquatics Championships in Rome and 2011 World Aquatics Championships in Shanghai."
+    ],
+    "fetchedAt": "2026-09-10"
+  },
+  {
+    "title": "2025 Campeonato Brasileiro Série A",
+    "paragraphs": [
+      "The 2025 Brazilian Football Championship Series A, officially Brasileirão Betano – Série A 2025 for sponsorship reasons, will be the 70th edition of the top division of Brazilian football.",
+      "The competition has the same rules as previous years, when the points system was implemented.",
+      "There will be a break for the 2025 FIFA Club World Cup which will be held between June 13 and July 15 in the United States .",
+      "This edition will feature Mirassol 's debut in the elite of Brazilian football, being the fifth team to debut in the first division since the beginning of the points-based era, in 2003 .",
+      "The last time there was a debut was 4 years ago, with Cuiabá, relegated last season to Série B.",
+      "Furthermore, with the relegation of Athletico Paranaense in the 2024 edition, it will be the first time since 1990 that Série A has no teams representing the State of Paraná ."
+    ],
+    "fetchedAt": "2026-09-10"
+  },
+  {
+    "title": "Pray (Sam Smith song)",
+    "paragraphs": [
+      "\"Pray\" is a song by English singer-songwriter Sam Smith. It was written by Smith, Larrance Dopson, Darryl Pearson, Timbaland, Jose Valasquez and Jimmy Napes.",
+      "The song was released on 6 October 2017 through Capitol Records. It was a promotional single from Smith's second studio album, The Thrill of It All (2017).",
+      "A new version of the song featuring American rapper Logic was released as the third single from The Thrill of It All on 29 March 2018."
+    ],
+    "fetchedAt": "2026-09-10"
+  },
+  {
     "title": "Florida International University",
     "paragraphs": [
       "Florida International University (FIU) is a public research university in Miami-Dade County, Florida, west of the Miami city limits in the United States. (The campus has a Miami mailing address.",
@@ -2947,67 +3003,6 @@
     "paragraphs": [
       "Amanda Marshall (born August 29, 1972) is a Canadian pop-rock singer. Her self-titled first record was in 1995. It was a major success in Canada. Her most successful single was \"Birmingham\".",
       "Marshall has released many singles. She has not had a studio album since around 2001."
-    ],
-    "fetchedAt": "2026-08-23"
-  },
-  {
-    "title": "United States Fleet Activities Yokosuka",
-    "paragraphs": [
-      "United States Fleet Activities Yokosuka (横須賀海軍施設, Yokosuka kaigun-shisetsu) or Commander Fleet Activities Yokosuka (横須賀艦隊活動司令官 or 横須賀艦隊基地隊, Yokosuka kantai katsudō Shirei-kan or Yokosuka kantai kichi-tai) is a United States Navy base in Yokosuka, Japan.",
-      "Its mission is to give support and service to the U. S. Naval Forces Japan, Seventh Fleet and other operating forces assigned in the Western Pacific. CFAY is the largest strategically important U. S."
-    ],
-    "fetchedAt": "2026-08-23"
-  },
-  {
-    "title": "D-flat minor",
-    "paragraphs": [
-      "D-flat minor is a theoretical key based on the musical note D♭. Its key signature has eight flats. Because it has so many flats, D♭ minor is usually written as its enharmonic equivalent of C♯ minor.",
-      "For example, Mahler's thematic motif \"der kleine Appell\" (\"call to order\") from his Fourth and Fifth Symphonies is written in D♭ minor in Symphony No. 4, but in his Symphony No. 5 it is in C♯ minor.",
-      "In the Adagio of his Symphony No. 9 a solo bassoon theme appears first in D♭ minor, but comes back two more times notated in C♯ minor. The Adagio of Bruckner's Symphony No.",
-      "8, also has phrases that are tonally in D♭ minor but written as C♯ minor."
-    ],
-    "fetchedAt": "2026-08-23"
-  },
-  {
-    "title": "Strict weak ordering",
-    "paragraphs": [
-      "Strict weak ordering is a binary relation on a set. Such relations define a strict ordering, but they contain several elements of the same type.",
-      "An example might be the relation \"costs less than\", or \"is cheaper than\". For any two elements that are of different types, the relation holds.",
-      "On the other hand, there are some elements that cannot be ordered that way, because they are of the same type.",
-      "An example for such a relation may be the relation, costs less than: milk may cost less than bread, and bread may cost less than cake.",
-      "Two items of different types may cost less than another, but they can otherwise have the same price.",
-      "Two different algorithms that sort words by the number of letters in the word may not give the same ordering of the words with the same number of letters, but they will always give an ordering where the four-letter words come before the five-letter-words, and after the three-letter-words."
-    ],
-    "fetchedAt": "2026-08-23"
-  },
-  {
-    "title": "Alice in Videoland",
-    "paragraphs": [
-      "Alice in Videoland is an electroclash band from Sweden. The band started in 2002. Toril Lindqvist is the singer. == History == In 2003 the band released their first album Maiden Voyage in Sweden.",
-      "In 2005 they released their second album Outrageous!. The band was signed by the American record label Storming The Base. In 2008 the band's third album She's a Machine! was released.",
-      "\"She's a Machine\" was released as the album's first single. In 2010 the band's fourth album A Million Thoughts and They're All About You was released."
-    ],
-    "fetchedAt": "2026-08-23"
-  },
-  {
-    "title": "David Abulafia",
-    "paragraphs": [
-      "David Samuel Harvard Abulafia (12 December 1949 – 24 January 2026) was an English historian.",
-      "He was known for his written works about Italy, Spain and the rest of the Mediterranean during the Middle Ages and Renaissance. He spent most of his career at the University of Cambridge.",
-      "He became a professor at the age of 50. He retired in 2017. He was a Fellow of Gonville and Caius College, Cambridge. He was a Fellow of the British Academy and a member of the Academia Europaea.",
-      "Abulafia died on 24 January 2026 in Cambridge, Cambridgeshire at the age of 76."
-    ],
-    "fetchedAt": "2026-08-23"
-  },
-  {
-    "title": "Forgot About Dre",
-    "paragraphs": [
-      "\"Forgot About Dre\" is the second single off American rapper Dr. Dre's second studio album 2001. The song was released in January 29, 2000 and features vocals from Eminem.",
-      "The song won a Grammy Award for Best Rap Performance by a Duo or Group in 2001. It was called a stand-out track by Stephen Thomas Erlewine.",
-      "NME said of the song: \"In case folks been smoking too much heavy 'chronic' lately, West Coast rap founder and scary legend Andre Young, aka Dr Dre, jogs their memories on 'Forgot About Dre'.",
-      "\"Who you think brought you the Eazy Es, Ice Cubes and DOCs, the Snoop- D-O-G-Gs and the group that said motherf-- the police?",
-      "\" yammers the one-time NWA lynchpin, ex Death Row playa, inventor of - G-Funk and occasional breaker of rival producers' jaws.",
-      "Yo, indeed, big bad Dre's back and, despite a four-year gap since his last hardcore missive, the Doc's recent collaboration with Eminem on 'The Slim Shady LP' has kept his legend simmering."
     ],
     "fetchedAt": "2026-08-23"
   }
