@@ -1,5 +1,84 @@
 [
   {
+    "title": "Yemen war – level 3",
+    "paragraphs": [
+      "The long-standing conflict in Yemen is intensifying as Houthi forces launch a major offensive against Saudi-backed government troops in the eastern province of Al Jawf.",
+      "Media released by the Houthi group shows extensive battlefield footage, including destroyed armored vehicles, heavy machine-gun fire from pickup trucks, and intense ground fighting across desert trenches."
+    ],
+    "fetchedAt": "2026-09-21"
+  },
+  {
+    "title": "New euro money – level 3",
+    "paragraphs": [
+      "European Central Bank President Christine Lagarde has unveiled ten shortlisted design concepts for future euro banknotes, selected from over 1,200 proposals.",
+      "The designs represent two main themes chosen to reflect European identity.",
+      "The first theme focuses on prominent cultural figures in history, including artist Leonardo da Vinci, opera singer Maria Callas, scientist Marie Curie, and composer Ludwig van."
+    ],
+    "fetchedAt": "2026-09-21"
+  },
+  {
+    "title": "Takeyoshi Tanuma",
+    "paragraphs": [
+      "Takeyoshi Tanuma (田沼 武能, Tanuma Takeyoshi; February 18, 1929 – June 1, 2022) was a Japanese photographer. He was born in Tokyo, Japan. He taught at Tokyo Polytechnic University.",
+      "He was also the chairman of the Japan Photographic Copyright Association and Japan Professional Photographers Society. In 2019, the Japanese government honoured him with the Order of Culture.",
+      "Tanuma died on June 1, 2022 at his Tokyo home, aged 93."
+    ],
+    "fetchedAt": "2026-09-21"
+  },
+  {
+    "title": "O'Reilly Auto Parts 500",
+    "paragraphs": [
+      "The O'Reilly Auto Parts 500 is an annual NASCAR Cup Series race held at Texas Motor Speedway in Fort Worth, Texas, United States.",
+      "== History == Samsung sponsored the race from 2002-2012, the sponsorship was grandfathered in 2003 when Nextel became title sponsor, when they banned wireless sponsorships, since the merger in 2005 with Sprint and Nextel, since Sprint and Nextel were combined.",
+      "== Past winners == 1997: Jeff Burton 1998: Mark Martin 1999: Terry Labonte 2000: Dale Earnhardt, Jr."
+    ],
+    "fetchedAt": "2026-09-21"
+  },
+  {
+    "title": "Bruce Cowan",
+    "paragraphs": [
+      "David Bruce Cowan, AM (15 January 1926—7 April 2011) was an Australian politician and Minister of the Crown in the cabinets of Tom Lewis and Sir Eric Willis.",
+      "He was a member of the New South Wales Legislative Assembly for 14 years from 6 November 1965 until his resignation on 29 August 1980 and then for 13 years in the Australian House of Representatives for Lyne for the Country Party of Australia and its successors, the National Country and then National Parties.",
+      "He was the father-in-law of the current Premier of New South Wales, Barry O'Farrell. Cowan died on 7 April 2011, a week after O'Farrell was elected Premier of New South Wales."
+    ],
+    "fetchedAt": "2026-09-21"
+  },
+  {
+    "title": "Area codes 205 and 659",
+    "paragraphs": [
+      "Area codes 205 and 659 are area codes for Alabama. 205 was one of the first area codes created in 1947.",
+      "It initially covered the entire state, but after it was split by 334 (first area code to not have a 0 and 1 as the middle digit) in 1995 and 256 in 1998, it now covers the western and central part of the state, typically in the cities of Birmingham and Tuscaloosa.",
+      "It was overlaid by area code 659 in 2019. == Other websites == Area Code 205 – areacode. us (Accessed September 20, 2025) Area Code – areacode."
+    ],
+    "fetchedAt": "2026-09-21"
+  },
+  {
+    "title": "Masaya Nakamura (Namco)",
+    "paragraphs": [
+      "Masaya Nakamura (中村 雅哉; 24 December 1925 – 22 January 2017) was a Japanese businessman. He was the founder of Namco. He was sometimes called the \"father of Pac-Man\".",
+      "He was the CEO of Namco until he stepped down in 2002. He also produced movies for entertainment company Nikkatsu. He was born in Tokyo.",
+      "On 30 January 2017, it was announced that Nakamura died on 22 January at the age of 91."
+    ],
+    "fetchedAt": "2026-09-21"
+  },
+  {
+    "title": "Living in a Box",
+    "paragraphs": [
+      "Living in a Box were an English pop band in the 1980s. They are best known for their debut single \"Living in a Box\". It was produced by Richard James Burgess.",
+      "== Group members == Richard Darbyshire (born 8 March 1960,November 10th 2025 Stockport, Cheshire, England) - vocals, guitar Marcus Charles Vere (born 29 January 1962) - Synthesizers Anthony \"Tich\" Critchlow (born 15 December 1960) - Drums == Discography == === Singles === === Albums === Studio Living In A Box (1987) UK #25, US #89 Gatecrashing (1989) UK #21 Compilations The Best of Living in a Box (1999) The Very Best of Living in a Box (2003) == References == == Other websites == Living In A Box official website Richard Darbyshire official website Archived 2013-06-24 at the Wayback Machine Discogs."
+    ],
+    "fetchedAt": "2026-09-21"
+  },
+  {
+    "title": "Leila Janah",
+    "paragraphs": [
+      "Leila Janah (October 9, 1982 – January 24, 2020) was an American businesswoman. She was the Founder and CEO of Samasource and LXMI.",
+      "She was also the author of Give Work: Reversing Poverty One Job at a Time and co-author of America's Moment: Creating Opportunity in the Connected Age. Janah was born in Lewiston, New York.",
+      "Janah died on January 24, 2020 in San Francisco, California from a rare-form of soft-tissue sarcoma, aged 37."
+    ],
+    "fetchedAt": "2026-09-21"
+  },
+  {
     "title": "Chum Bucket",
     "paragraphs": [
       "The Chum Bucket is a fictional restaurant in the television series SpongeBob SquarePants. It is in the city of Bikini Bottom. The restaurant is run by a plankton named Sheldon J. Plankton.",
@@ -2896,91 +2975,6 @@
       "Manufacturing: agrichemicals, agricultural construction, farm machinery and supplies, seed, etc.",
       "Food processing: getting fresh products for market ready, and create food products Marketing: promotion of products, new products, advertising, marketing campaigns, packaging, public relations, etc.",
       "Wholesale and food distribution: logistics, transportation, warehousing Foodservice (which includes catering) Grocery, farmers' markets, public markets and other retailing Regulation: local, regional, national, and international rules and regulations for food production and sale, including food quality, food security, food safety, marketing/advertising, and industry lobbying activities Education: academic, consultancy, vocational Research and development: food science, food microbiology, food technology, food chemistry, and food engineering Financial services: credit, insurance == References == == Other websites == \"The Food Industry Center\"."
-    ],
-    "fetchedAt": "2026-09-02"
-  },
-  {
-    "title": "Care Bears: Journey to Joke-a-lot",
-    "paragraphs": [
-      "Care Bears: Journey to Joke-a-lot is a 2004 animated musical adventure film, produced by Nelvana Limited and released by Lions Gate Home Entertainment.",
-      "It was the first Nelvana Limited co-production featuring the Care Bears in the last 24 years, since the Care Bears Nutcracker Suite television film in 1988.",
-      "Directed by Mike Fallows and written by Jeffrey Alan Schecter, this was the fourth film to star the Care Bears and their first in 17 years.",
-      "This was also the first one in the franchise to be computer-animated. The film centres on Funshine Bear, a Care Bear who loves to laugh and tell jokes.",
-      "After one of his jokes backfires against Grumpy, another of the Bears, Funshine runs away to find a place where others can appreciate his talents better.",
-      "He discovers a town known as Joke-a-lot, where laughter and humour are the order of the day, and soon becomes the area's \"King\"."
-    ],
-    "fetchedAt": "2026-09-02"
-  },
-  {
-    "title": "Abubakari Yakubu",
-    "paragraphs": [
-      "Abubakari Yakubu (13 December 1981 – 31 October 2017) was a Ghanaian football player. He has played for the Ghanaian national team. He was born in Tema, Ghana.",
-      "Yakubu died on 31 October 2017 at the age of 35."
-    ],
-    "fetchedAt": "2026-09-02"
-  },
-  {
-    "title": "Max Osceola Jr.",
-    "paragraphs": [
-      "Max Osceola Jr. (August 13, 1950 – October 8, 2020) was a leader of the Native American Seminole Tribe of Florida.",
-      "Osceola was an elected representative on the Seminole Tribal Council from 1985 through 2010. The South Florida Sun-Sentinel called Mr.",
-      "Osceola “one of the tribe’s longest-serving and most powerful politicians. ” He died on October 8, 2020 of COVID-19 at the age of 70."
-    ],
-    "fetchedAt": "2026-09-02"
-  },
-  {
-    "title": "1339",
-    "paragraphs": [
-      "1339 (MCCCXXXIX) was a common year starting on Friday of the Julian calendar, the 1339th year of the Common Era (CE) and Anno Domini (AD) designations, the 339th year of the 2nd millennium, the 39th year of the 14th century, and the 10th and last year of the 1330s decade.",
-      "As of the start of 1339, the Gregorian calendar was 8 days ahead of the Julian calendar, which was the dominant calendar of the time.",
-      "== Events == 23 September – Simone Boccanegra elected to be the first Doge of Genoa. Emperor Go-Murakami ascends to the throne of Japan. Kashmir is conquered by Muslims.",
-      "== Births == July 23 – King Louis I of Naples (d."
-    ],
-    "fetchedAt": "2026-09-02"
-  },
-  {
-    "title": "United States Court of Appeals for the District of Columbia Circuit",
-    "paragraphs": [
-      "The United States Court of Appeals for the District of Columbia (in case citations, D. C. Cir. ) is one of thirteen United States Courts of Appeals.",
-      "It exercises appellate jurisdiction over decisions from the United States District Court for the District of Columbia. The court is comprised of eleven appellate judges and is based at the E.",
-      "Barrett Prettyman U. S. Courthouse in Washington, D. C."
-    ],
-    "fetchedAt": "2026-09-02"
-  },
-  {
-    "title": "Romell Broom",
-    "paragraphs": [
-      "Romell Broom (June 4, 1956 – December 28, 2020) was an American man convicted of murder, kidnapping, and rape.",
-      "He was convicted in 1984 of abducting and killing Tryna Middleton, age 14, who was walking home from a football game in East Cleveland, Ohio.",
-      "In 2003, Broom accepted an offer from the state of Ohio for a DNA test to try to prove his innocence. However, the test results proved that he was guilty.",
-      "Broom also has convictions for robbery, aggravated robbery and four counts of kidnap of a male child. He was also convicted in a separate incidence of raping a female child.",
-      "On May 19, 2017, the Ohio Supreme Court scheduled an execution date for Broom, on June 17, 2020. His execution was pushed to 2022.",
-      "Broom died on December 28, 2020, at age 64 from COVID-19 in Ohio, aged 64."
-    ],
-    "fetchedAt": "2026-09-02"
-  },
-  {
-    "title": "U.S. list of most-wanted Iraqis",
-    "paragraphs": [
-      "In 2003, the United States made the most-wanted Iraqis list. The list contained the 55 most wanted people in Iraq. Later, the most wanted list would be made into a deck of playing cards.",
-      "== List == As of January 2024, 33 of the 55 most wanted people have died, 4 have been released and are still alive, 14 are in prison, and 4 are still missing (at large)."
-    ],
-    "fetchedAt": "2026-09-02"
-  },
-  {
-    "title": "Nuvvuagittuq Greenstone Belt",
-    "paragraphs": [
-      "Nuvvuagittuq Greenstone Belt is a series of rock formations in Northern Canada, on the eastern shore of the Hudson Bay. They may be up to 4. 4 billion years old.",
-      "The belt is one of the oldest rock formations on Earth, but there is dispute about its actual age. 3,770 million years ago is accepted by others.",
-      "The rocks have been metamorphosed by later geological events."
-    ],
-    "fetchedAt": "2026-09-02"
-  },
-  {
-    "title": "Mary Wickes",
-    "paragraphs": [
-      "Mary Wickes (originally Wickenhauser; June 3, 1910 – October 22, 1995) was an American actress. She first performed on Broadway in The Farmer Takes a Wife.",
-      "She also acted as Nurse Preen in The Man Who Came to Dinner. Wickes was also a comedian. Mary Wickes was born in St. Louis, Missouri. She died in Los Angeles as a result of surgical complications."
     ],
     "fetchedAt": "2026-09-02"
   }
