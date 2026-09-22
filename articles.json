@@ -1,5 +1,88 @@
 [
   {
+    "title": "Affair",
+    "paragraphs": [
+      "An affair is a sexual relationship, romantic friendship, or passionate attachment between two people where at least one of the two has a connection with a third person, either in a marriage or relationship, without the third person's knowledge or agreement.",
+      "A romantic affair, also called an affair of the heart, may be about sexual actions of more emotional relationship between two people who may have sex without expecting a more formal romantic relationship."
+    ],
+    "fetchedAt": "2026-09-22"
+  },
+  {
+    "title": "António Guterres",
+    "paragraphs": [
+      "António Manuel de Oliveira Guterres, GCL GCC (Portuguese pronunciation: [ɐ̃ˈtɔnju ɡuˈtɛʁɨʃ]; born 30 April 1949) is a Portuguese politician and diplomat.",
+      "He became the Secretary-General of the United Nations in 2017. Guterres was Prime Minister of Portugal from 1995 to 2002, as leader of the Socialist Party.",
+      "He also served as President of the Socialist International from 1999 to 2005.",
+      "He was the United Nations High Commissioner for Refugees from June 2005 to December 2015, and in October 2016 the United Nations General Assembly elected him by acclamation to become the next United Nations secretary-general.",
+      "He replaced Ban Ki-moon. == Early life == Guterres was born and raised in Lisbon, Portugal. He studied Physics and Electrical Engineering at Instituto Superior Técnico in Lisbon. He graduated in 1971.",
+      "He was Assistant Professor teaching Systems Theory and Telecommunications Signals, before leaving academic life to start a political career."
+    ],
+    "fetchedAt": "2026-09-22"
+  },
+  {
+    "title": "Roger Sessions",
+    "paragraphs": [
+      "Roger Huntington Sessions (December 28, 1896 – March 16, 1985) was an American composer, teacher, and writer on music. He was born in Brooklyn, New York.",
+      "He studied at Harvard University, Yale University and at Smith College. He won two Pulitzer Prizes in 1974 and in 1982.",
+      "Sessions taught at Princeton University (from 1936), moved to the University of California, Berkeley, where he taught from 1945 to 1953, and then returned to Princeton until retiring in 1965.",
+      "He was elected a Fellow of the American Academy of Arts and Sciences in 1961.",
+      "Sessions was appointed Bloch Professor at Berkeley (1966–67), and gave the Charles Eliot Norton Lectures at Harvard University in 1968–69.",
+      "He continued to teach on a part-time basis at the Juilliard School from 1966 until 1983. Sessions died at the age of 88 in Princeton, New Jersey on March 16, 1985."
+    ],
+    "fetchedAt": "2026-09-22"
+  },
+  {
+    "title": "Pandora's box",
+    "paragraphs": [
+      "In Greek mythology, Pandora's box was a large jar (πιθος Pithos) carried by Pandora. It contained the evils to be let loose on mankind. When the box was empty, hope remained.",
+      "The actual evils are not specified by Hesiod. == Where the word box is from == The word in the original text is Pithos, which usually refers to a large container; used to store wine or other things.",
+      "Such containers were also used for funerals.",
+      "In the case of Pandora, this jar may have been made of clay for use as storage as in the usual sense, or, instead, of bronze metal as an unbreakable prison.",
+      "The mistranslation of Pithos as \"box\" is usually attributed to the 16th-century humanist Erasmus of Rotterdam.",
+      "Erasmus is thought to have made the error when he translated Hesiod's tale of Pandora into Latin. Hesiod's Pithos refers to a storage jar for oil or grain."
+    ],
+    "fetchedAt": "2026-09-22"
+  },
+  {
+    "title": "Tammy Miller (politician)",
+    "paragraphs": [
+      "Tammy Miller (born February 8, 1960) is an American accountant and politician. She was the 39th lieutenant governor of North Dakota from 2023 to 2024.",
+      "She was picked by Governor Doug Burgum to replace Brent Sanford after his resignation. She is a certified public accountant.",
+      "After thinking about it, she decided not to run for the United States Senate against Heidi Heitkamp in 2018. On January 22, 2024, Governor Doug Burgum announced he would not run for a third term.",
+      "On February 15, 2024, Miller announced she would run for governor. She lost the nomination to U. S. Representative Kelly Armstrong."
+    ],
+    "fetchedAt": "2026-09-22"
+  },
+  {
+    "title": "Nizari",
+    "paragraphs": [
+      "The Nizari (Arabic: النَظَرِي) are the third biggest group of Shiite Ismailites. They emphasize social justice, pluralism and human reason in the framework of Islam.",
+      "They are the second-largest group of Shiites. There are about 15-20 million, spread over many countries; in Pakistan up to 0. 5% of the people may follow this faith.",
+      "Nizari still have an imam that is descended from Ali, the current imam is Karim Aga Khan IV."
+    ],
+    "fetchedAt": "2026-09-22"
+  },
+  {
+    "title": "Palestinian government",
+    "paragraphs": [
+      "Palestinian Authority Governments (Arabic: حكومات السلطة الفلسطينية) refers to the governmental body of the Palestinian National Authority located in Ramallah from 1994 until its division in 2007 and finally its renaming to the Government of the State of Palestine in 2013 (Arabic: حكومة دولة فلسطين).",
+      "== 2006 to 2011 == The Palestinian legislative election on 25 January 2006, was won by the Hamas movement (Arabic: حركة حماس, romanized: Haraka Hamās, lit.",
+      "'the Enthusiasm Movement', an Arabic acronym for \"the Islamic Resistance Movement\"), and Ismail Haniyeh became Prime Minister of the State of Palestine.",
+      "But, the national unity government collapsed when a violent conflict broke out between Hamas and the Fatah movement (Arabic: حركة فتح, romanized: Haraka Fatah, lit.",
+      "'The Courage Movement'), especially in especially in the Gaza Strip.",
+      "After Hamas seized control of the Gaza Strip on 14 June 2007, Palestinian Authority President Mahmoud Abbas rejected the Hamas-led unity government and appointed Salam Fayyad as prime minister."
+    ],
+    "fetchedAt": "2026-09-22"
+  },
+  {
+    "title": "Mur (river)",
+    "paragraphs": [
+      "The Mur (Slovenian, Croatian and Hungarian: Mura) is a river that flows through Austria, Slovenia, Hungary and Croatia. It has about 464 km (288 mi) long.",
+      "The river starts in the Lungau region of the Austrian state of Salzburg. It ends at the mouth of the Drava near Legrad, Croatia. The largest city on the river is Graz, Austria."
+    ],
+    "fetchedAt": "2026-09-22"
+  },
+  {
     "title": "Yemen war – level 3",
     "paragraphs": [
       "The long-standing conflict in Yemen is intensifying as Houthi forces launch a major offensive against Saudi-backed government troops in the eastern province of Al Jawf.",
@@ -2896,86 +2979,5 @@
       "Jericho won the World Championship minutes earlier from The Rock."
     ],
     "fetchedAt": "2026-09-03"
-  },
-  {
-    "title": "Dorf an der Pram",
-    "paragraphs": [
-      "Dorf an der Pram is a municipality in the district of Schärding in the Austrian state of Upper Austria. == Geography == Dorf an der Pram lies in the Innviertel.",
-      "About 8 percent of the municipality is forest, and 80 percent is farmland."
-    ],
-    "fetchedAt": "2026-09-03"
-  },
-  {
-    "title": "2003 Santa Fe flood",
-    "paragraphs": [
-      "The floods in Santa Fe in 2003 were a meteorological event that occurred between April 29 and May 3 of that year that affected Santa Fe, Argentina and also surrounding towns due to unprecedented growth at that level of the Salado River plus intense rainfall.",
-      "that had been brewing for about five days before. It was one of the most important catastrophes in the country due to its magnitude, which occurred during the government of Carlos Reutemann.",
-      "In the following months there were cases of scabies, mycosis, pediculosis, diarrhea, acute respiratory symptoms, hepatitis, leptospirosis (a disease that is not fatal, but cases of deaths due to it have been reported) and even chickenpox.",
-      "Many people suffered from high blood pressure and nervous breakdowns. There were also a large number of psychotic breaks and people addicted to narcotics with withdrawal symptoms.",
-      "== Overview == At the end of April 2003, several days of heavy rainfall caused some major rivers in the Santa Fe area to rise as much as 50 cm in 12 hours.",
-      "The water level of the Salado River (which flows through the north of the province and empties into the Paraná) rose by almost two metres in just three hours."
-    ],
-    "fetchedAt": "2026-09-03"
-  },
-  {
-    "title": "Our brain can heal itself – level 3",
-    "paragraphs": [
-      "Construction worker Phineas Gage survived a terrible accident in 1848 when an iron rod shot through his skull, destroying a large section of his right frontal lobe, the part of the brain associated with behavior and emotion.",
-      "Although he physically recovered, his personality drastically changed; the once reliable man became rude and capricious. Friends famously claimed, ‘’Gage was."
-    ],
-    "fetchedAt": "2026-09-02"
-  },
-  {
-    "title": "Meta must pay and change its apps – level 3",
-    "paragraphs": [
-      "Meta has agreed to pay an 18 billion-dollar (16. 5 billion euros) settlement to resolve claims from 48 US states, Washington, D. C. , and three territories.",
-      "The legal actions accused Facebook and Instagram of harming children’s mental health through addictive features.",
-      "Although Meta denied any wrongdoing, the company agreed to pay the sum in annual instalments over a 10-year period."
-    ],
-    "fetchedAt": "2026-09-02"
-  },
-  {
-    "title": "Susquehanna County, Pennsylvania",
-    "paragraphs": [
-      "Susquehanna County is a county located in the U. S. state of Pennsylvania. As of the 2020 census, the population was 38,434. Its county seat is Montrose.",
-      "The county was created on February 21, 1810, from part of Luzerne County."
-    ],
-    "fetchedAt": "2026-09-02"
-  },
-  {
-    "title": "Anomaloglossus tepequem",
-    "paragraphs": [
-      "Anomaloglossus tepequem is a frog. Scientists found it in Brazil. == Home == This frog is awake during the day. It lives in forests.",
-      "Scientists saw the frog high on the tepui flatlands, between 500 and 1100 meters above sea level.",
-      "== Young == Scientists think these frogs have young in the same way as other frogs in Anomaloglossus: The female lays eggs on the dead leaves on the ground, and the adult frogs carry the tadpoles to water.",
-      "== Danger == Scientists say this frog is in very big danger of dying out, and they might all be dead now.",
-      "In 1990, there were many frogs, but now scientists think that there are no more than fifty adult frogs alive at any one time. People dug for gold in the frog's home.",
-      "To do this, they cut down the forests where the frog lived and put chemicals into the water."
-    ],
-    "fetchedAt": "2026-09-02"
-  },
-  {
-    "title": "Music of the United Kingdom",
-    "paragraphs": [
-      "Historically, the United Kingdom has been a big producer of music. Including church music, traditional folk music and instrumentation of England, Scotland, Northern Ireland, and Wales.",
-      "The countries of the United Kingdom has its own folk music forms, which is popular until the era of industrialisation.",
-      "Many British musicians have influenced modern music around the world, and the United Kingdom has one of the world's largest music industries.",
-      "Genres include pop, rock, also sub-genres like avant-funk, new wave, acid jazz, neo soul, trip hop, dubstep and industrial. == Folk music == Every countries of the United Kingdom has its own.",
-      "folk music forms. Folk music is an important sub-culture within society. === English folk music === England has a long history of folk music.",
-      "During the medieval period there were forms of music, song and dance. A lot of the tradition has been preserved and is practiced."
-    ],
-    "fetchedAt": "2026-09-02"
-  },
-  {
-    "title": "Food industry",
-    "paragraphs": [
-      "The food industry is a global network of businesses that create most of the food eaten by the world's population.",
-      "The food industry today are range from small, traditional, family-run activities to large, capital-intensive and highly mechanized industrial processes.",
-      "Many food industries also lead into local agriculture, animal farms, produce, and/or fishing. The food industry includes: Agriculture: raising crops, livestock, and seafood. Agricultural economics.",
-      "Manufacturing: agrichemicals, agricultural construction, farm machinery and supplies, seed, etc.",
-      "Food processing: getting fresh products for market ready, and create food products Marketing: promotion of products, new products, advertising, marketing campaigns, packaging, public relations, etc.",
-      "Wholesale and food distribution: logistics, transportation, warehousing Foodservice (which includes catering) Grocery, farmers' markets, public markets and other retailing Regulation: local, regional, national, and international rules and regulations for food production and sale, including food quality, food security, food safety, marketing/advertising, and industry lobbying activities Education: academic, consultancy, vocational Research and development: food science, food microbiology, food technology, food chemistry, and food engineering Financial services: credit, insurance == References == == Other websites == \"The Food Industry Center\"."
-    ],
-    "fetchedAt": "2026-09-02"
   }
 ]
