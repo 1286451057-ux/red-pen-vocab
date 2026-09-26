@@ -1,5 +1,90 @@
 [
   {
+    "title": "Rügen (district)",
+    "paragraphs": [
+      "Rügen is a former district in the northeastern part of Mecklenburg-Vorpommern, Germany. Rügen districts is two large islands, Rügen and Hiddensee, and some small islands like Ummanz and Vilm.",
+      "It is thus the only district of Germany which is not on the mainland."
+    ],
+    "fetchedAt": "2026-09-26"
+  },
+  {
+    "title": "West Virginia",
+    "paragraphs": [
+      "West Virginia is a state in the Appalachian region of the United States. Its capital and largest city is Charleston. It is often abbreviated W. Va. or simply WV.",
+      "About 1,800,000 people live in the state.",
+      "West Virginia is bordered by Pennsylvania to the north, by Ohio to the north and west, by Kentucky to the west, by Maryland to the north and east, and by Virginia to the east and south.",
+      "The Ohio and Potomac Rivers form parts of the boundaries. Before the American Civil War, the western part of Virginia practiced slavery as part of the state of Virginia.",
+      "Slaves, at first Native American but increasingly brought from Africa in the slave trade, were forced to grow tobacco, mine coal, and be personal servants.",
+      "Many slaves were rented from owners in other parts of the state to work in the mines. With land that was poor for growing cotton, slavery was less important than in other parts of Virginia."
+    ],
+    "fetchedAt": "2026-09-26"
+  },
+  {
+    "title": "Gook",
+    "paragraphs": [
+      "Gook ( or ) is a racial slur for East Asians and Southeast Asians in English. == Origin == The word's origin is unclear.",
+      "It is said that American troops in the Philippine–American War (1899 – 1913) started using it, which later became a word for \"dark-skinned foreigner, especially a non-European or non-American\" in general.",
+      "== Usage == The word began to be used for referring to Koreans in the Korean War (1950 – 1953), despite South Korea's protection by the US-led United Nations Command.",
+      "Historians said that the use might come from the frequent local use of the Korean word 국 (guk), meaning \"country\", which was mistaken by American troops for how Koreans called themselves.",
+      "The word was reportedly so common among American troops that U. S. General Douglas MacArthur banned it to avoid upsetting Asians.",
+      "However, its use towards Asians continued until the end of the Vietnam War."
+    ],
+    "fetchedAt": "2026-09-26"
+  },
+  {
+    "title": "Perth, Western Australia",
+    "paragraphs": [
+      "Perth (Nyungar: Boorloo) is the capital city of the state of Western Australia. It is built on the banks of the Swan River. Almost 2. 1 million people live in the city.",
+      "It is the fourth biggest city in Australia, behind Sydney, Melbourne and Brisbane. Perth was founded in 1829 by Captain James Stirling.",
+      "The native population of the city are the Whadjuk people, a group of the Aboriginal Noongar tribe. Perth is famous for its beautiful white, sandy beaches.",
+      "Popular local beaches include Cottesloe and Scarborough. These beaches are ideal for swimming and bodysurfing.",
+      "A popular local tourist attraction is Rottnest Island, which is populated by small native mammals called Quokkas.",
+      "Another famous attraction is Kings Park, which is one of the biggest city parks in the world. Perth has a public transport system called Transperth."
+    ],
+    "fetchedAt": "2026-09-26"
+  },
+  {
+    "title": "Have a Cigar",
+    "paragraphs": [
+      "\"Have a Cigar\" is the third song on Wish You Were Here, an album by Pink Floyd. It was released in 1975. In some places, the song was sold as a single. Roger Waters wrote the song.",
+      "The lyrics of the song are Waters' opinions on the greed and cynicism of people who managed rock bands at the time. Roy Harper, an English singer, sang the lyrics on the song.",
+      "It is one of three Pink Floyd songs that has a guest singer as the main vocalist. The other two songs are \"The Great Gig in the Sky\" with Clare Torry and \"Hey Hey Rise Up\" with Andriy Khlyvnyuk."
+    ],
+    "fetchedAt": "2026-09-26"
+  },
+  {
+    "title": "Sebastian Leitner",
+    "paragraphs": [
+      "Sebastian Leitner (born 15 April 2005 in Linz) is an Austrian footballer. He plays for FC Liefering as defender in the 2nd Austrian League.",
+      "== Career == Leitner began his career at Union Ried/Riedmark. For the 2016/17 season he moved to LASK. In February 2019 he went to the FC Red Bull Salzburg academy. There went through all age groups.",
+      "For the 2023/24 season he went to FC Liefering."
+    ],
+    "fetchedAt": "2026-09-26"
+  },
+  {
+    "title": "Affine symmetric group",
+    "paragraphs": [
+      "Flat, straight-edged shapes (like triangles) or 3D ones (like pyramids) have only a finite number of symmetries - ways to reflect or rotate it where it looks the same.",
+      "In contrast, the affine symmetric group is a way to mathematically describe all the symmetries possible when an infinitely large flat surface is covered by triangular tiles.",
+      "As with many subjects in mathematics, it can also be thought of in a number ways: for example, it also describes the symmetries of the infinitely long number line, or the possible arrangements of all whole numbers (.",
+      ", −2, −1, 0, 1, 2, . ) with certain repetitive patterns.",
+      "As a result, studying the affine symmetric group extends the study of symmetries of polyhedra or of groups of permutations to the infinite case.",
+      "It also connects several topics in mathematics that were originally studied for independent reasons, ranging from complex reflection groups to juggling sequences."
+    ],
+    "fetchedAt": "2026-09-26"
+  },
+  {
+    "title": "Macro BMA",
+    "paragraphs": [
+      "Macro BMA formerly known as Banco Itaú, was an Argentine banking entity owned by Banco Macro since November 2023.",
+      "It was the Argentine subsidiary of the Brazilian bank Itaú Unibanco, founded in 1998 after the acquisition of Banco del Buen Ayre.",
+      "Currently, the entity has 99 bank branches and 140 ATMs throughout the country, serving over 400,000 clients. == History == It was founded in 1998 after the purchase of Banco del Buen Ayre.",
+      "On August 24, 2023, Banco Macro purchased this bank from its then parent Itaú Unibanco for a price of US$50 million. On November 3, 2023, the entity was renamed Macro BMA.",
+      "On November 19, 2024, Macro BMA will cease to exist as a separate entity from Banco Macro and all of its customers, alongside their existing accounts and products, will become part of Macro."
+    ],
+    "fetchedAt": "2026-09-26"
+  },
+  {
     "title": "The doorway effect – level 3",
     "paragraphs": [
       "The doorway effect, also known as the location updating effect, is a common memory lapse that occurs when walking into a new room makes you forget your original intention.",
@@ -2911,75 +2996,5 @@
       "Sergei Kirov was also involved in the 1918-1921 Polish–Soviet War until it ended in 1921 just two years before both Russian Revolution and the Russian Civil War ended in 1923 in the Soviet Union."
     ],
     "fetchedAt": "2026-09-07"
-  },
-  {
-    "title": "Inzerillo Mafia clan",
-    "paragraphs": [
-      "The Inzerillo Family is a high-ranking powerful family who controls most of the drug trade, prostitution, gambling and contract killings in Sicily.",
-      "They have ties to the five families of New York it is believed that underboss of the Gambino family, Frank Cali, had personal ties to them directly."
-    ],
-    "fetchedAt": "2026-09-07"
-  },
-  {
-    "title": "Technicien supérieur de l'aviation",
-    "paragraphs": [
-      "The degree of Technicien supérieur de l'aviation (TSA, in English: Advanced Technician Degree in Aviation) was created in 2010 from the Technicien supérieur des études et de l'exploitation de l'aviation civile degree.",
-      "It is recognized by CNCP, and recorder level III in the nomenclature des niveaux de formation (level of training).",
-      "The degree is obtained after training at the École nationale de l'aviation civile (French civil aviation university) · .",
-      "== Related pages == Technicien supérieur des études et de l'exploitation de l'aviation civile (TSEEAC) Technicien supérieur de l'aviation (civilian) (TSA civil) == References == == Further reading == Ariane Gilotte, Jean-Philippe Husson et Cyril Lazerge, 50 ans d'Énac au service de l'aviation, Édition S."
-    ],
-    "fetchedAt": "2026-09-07"
-  },
-  {
-    "title": "Seydou Doumbia",
-    "paragraphs": [
-      "Seydou Doumbia (French pronunciation: ​[sɛdu dumbja]; born 31 December 1987) is an Ivorian former professional association footballer who played as a forward.",
-      "== Career statistics == === Club === As of match played 6 March 2021 === International === Source: Scores and results list Ivory Coast's goal tally first."
-    ],
-    "fetchedAt": "2026-09-07"
-  },
-  {
-    "title": "Midnight Train to Georgia",
-    "paragraphs": [
-      "\"Midnight Train to Georgia\" is a 1973 song by Gladys Knight & the Pips. It was taken from their 11th studio album Imagination.",
-      "It went to number 1 in the United States, number 5 in Canada and number 10 in the United Kingdom. It won a Grammy Award in 1974."
-    ],
-    "fetchedAt": "2026-09-07"
-  },
-  {
-    "title": "Awards for mathematics",
-    "paragraphs": [
-      "Awards for mathematics is a list of prizes for mathematicians. Prize: It is generally dedicated to the memory of a great mathematician or philanthropist.",
-      "Organization: It may be a Mathematical Society, Foundation or State agency event sponsor. Headquarters or convener country, which may be rotating among the members of a society.",
-      "The suffix (+) after the country indicates that foreigners are allowed to participate mathematicians. Value of prize, usually fixed, but sometimes the contestant expenses are included.",
-      "Note Contains a comment or a series of fixed concepts: • Number of years, age limit to appear in the competition. • Women, when they can only participate.",
-      "• Student grant, for courses, masters or projects. •University, you have to be linked to access to the event. • Specialty, if the event is dedicated to only one branch of mathematics.",
-      "You can choose the order of the list by clicking on the Prize, Organize, Value, etc."
-    ],
-    "fetchedAt": "2026-09-06"
-  },
-  {
-    "title": "Hirslanden",
-    "paragraphs": [
-      "Hirslanden is a quarter in district 7 in the city of Zürich in Switzerland. Until 1893 it was a municipality on its own. It was then incorporated into Zürich.",
-      "It is on the western side of the Adlisberg."
-    ],
-    "fetchedAt": "2026-09-06"
-  },
-  {
-    "title": "Air Jamaica",
-    "paragraphs": [
-      "Air Jamaica was the national airline of Jamaica from Kingston, Jamaica. It flies regular services from Kingston and Montego Bay to 23 airports in the Caribbean, the USA, Canada and United Kingdom.",
-      "The airline's main bases are Norman Manley International Airport (KIN), Kingston and Sangster International Airport (MBJ), Montego Bay."
-    ],
-    "fetchedAt": "2026-09-06"
-  },
-  {
-    "title": "Gulab Chand Kataria",
-    "paragraphs": [
-      "Gulab Chand Jain Kataria (born 13 October 1944) is an Indian politician who has been the Governor of Punjab and Administrator of Chandigarh since 31 July 2024.",
-      "He was the 31st Governor of Assam from 22 February 2023 to 29 July 2024. He is a member of the Bharatiya Janata Party (BJP)."
-    ],
-    "fetchedAt": "2026-09-06"
   }
 ]
