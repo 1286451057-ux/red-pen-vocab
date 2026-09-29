@@ -1,5 +1,94 @@
 [
   {
+    "title": "Textbook",
+    "paragraphs": [
+      "A textbook is a book used for the study of a subject. People use a textbook to learn facts and methods about a certain subject.",
+      "Textbooks sometimes have questions to test the knowledge and understanding of the learner. A workbook is a type of textbook that has only practice questions and exercises.",
+      "Workbooks are designed not to teach but to provide practice and to highlight areas which need more learning.",
+      "A revision guide is a type of textbook that is used to remind the learner about the subject and give him/her extra practice, especially before an examination.",
+      "A textbook is usually lent to students by a school to accompany a course the school is teaching.",
+      "Sometimes, especially at university, students have to buy the textbooks they need themselves or borrow them from a library. Most textbooks are only published in printed format."
+    ],
+    "fetchedAt": "2026-09-29"
+  },
+  {
+    "title": "Lynn Redgrave",
+    "paragraphs": [
+      "Lynn Rachel Redgrave, OBE (8 March 1943 – 2 May 2010) was an English actress. She has been nominated for many other awards including the Academy, BAFTA and Emmy awards.",
+      "Redgrave starred in many movies and plays as well as working on television. She made her Broadway debut in 1967. She was the sister of actress Vanessa Redgrave and actor Corin Redgrave.",
+      "She was an aunt of actresses Natasha Richardson and Joely Richardson. Redgrave died of breast cancer. == Filmography == Meet Your Animal Friends (1983) ."
+    ],
+    "fetchedAt": "2026-09-29"
+  },
+  {
+    "title": "Saint Francis of Assisi (opera)",
+    "paragraphs": [
+      "Saint François d'Assise is an opera in three acts and eight scenes. The music and libretto were written by Olivier Messiaen. The opera was written from 1975 to 1983.",
+      "The first performance was given by the Paris Opéra at the Palais Garnier on November 28, 1983."
+    ],
+    "fetchedAt": "2026-09-29"
+  },
+  {
+    "title": "Chess960",
+    "paragraphs": [
+      "Chess960, also known as Fischer random chess, is a chess variant that randomizes the starting position of the pieces on their back row, but there are some restrictions: The king must be in between the two rooks, and the bishops must go on their opposite colour squares.",
+      "And their second row will still have pawns on each column.",
+      "== Castling == To castle in Chess960: All the squares between the king and the rook must be empty, no matter how far it is from each other and all normal castling rules are followed.",
+      "To castle kingside, move the king and the rook to the same spots in regular chess (the king on the G-column and the rook on the F-column) and to castle queenside move the king and the rook to the same spots in regular chess (the king on C-column and rook on D-column).",
+      "== Origin == It was named after Bobby Fischer, which is a chess player that played the World Chess Champion.",
+      "The chess variant was invented in 1996 by the same person that named the game (Bobby Fischer)."
+    ],
+    "fetchedAt": "2026-09-29"
+  },
+  {
+    "title": "List of Intermediate and Secondary Education Boards in Bangladesh",
+    "paragraphs": [
+      "The district Boards of Intermediate and Secondary Education in Bangladesh oversee the country’s education system at three levels: primary, secondary, and higher secondary.",
+      "They conduct exams for the Secondary School Certificate (S. S. C) and Higher Secondary Certificate (H. S. C). They also recognize private educational institutes."
+    ],
+    "fetchedAt": "2026-09-29"
+  },
+  {
+    "title": "Michela Sillari",
+    "paragraphs": [
+      "Michela Sillari (born 23 February 1993) is an Italian rugby union player, three quarters of the center of Valsugana and international since 2012.",
+      "At all Six Nations 2019, she was the best scorer for the national team (141 points) as well as the third best ever after Veronica Schiavon and Michela Tondinelli.",
+      "== Life == She started rugby at seven years of age in the second grade, she was first in the youth teams of Amatori Parma and then moved to Noceto, and then to Lupe Piacenza.",
+      "In the 2011-12 season, she was in Colorno, and in February 2012 she made her debut for Recco in the 2012 Six Nations, against England.",
+      "In 2016, she moved to the Aylesford Bulls, later to Harlequin FC, with whom in April 2017 she was England champion, also achieving two goals in the final match against Bristol.",
+      "Later in the season, she returned to Colorno and took part in the 2017 Rugby World Cup in Ireland."
+    ],
+    "fetchedAt": "2026-09-29"
+  },
+  {
+    "title": "Endemic (epidemiology)",
+    "paragraphs": [
+      "In epidemiology, an infection is said to be endemic in a population when that infection is not spread quickly or not a lot of people are infected for it to become a pandemic.",
+      "For example, chickenpox is endemic (steady state) in the United Kingdom, but malaria is not."
+    ],
+    "fetchedAt": "2026-09-29"
+  },
+  {
+    "title": "Abdur Rahman Biswas",
+    "paragraphs": [
+      "Abdur Rahman Biswas (1 September 1926 – 3 November 2017) was a Bangladeshi politician. He was the 10th President of Bangladesh during 1991 to 1996.",
+      "He was elected as a representative to the East Pakistan Legislative Assembly in 1962 and 1965. Biswas died on 3 November 2017 at a hospital in Dhaka of respiratory failure, at the age of 91."
+    ],
+    "fetchedAt": "2026-09-29"
+  },
+  {
+    "title": "Armenians",
+    "paragraphs": [
+      "Armenians are an ethnic group and a nation native to the Armenian highlands of West Asia. Armenians are the main population of the Republic of Armenia.",
+      "They were the main population of the unrecognized Republic of Artsakh until it collapsed when Azerbaijan retook it and all the Armenians of Nagorno-Narabakh were ethnically cleansed in 2023.",
+      "== Overview == There is a diaspora of around five million people of full or partial Armenian ancestry living outside modern Armenia.",
+      "The largest Armenian populations today are in Russia, the United States, France, Georgia, Iran, Germany, Ukraine, Lebanon, Brazil, Syria, and Turkey.",
+      "The present-day Armenian diaspora was mainly a result of the Armenian genocide with the exceptions of Iran, former Soviet states, and parts of the Levant.",
+      "== Languages == They speak Armenian which is an Indo-European language unique in that language family. It has two mutually intelligible spoken and written forms."
+    ],
+    "fetchedAt": "2026-09-29"
+  },
+  {
     "title": "Empty flats in London – level 3",
     "paragraphs": [
       "London’s real estate market is facing a severe slump in flat sales, which is in sharp contrast with the high demand seen just a few years ago.",
@@ -2882,102 +2971,6 @@
       "Some researchers think Perkele is an original name of the thunder god Ukko, the chief god of the Finnish pagan pantheon. There are related words in other Finnic languages.",
       "In Estonian, põrgu means hell and in Karelian, perkeleh means an evil spirit. == Use == It has been used as a curse as a cry for the god for strength.",
       "It still is a common curse word in colloquial Finnish. Finnish people use the word to be more serious and powerful than less powerful curses."
-    ],
-    "fetchedAt": "2026-09-09"
-  },
-  {
-    "title": "Nicolas Capaldo",
-    "paragraphs": [
-      "Nicolás Capaldo Taboas (born 14 September 1998) is an Argentine professional footballer who plays as a midfielder for 2. Bundesliga club Hamburger SV.",
-      "== Club career == Capaldo played in the youth of Deportivo Mac Allister. In 2015 he went on to the Boca Juniors academy.",
-      "Capaldo made his debut in professional football during a Argentine Primera División match against Defensa y Justicia on 24 February 2019.",
-      "In June 2021 he went on to the Austrian club Red Bull Salzburg and signed a contract to 2026. On July 10, 2025, Capaldo moved to Hamburger SV for about €4. 5 million.",
-      "== International career == In September 2019 he was called up in the Argentina U23s national football team.",
-      "He played his first match a few days later against Colombia and scored his first goal for the team against Chile in a 1–0 win."
-    ],
-    "fetchedAt": "2026-09-09"
-  },
-  {
-    "title": "Linn Thant",
-    "paragraphs": [
-      "U Linn Thant (Burmese: လင်းသန့်) is a Burmese politician and diplomat. He works as the representative of the National Unity Government of Myanmar in the Czech Republic.",
-      "He was also part of the 1988 student protests in Myanmar. == Early life == U Linn Thant was born in Myanmar in the 1960s. He studied at government and Christian mission schools.",
-      "Later, he took courses in civil engineering. == Political career == In the 1980s, Linn Thant joined the All Burma Federation of Student Unions (ABSDF).",
-      "He took part in the 8888 Uprising against the military government in 1988. After the coup, he was arrested and sentenced to death in 1990. His sentence was later changed to life imprisonment.",
-      "He spent time in Insein Prison and Thayet Prison before being released in 2008. After his release, he worked with 88 Generation Students and supported education and democracy programs.",
-      "He later moved to Thailand, where he worked as an English teacher and journalist for the *Irrawaddy* news agency. In 2011, he received political asylum in the Czech Republic."
-    ],
-    "fetchedAt": "2026-09-09"
-  },
-  {
-    "title": "John Lockwood Kipling",
-    "paragraphs": [
-      "John Lockwood Kipling (6 July 1837 – 26 January 1911) was an English art teacher, illustrator, and museum curator, who spent most of his career in British India.",
-      "He was the father of the famous writer Rudyard Kipling. Most of the original illustrations for Rudyard's renowned Kim (book) (1901) were made by John Lockwood."
-    ],
-    "fetchedAt": "2026-09-09"
-  },
-  {
-    "title": "Maybelle Carter",
-    "paragraphs": [
-      "Maybelle Addington (or Maybelle Carter; 10 May 1909 – 23 October 1978) was an American country musician. She was a member of the Carter Family act. She released several albums of her own.",
-      "Carter was the mother of June Carter Cash, wife of Johnny Cash. Addington was born in Nickelsville, Virginia. She died from poor health at age sixty-nine."
-    ],
-    "fetchedAt": "2026-09-09"
-  },
-  {
-    "title": "Buzzword",
-    "paragraphs": [
-      "A buzzword is a word or phrase that is made to either summarize a complex idea or reconstruct another word or phrase to reflect a particular point of view.",
-      "Corporations make up buzzwords so that they can advertise stuff better. In this way, a buzzword is a lot like a product name or a proper noun.",
-      "People can remember buzzwords better than non-buzzwords, which is why its good for advertising. Example: Multimedia has been a buzzword in the computer industry for years.",
-      "== References == Cluley, Robert (11 January 2013). \"What Makes a Management Buzzword Buzz? \". Organization Studies. 34: 33–43. doi:10. 1177/0170840612464750. S2CID 143649572. Collins, David (2000).",
-      "Management Fads and Buzzwords: Critical-Practical Perspectives. Psychology Press. Hallgren, F. M. ; Weiss, H. (1946). \"'Buzz words' at the 'B School'\". American Speech. Loughlin, Michael (May 2002).",
-      "\"On the buzzword approach to policy formation\". Journal of Evaluation in Clinical Practice. 8 (2): 229–242. doi:10. 1046/j. 1365-2753. 2002. 00361. x. PMID 12180370."
-    ],
-    "fetchedAt": "2026-09-09"
-  },
-  {
-    "title": "Atchison, Kansas",
-    "paragraphs": [
-      "Atchison is a city and county seat of Atchison County, Kansas, United States, and is along the Missouri River. As of the 2020 census, its population was 10,885.",
-      "The city is named for David Rice Atchison, a United States senator from Missouri. It was the original eastern starting point of the Atchison, Topeka and Santa Fe Railway.",
-      "Aviator Amelia Earhart was born there. The Amelia Earhart Festival is held every year in July. Atchison is also home of Benedictine College, a Catholic liberal-arts college.",
-      "== History == === Founding === Atchison was founded in 1854.",
-      "It was named for Senator David Rice Atchison, who, when Kansas was opened for settlement, interested some of his friends in the scheme of forming a city in the new territory.",
-      "Senator Atchison was interested in making sure that the population of the new Kansas Territory would be mainly pro-slavery."
-    ],
-    "fetchedAt": "2026-09-09"
-  },
-  {
-    "title": "Eric the Victorious",
-    "paragraphs": [
-      "Eric the Victorious (Old Norse: Eiríkr inn sigrsæli; Swedish: Erik Segersäll) was the first Kingdom of Sweden. There is debate about whether or not he was actually the first king.",
-      "He is sometimes called Eric V or Eric VI. He is called this by people who count back from Eric XIV (1560–68). Eric the Victorious originally controlled the area around Uppland.",
-      "His kingdom may have extended down to Blekinge. He got the name \"victorious,\" because of his victory in the Battle of Fýrisvellir.",
-      "According to Adam of Bremen, he was also the King of Denmark after the defeat of Sweyn Forkbeard. He probably also founded the town of Sigtuna, 38 km northeast from downtown Stockholm.",
-      "Adam also dated Eric the Victorious's death as between 992 and 995. He is remembered as a war-like and successful ruler. == References == == Other websites == Carl L."
-    ],
-    "fetchedAt": "2026-09-09"
-  },
-  {
-    "title": "Panda Cloud Antivirus",
-    "paragraphs": [
-      "Panda Cloud Antivirus is a cloud-based antivirus program made by Panda Security. It was one of the first antivirus programs to use cloud technology for virus detection.",
-      "A free version and a paid version are available. Panda Cloud Antivirus scans files on remote servers instead of using the computer’s own processing power.",
-      "This helps keep the software lightweight and always up to date.",
-      "The system is powered by Panda’s “Collective Intelligence” platform, which collects and analyzes new malware samples from users around the world in real time.",
-      "== Features == Panda Cloud Antivirus protects against viruses, worms, trojans, spyware, hacking tools, and other types of security risks.",
-      "It usually needs an Internet connection to access updated threat information. If offline, it uses a local cache with the most common threats."
-    ],
-    "fetchedAt": "2026-09-09"
-  },
-  {
-    "title": "West Bridgford",
-    "paragraphs": [
-      "West Bridgford is a small town in Nottinghamshire. The River Trent runs through it. The Trent Bridge cricket ground and the Nottingham Forest football ground are there.",
-      "West Bridgford has a lot of independent cafes and supermarkets such as ASDA, Marks and Spencers and The Co-operative. West Bridgford is often called \"Bread and Lard Island\".",
-      "It is called that because it is thought that the people who live there spend most of their money on big houses and fur coats, and can only afford to eat bread and lard at home."
     ],
     "fetchedAt": "2026-09-09"
   }
