@@ -1,5 +1,96 @@
 [
   {
+    "title": "The Swiss vote on neutrality – level 2",
+    "paragraphs": [
+      "More than two-thirds of Swiss voters said no to a proposal for stricter rules on neutrality.",
+      "A right-wing political party wanted to stop Switzerland from making agreements with NATO or using sanctions against countries at war.",
+      "The Swiss government opposed the idea and said it would limit their choices during international conflicts. Swiss people prefer the current flexible."
+    ],
+    "fetchedAt": "2026-10-06"
+  },
+  {
+    "title": "Brazilians have problems with money – level 3",
+    "paragraphs": [
+      "As Brazil gets closer to its next election, the massive debt problem is getting way too big to ignore.",
+      "Over 80% of households are deep in debt, mostly thanks to paying for everything in monthly installments, credit card rates shooting over 400%, and quick loans on banking apps.",
+      "On top of that, a huge surge in online sports."
+    ],
+    "fetchedAt": "2026-10-06"
+  },
+  {
+    "title": "Kalman filter",
+    "paragraphs": [
+      "The Kalman filter is an algorithm (a step-by-step process) that helps people remove errors from numbers. It is named for Rudolf E. Kálmán, a mathematician who helped to make it.",
+      "Science can use the Kalman filter in many ways. One important use is steering airplanes and space ships.",
+      "People also use the Kalman filter to make a model of how humans use nerves and muscles to move their bodies. The Kalman filter has two steps.",
+      "The first step is predicting (trying to say what you think will happen).",
+      "The Kalman filter makes a first guess about what we think is true (an estimate) and how certain we are that it is true (uncertainty).",
+      "Next, the Kalman filter makes a new guess by using a weighted average. More certain numbers are more important in this weighted average."
+    ],
+    "fetchedAt": "2026-10-06"
+  },
+  {
+    "title": "Toyota Land Cruiser",
+    "paragraphs": [
+      "Toyota Land Cruiser also spelled as LandCruiser is a four-wheel drive car made by Toyota. It was first produced on 1951. Toyota currently launched on 2025. It was returned to United States.",
+      "== Sales == The Toyota Land Cruiser became more popular car in United Arab Emirates."
+    ],
+    "fetchedAt": "2026-10-06"
+  },
+  {
+    "title": "Western Europe",
+    "paragraphs": [
+      "Western Europe is a geographic region of Europe. This term does not have an exact definition. Some definitions include countries like Spain and the United Kingdom, while some don't.",
+      "Its use has changed over time. During the Middle Ages, the European parts of the Western World included those countries following Catholicism or Protestantism.",
+      "During the Cold War, Western Europe was a geographic and socio-political concept. It meant the democratic European countries of the First World, which are also vaguely defined.",
+      "It was and still is distinguished from Eastern Europe by differences of economics, politics, and religion.",
+      "It includes at least the following 23 countries: Andorra Austria Belgium Denmark Finland France Germany Greece Iceland Ireland Italy Liechtenstein Luxembourg Monaco Netherlands Norway Portugal San Marino Spain Sweden Switzerland United Kingdom Vatican City Many, such as Norway, are also in Northern Europe or in Central Europe or Southern Europe.",
+      "Today, the term \"Western Europe\" has to do with geography and with economics."
+    ],
+    "fetchedAt": "2026-10-06"
+  },
+  {
+    "title": "Warren Hastings",
+    "paragraphs": [
+      "Warren Hastings (December 7 1732 - August 22 1818) was the first Governor-General of India, from 1773 to 1785. He was born at Churchill, Oxfordshire.",
+      "He attended Westminster School before joining the British East India Company in 1750 as a clerk. In 1757 he was made the British Resident (administrative in charge) of Murshidabad.",
+      "He was appointed to the Calcutta council in 1761, but was back in England in 1764. He returned to India in 1769 as a part of the Madras council and was made governor of Bengal in 1772.",
+      "In 1773, he was appointed the first Governor-General of India. For ten years Hastings managed to help expand British control across India that had been stated by Robert Clive.",
+      "Some of his fellow Britons blamed him for not getting victory in the Second Anglo-Mysore War.",
+      "Hastings resigned in 1784 and returned to England, however when he arrived in England he was charged with corruption by Edmund Burke."
+    ],
+    "fetchedAt": "2026-10-06"
+  },
+  {
+    "title": "2021 Seattle Seahawks season",
+    "paragraphs": [
+      "The 2021 season was the Seattle Seahawks' 46th season in the National Football League and their 12th under head coach Pete Carroll.",
+      "== Draft == == Regular season == === Schedule === The Seahawks' regular season schedule was announced on May 12. Note: Intra-division opponents are in bold text."
+    ],
+    "fetchedAt": "2026-10-06"
+  },
+  {
+    "title": "Pimp",
+    "paragraphs": [
+      "A pimp is a person who makes money from other people prostituting themselves. Other names include procurer, and madam if the person is a woman.",
+      "Usually, the prostitutes make money for themselves, but the pimp takes a percentage of the money in exchange for providing them with security and other services.",
+      "Pimps has gotten connected to a special look, often a male with fancy and colorful clothes with gold accessories."
+    ],
+    "fetchedAt": "2026-10-06"
+  },
+  {
+    "title": "Dian Fossey",
+    "paragraphs": [
+      "Dian Fossey (January 16, 1932 – December 26, 1985) was an American zoologist. She is best known for studying gorillas in Rwanda.",
+      "Fossey was inspired by a book called The Mountain Gorilla by George Schaller. Fossey studied mountain gorillas in Rwanda because of the book.",
+      "When people want to get close to gorillas and get to know them they have to gain the gorillas trust. Fossey changed her lifestyle to match the gorillas’.",
+      "She wanted to protect the gorillas from hunters. Hunters were going into places where to one was allowed to hunt.",
+      "She also wanted to protect the endangered animals in the area, even though some people didn’t agree with her ideas. She is a hero to many people for what she did to help mountain gorillas.",
+      "There is a movie that was made based on what she experienced in Africa. The movie is called Gorillas in the Mist."
+    ],
+    "fetchedAt": "2026-10-06"
+  },
+  {
     "title": "Easy (Troye Sivan song)",
     "paragraphs": [
       "\"Easy\" is a song by Australian singer-songwriter Troye Sivan from his fifth EP, In a Dream (2020). It was released on 15 July 2020 as the second single from the EP.",
@@ -2881,95 +2972,6 @@
       "Josef Průša is a Czech entrepreneur and engineer who became one of Europe’s most influential people in 3D printing.",
       "As a student, he experimented with music technology and built his first 3D printer to make customized parts.",
       "His design quickly gained global interest, and in 2012, he founded Prusa Research in Prague. The company now employs over 1,000."
-    ],
-    "fetchedAt": "2026-09-16"
-  },
-  {
-    "title": "England’s tourist tax – level 3",
-    "paragraphs": [
-      "The UK government will allow mayors in England to introduce a tourist tax on overnight stays before 2029.",
-      "The levy will apply to all accommodation types, including hotels, B&Bs, and short-term rentals, regardless of the visitor’s nationality or purpose.",
-      "While the charge is uncapped, local leaders, including London’s mayor, expect to keep it under 5% of the total."
-    ],
-    "fetchedAt": "2026-09-16"
-  },
-  {
-    "title": "Lignite",
-    "paragraphs": [
-      "Lignite, often called brown coal, is a soft sedimentary rock. It is brown in color and combustible. The rock is created from naturally compressed peat. It has a carbon content around 25–35%.",
-      "It is thought to be the lowest rank of coal. This is because of its low heat content. Lignite has a high amount of moisture when it is taken from the ground. This can explain its low carbon content.",
-      "The rock is mined all around the world. It is mostly used as a fuel for steam-electric power generation.",
-      "The combustion of lignite makes less heat for the amount of carbon dioxide and sulfur that come out than other types of coal.",
-      "Because of this, environmentalists have said that lignite is the worst coal for human health. Many different toxic heavy metals can also be in lignite.",
-      "These are left over in the coal fly ash made from its combustion. This causes more health risks. == Uses == Most lignite is used to make electricity."
-    ],
-    "fetchedAt": "2026-09-16"
-  },
-  {
-    "title": "Kit Harington",
-    "paragraphs": [
-      "Christopher Catesby \"Kit\" Harington (born 26 December 1986) is an English actor. He played Jon Snow in the Home Box Office television series Game of Thrones.",
-      "He was nominated for an Emmy Award in 2016. Harington was born in London. His role is praised for the series."
-    ],
-    "fetchedAt": "2026-09-16"
-  },
-  {
-    "title": "30 (album)",
-    "paragraphs": [
-      "30 is the fourth studio album by English singer-songwriter Adele. It was released 19 November 2021 through Melted Stone and Columbia Records.",
-      "Adele explained the album should have been released in 2020 but was postponed because of the COVID-19 pandemic. The cover depicts Adele facing to the right in front of an emerald-green background.",
-      "30 debuted at number one in the US with 839,000 copies consumed in its first week, the highest-selling first week of 2021. It also entered at number one in the UK.",
-      "== Track listing == Lengths from iTunes metadata. Credits from Target exclusive album booklet."
-    ],
-    "fetchedAt": "2026-09-16"
-  },
-  {
-    "title": "Horst Krause",
-    "paragraphs": [
-      "Horst Krause (18 December 1941 – 5 September 2025) was a German actor. In the 1990s, Krause became a popular TV character in the Polizeiruf 110 crime series.",
-      "Krause was also the lead actor in the 2003 movie Schultze Gets the Blues. Krause died on 5 September 2025 at a retirement home in Teltow, Germany at the age of 83.",
-      "== References == == Other websites == Horst Krause on IMDb Horst Krause on Filmportal."
-    ],
-    "fetchedAt": "2026-09-16"
-  },
-  {
-    "title": "Natalia LL",
-    "paragraphs": [
-      "Natalia Lach-Lachowicz (18 April 1937 – 12 August 2022), known as Natalia LL, was a Polish artist. Her works were usually painted portraits, photography, drawings, performance and video art.",
-      "She was a well known avant garde image making artist in Poland. In 1970 she co-founded PERMAFO, an artists' group and gallery. She worked at the University of Fine Arts in Poznań from 2004 to 2013.",
-      "Natalia LL died on 12 August 2022 in Poznań, Poland at the age of 85."
-    ],
-    "fetchedAt": "2026-09-16"
-  },
-  {
-    "title": "Broken Arrow (military)",
-    "paragraphs": [
-      "Broken Arrow was a call for all available combat aircraft to attack enemy positions, even those close to the position of U. S. troops. The reason for calling in that order, is because a U. S.",
-      "position is being overrun and can no longer be defended.",
-      "Broken Arrow was a code phrase that a military unit on the ground is facing imminent (or very soon) destruction from enemy attack and all available air forces within range are to provide air support immediately.",
-      "Alternatively, Broken Arrow is a code phrase that refers to an accidental event that involves nuclear weapons, warheads or components that does not create a risk of nuclear war.",
-      "These include: Accidental or unexplained nuclear explosion Non-nuclear detonation or burning of a nuclear weapon Radioactive contamination Loss in transit of nuclear asset with or without its carrying vehicle Jettisoning of a nuclear weapon or nuclear component Public hazard, actual or implied == In modern culture == The phrase has been used in We Were Soldiers (2002) starring Mel Gibson.",
-      "Part of the plot of the movie is that, at the point of being overrun by the enemy, the military officer (played by Mel Gibson), orders his forward air controller, to call in the air strike, by saying \"Broken Arrow\"."
-    ],
-    "fetchedAt": "2026-09-16"
-  },
-  {
-    "title": "Ryosuke Kojima",
-    "paragraphs": [
-      "Ryosuke Kojima (小島 亨介, Kojima Ryosuke; born January 30, 1997) is a Japanese football player. == Biography == Kojima was born in Toyota on January 30, 1997.",
-      "After graduating from Waseda University, he joined J1 League club Oita Trinita in 2019. In 2020, he moved to J2 League club Albirex Niigata.",
-      "In May 2019, Kojima was selected the Japan national team for 2019 Copa América, but he did not play in the match. == Club statistics == As of 23 November 2022.",
-      "== Honours == Albirex Niigata J2 League : 2022 Individual J2 League Best XI: 2022 == References == == Other websites == Ryosuke Kojima at Soccerway. com Ryosuke Kojima at WorldFootball.",
-      "net Ryosuke Kojima at Soccerbase. com Ryosuke Kojima at 11v11."
-    ],
-    "fetchedAt": "2026-09-16"
-  },
-  {
-    "title": "Gamescom – level 3",
-    "paragraphs": [
-      "Gamescom, the world’s largest in-person gaming convention, opened with Opening Night Live and featured major announcements like a remake of The Witcher 3.",
-      "Over 350,000 visitors are expected at the massive event that fills ten halls with major publishers and indie developers.",
-      "CEO Asha Sharma marked Xbox’s 25th anniversary and emphasized that the industry must innovate on efficiency."
     ],
     "fetchedAt": "2026-09-16"
   }
