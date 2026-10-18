@@ -1,5 +1,75 @@
 [
   {
+    "title": "Ronivaldo (footballer)",
+    "paragraphs": [
+      "Ronivaldo Bernardo Sales (born 24 March 1989) is a Brazilian professional footballer. He plays as a forward for Blau-Weiß Linz.",
+      "== Club career == He started his career with Náutico Capibaribe in Brazil. In 2013 he came to Austria. He played for SV Kapfenberg in Austrias Second League.",
+      "In 57 matches he scored 27 goals for Kapfenberg. In summer 2015 he went to FK Austria Wien in the Austrian Bundesliga. Due to severe injuries he could not play for the first team.",
+      "After the recovery he played eight matches for the second team. From 2017 to 2020 he played for SC Austria Lustenau where he scored in 78 matches 68 goals.",
+      "On 10 July 2020, he signed with Wacker Innsbruck. After the relegation of Wacker Innsbruck due to financial problems he went to Blau-Weiß Linz."
+    ],
+    "fetchedAt": "2026-10-18"
+  },
+  {
+    "title": "Keith Greene",
+    "paragraphs": [
+      "Keith Greene (5 January 1938 – 7 March 2021) was an English racing driver.",
+      "He raced in Formula One from 1959 to 1962, participating in six World Championship Grands Prix and numerous non-Championship races. Greene was born in London.",
+      "Greene died of a cardiac arrest in London on 7 March 2021, aged 83."
+    ],
+    "fetchedAt": "2026-10-18"
+  },
+  {
+    "title": "Cecilia Elizabeth Martin-Edmunds",
+    "paragraphs": [
+      "Cecilia Elizabeth Mary Agnes Martin-Edmunds (1872 - 1947) was a British foil fencer from London. She was a fencer at Salle Alibert. She was internationaly a leading female fencer in the early 1910s.",
+      "Martin Edmunds became British national champion in 1909. She won in the summer of 1913 the international women's fencing tournament at the 1913 International Exposition in Ghent.",
+      "Forty fencers competed at this tournament and she among others eliminated the Dutch Esther Bekkers-Lopes Cardozo.",
+      "In 1914 she won the 1914 Salle Giandomenici international women's fencing competition in Amsterdam. Of the eight matches she only lost one match.",
+      "With less received touchés compared to Esther Bekkers-Lopes Cardozo who also lost only one match, she won the tournament. Martin Edmunds was tall compared to Dutch and Belgian fencers.",
+      "This was in her advantage having a larger reach. She had, as described, a \"careful\" fencing style."
+    ],
+    "fetchedAt": "2026-10-18"
+  },
+  {
+    "title": "Momoko Sakura",
+    "paragraphs": [
+      "Momoko Sakura (さくら ももこ, Sakura Momoko) (8 May 1965 – 15 August 2018) was a Japanese cartoonist, essayist, songwriter, and screenwriter.",
+      "Sakura is famous for writing the manga series Chibi Maruko-chan in which the protagonist has the same name as her, and in which the story is based on her childhood.",
+      "Sakura was born in Shimizu City in the Shizuoka prefecture of Japan. Over the years the Chibi Maruko-chan book series has gotten a lot of success. More than 30 million copies were sold.",
+      "Sakura was also a very popular author, as she had a very unique viewpoint and narrative in her stories, especially in the stories Momokanzume, Saru no Koshikake and Tai no Okashira which have sold over a million copies."
+    ],
+    "fetchedAt": "2026-10-18"
+  },
+  {
+    "title": "Iranic peoples in Turkey",
+    "paragraphs": [
+      "Iranic peoples in Turkey, are Iranic peoples living in Turkey. Most of them are Kurdish and Zaza but there are also Persians and Ossetians.",
+      "== Notable people == Halid Beg Cibran (1882–1925) Kurd of Cibran tribe, he fought against Russo-Armenian forces in World War I, founding of Azadî organization later took part in the Kurdish nationalist Beytuşsebap and Sheikh Said rebellions and was executed in 1925 Alisher Efendi (1882–1937) Kurd of Koçgiri tribe, he joined Russian army and fought against Turkish forces in World War I, member of Society for the Rise of Kurdistan, also an intellectual and poet, one of organizators of Koçgiri rebellion and one of the leaders of Dersim rebellion == Sources == Soileau, Dilek Kızıldağ (2018).",
+      "\"Koçgirili Alişer Efendi\". In Bora, Tanıl; Yanık, Aybars (eds. ). Kürt Tarihi ve Siyasetinden Portreler (in Turkish). İletişim Yayıncılık. ISBN 978-975-05-2529-2."
+    ],
+    "fetchedAt": "2026-10-18"
+  },
+  {
+    "title": "Sony Movies",
+    "paragraphs": [
+      "Sony Movies (formerly known as Sony Movie Channel from 2010 to 2021) is an American subscription television channel that launched on October 1, 2010. Owned by subsidiary Sony Pictures Television.",
+      "== Availability == Sony Movies is available nationally on Philo, DirecTV and Dish Network, and regionally on AT&T U-Verse, Suddenlink, Optimum.",
+      "== Sony Cine == Sony Cine (also known as Cine Sony Televisión from 2011 to 2017 and formerly known as Cine Sony from 2017 to 2021) is an American Spanish-language pay television channel, broadcasting with dubbed movies in Spanish.",
+      "The channel launched in August 2012 with a focus on showcasing Hollywood blockbusters featuring dramas, comedies, and thrillers from Sony Pictures Entertainment and other partner studios.",
+      "It is distributed nationwide by Comcast, Cox Communications, CenturyLink, Dish Network, DirecTV, Sling, and Verizon."
+    ],
+    "fetchedAt": "2026-10-18"
+  },
+  {
+    "title": "Shawn Kemp",
+    "paragraphs": [
+      "Shawn T. Kemp (born November 26, 1969) is an American retired professional basketball player. Kemp played a total of 14 seasons in the National Basketball Association (NBA).",
+      "He played for the Seattle SuperSonics, Cleveland Cavaliers, Portland Trail Blazers and Orlando Magic."
+    ],
+    "fetchedAt": "2026-10-18"
+  },
+  {
     "title": "Nesvizh Castle",
     "paragraphs": [
       "Nesvizh Castle or Niasvizh Castle is a castle of the Radziwill family in Nesvizh in Belarus. == History == The estate was owned by the Radziwiłł Belarus magnate family starting in 1533.",
@@ -2956,77 +3026,6 @@
       "The President appoints the Vice President, Prime Minister, Ministers and other officials with the consent of the National Assembly.",
       "The President is the Supreme Commander-in-chief of the Vietnam People's Armed Forces, Chairman of the Council for Defense and Security.",
       "If the President becomes unable to discharge duties of office, the Vice President assumes the office of acting president until the President resumes duty, or until the election of a new president."
-    ],
-    "fetchedAt": "2026-09-29"
-  },
-  {
-    "title": "Live from SoHo (Maroon 5 album)",
-    "paragraphs": [
-      "Live from SoHo is a live album by rock band Maroon 5. The songs performed by the band are the first 6 tracks in order from track 1-6 on the album It Won't Be Soon Before Long.",
-      "The album was released March 25, 2008. == Performance == The band Maroon 5 performed Live from SoHo in Apple Store SoHo in New York."
-    ],
-    "fetchedAt": "2026-09-29"
-  },
-  {
-    "title": "Slender-legged tree frogs",
-    "paragraphs": [
-      "Osteocephalus is a group of frogs. In English, they are named the slender-legged tree frogs. They are a genus in the family Hylidae.",
-      "They live in the Guianas, the Amazon Basin, Venezuela, Colombia, southeastern Brazil, and northeastern Argentina. Male frogs have warty, bumpy skin, and female frogs have smooth skin.",
-      "== Species == There are 25 species in Osteocephalus: O. alboguttatus (Boulenger, 1882) O. buckleyi (Boulenger, 1882) — Buckley's slender-legged tree frog O. cabrerai (Cochran and Goin, 1970) O.",
-      "camufatus (Jungfer, Verdade, Faivovich, and Rodrigues, 2016) O. cannatellai (Ron, Venegas, Toral, Read, Ortiz, and Manzano, 2012) O. carri (Cochran and Goin, 1970) O.",
-      "castaneicola (Moravec, Aparicio, Guerrero-Reinhard, Calderón, Jungfer, and Gvoždík, 2009) O. deridens (Jungfer, Ron, Seipp, and Almendáriz, 2000) O. duellmani (Jungfer, 2011) O.",
-      "festae (Peracca, 1904) O. fuscifacies (Jungfer, Ron, Seipp, and Almendáriz, 2000) O. helenae (Ruthven, 1919) O. heyeri (Lynch, 2002) O. leoniae (Jungfer and Lehr, 2001) O."
-    ],
-    "fetchedAt": "2026-09-29"
-  },
-  {
-    "title": "Book Club (movie)",
-    "paragraphs": [
-      "Book Club is a 2018 American romantic comedy movie directed by Bill Holderman in his directorial debut.",
-      "Co-written by Holderman and Erin Simms, the movie stars Diane Keaton, Jane Fonda, Candice Bergen, and Mary Steenburgen as four friends who find their perspectives on personal relationships shifting after reading Fifty Shades of Grey for their monthly book club.",
-      "Released on May 18, 2018, by Paramount Pictures, the film received mixed reviews from critics. However, it was a financial success, earning over $104 million worldwide against its $14 million budget.",
-      "A sequel titled Book Club: The Next Chapter was released in May 2023."
-    ],
-    "fetchedAt": "2026-09-29"
-  },
-  {
-    "title": "Textbook",
-    "paragraphs": [
-      "A textbook is a book used for the study of a subject. People use a textbook to learn facts and methods about a certain subject.",
-      "Textbooks sometimes have questions to test the knowledge and understanding of the learner. A workbook is a type of textbook that has only practice questions and exercises.",
-      "Workbooks are designed not to teach but to provide practice and to highlight areas which need more learning.",
-      "A revision guide is a type of textbook that is used to remind the learner about the subject and give him/her extra practice, especially before an examination.",
-      "A textbook is usually lent to students by a school to accompany a course the school is teaching.",
-      "Sometimes, especially at university, students have to buy the textbooks they need themselves or borrow them from a library. Most textbooks are only published in printed format."
-    ],
-    "fetchedAt": "2026-09-29"
-  },
-  {
-    "title": "Lynn Redgrave",
-    "paragraphs": [
-      "Lynn Rachel Redgrave, OBE (8 March 1943 – 2 May 2010) was an English actress. She has been nominated for many other awards including the Academy, BAFTA and Emmy awards.",
-      "Redgrave starred in many movies and plays as well as working on television. She made her Broadway debut in 1967. She was the sister of actress Vanessa Redgrave and actor Corin Redgrave.",
-      "She was an aunt of actresses Natasha Richardson and Joely Richardson. Redgrave died of breast cancer. == Filmography == Meet Your Animal Friends (1983) ."
-    ],
-    "fetchedAt": "2026-09-29"
-  },
-  {
-    "title": "Saint Francis of Assisi (opera)",
-    "paragraphs": [
-      "Saint François d'Assise is an opera in three acts and eight scenes. The music and libretto were written by Olivier Messiaen. The opera was written from 1975 to 1983.",
-      "The first performance was given by the Paris Opéra at the Palais Garnier on November 28, 1983."
-    ],
-    "fetchedAt": "2026-09-29"
-  },
-  {
-    "title": "Chess960",
-    "paragraphs": [
-      "Chess960, also known as Fischer random chess, is a chess variant that randomizes the starting position of the pieces on their back row, but there are some restrictions: The king must be in between the two rooks, and the bishops must go on their opposite colour squares.",
-      "And their second row will still have pawns on each column.",
-      "== Castling == To castle in Chess960: All the squares between the king and the rook must be empty, no matter how far it is from each other and all normal castling rules are followed.",
-      "To castle kingside, move the king and the rook to the same spots in regular chess (the king on the G-column and the rook on the F-column) and to castle queenside move the king and the rook to the same spots in regular chess (the king on C-column and rook on D-column).",
-      "== Origin == It was named after Bobby Fischer, which is a chess player that played the World Chess Champion.",
-      "The chess variant was invented in 1996 by the same person that named the game (Bobby Fischer)."
     ],
     "fetchedAt": "2026-09-29"
   }
