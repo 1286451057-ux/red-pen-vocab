@@ -1,5 +1,74 @@
 [
   {
+    "title": "Citrus (manga)",
+    "paragraphs": [
+      "Citrus is a Japanese media franchise created by Saburouta. It began as a manga, and it was later adapted into a television anime. == Manga == The manga is written and illustrated by Saburouta.",
+      "It began serialization in Ichijinsha's Comic Yuri Hime magazine in 2012 and ended in August 2018, running for 10 volumes.",
+      "Seven Seas Entertainment publishes the manga in English, and shipped its 10th and final volume in July 2019. A spinoff manga, Citrus+, began the same year the original series ended.",
+      "== Anime == Citrus is a Japanese anime television series. It was directed by Takeo Takahashi and animated by the studio Passione.",
+      "Naoki Hayashi oversaw the series scripts, and Izuro Ijuuin designed the characters and served as chief animation director. It has 12 episodes.",
+      "It aired in Japan from January 6 to March 24, 2018, first on AT-X and then on Tokyo MX, Sun TV, and BS Fuji."
+    ],
+    "fetchedAt": "2026-10-24"
+  },
+  {
+    "title": "Titanite",
+    "paragraphs": [
+      "Titanite, or sphene (from the Greek sphenos (σφηνώ), meaning wedge), is a calcium titanium silicate mineral. Its chemical formula is CaTiSiO5. Iron and aluminium are sometimes found in it.",
+      "Also sometimes found in it are rare earth metals including cerium and yttrium, and the actinide thorium."
+    ],
+    "fetchedAt": "2026-10-24"
+  },
+  {
+    "title": "Loleta, California",
+    "paragraphs": [
+      "Loleta is a census-designated place in Humboldt County, California. At the 2020 census, 828 people lived there. The town 14 meters above sea level and 24 kilometers south of Eureka.",
+      "The Northwestern Pacific Railroad runs through the town, although it is abandoned."
+    ],
+    "fetchedAt": "2026-10-24"
+  },
+  {
+    "title": "Diversity Champions",
+    "paragraphs": [
+      "In 2001, British LGBT rights group Stonewall launched its Diversity Champions programme, a programme which works with over 900 organisations to ensure that lesbian, gay, bisexual, transgender and queer people (the LGBTQ+ community) are comfortable in the workplace.",
+      "This includes addressing outright discrimination, as well as \"more discrete\" forms of heterosexist thinking."
+    ],
+    "fetchedAt": "2026-10-24"
+  },
+  {
+    "title": "IWork",
+    "paragraphs": [
+      "iWork is a suite of programs created by Apple Inc. , containing Pages, a word processing and desktop publishing program, Keynote, a presentation package and Numbers, a spreadsheet program.",
+      "Although iWork is called \"a successor to AppleWorks\" by Apple, it does not have the functions of AppleWorks's database and drawing tools.",
+      "Also, it does not compete directly with the Mac version of Microsoft Office, but instead offers tools with a different focus (presentation, rather than analysis) at a lower price.",
+      "It is made to integrate with other applications from Apple's iLife Suite. Although iLife comes free on every Mac, iWork is sold separately.",
+      "From February to March 2008, a free 30-day trial of iWork was installed on every new Mac bought during that time, but now the trial must be downloaded from online.",
+      "It is still given with copies of iLife. It was later sold for $19. 99 per app on OS X and $9. 99 per app on iOS."
+    ],
+    "fetchedAt": "2026-10-24"
+  },
+  {
+    "title": "Punta del Este International Airport",
+    "paragraphs": [
+      "Capitán de Corbeta Carlos A. Curbelo International Airport (Aeropuerto Internacional Capitán de Corbeta Carlos A.",
+      "Curbelo) (IATA: PDP, ICAO: SULS), also known by its former official name of Laguna del Sauce International Airport, and as Punta del Este International Airport is an airport located on Laguna del Sauce, Maldonado department, Uruguay, about 20 km northwest of the Punta del Este peninsula.",
+      "The main runway is 2,133 m long and 45 m wide, and is capable of receiving medium-sized aircraft, such as Boeing 737 and Airbus A320.",
+      "== History == In 1946, the Navy began to study the possibility of establishing an air-naval base on Laguna del Sauce.",
+      "The nation's military dominance was strongly tied to its ability to effectively develop and operate giant seaplanes.",
+      "The technical reports determined that a base located on Laguna del Sauce would ensure Uruguay's control of the coast that extended from Montevideo to Arroyo Chuy. Naval Air Base No."
+    ],
+    "fetchedAt": "2026-10-24"
+  },
+  {
+    "title": "Amden",
+    "paragraphs": [
+      "Amden is a municipality in See-Gaster, in the canton of St. Gallen in Switzerland. == Geography == Amden has an area of 43 square kilometres (17 square miles).",
+      "It is on a terrace above the north shore of the Lake Walen. The Seerenbach Falls is in Amden. It is the highest waterfall in Switzerland.",
+      "== References == == Other websites == Media related to Amden at Wikimedia Commons Amden - Official website (in German) Amden - Official website (in English) Amden in German, French and Italian in the online Historical Dictionary of Switzerland."
+    ],
+    "fetchedAt": "2026-10-24"
+  },
+  {
     "title": "Miroslav Lajčák",
     "paragraphs": [
       "Miroslav Lajčák (born 20 March 1963) is a Slovak diplomat. He is the Minister of Foreign Affairs.",
@@ -2971,75 +3040,6 @@
       "Begum Nusrat Bhutto (Urdu: بیگم نصرت بھٹو, Sindhi: بیگم نصرت ڀٽو, March 23, 1929 – October 23, 2011) was an Iranian-Pakistani who was the former First Lady of Pakistan and widow of former Prime Minister of Pakistan Zulfikar Ali Bhutto.",
       "She became her husband's successor as the chairman of the Pakistan Peoples Party (PPP) from 1979 to 1983.",
       "The couple had four children: PPP chairman and the first and only female Pakistani Prime Minister, Benazir Bhutto (1953-2007), Murtaza Bhutto (1954-1996), Sanam Bhutto (born 1957) and Shahnawaz Bhutto (1958-1985)."
-    ],
-    "fetchedAt": "2026-10-04"
-  },
-  {
-    "title": "Hamiltonian mechanics",
-    "paragraphs": [
-      "Hamiltonian mechanics is a mathematical way of understanding the way something mechanical will behave. It was invented in 1833 by Irish mathematician William Rowan Hamilton.",
-      "The value of the Hamiltonian is the total energy of the thing being described. For a closed system, it is the sum of its kinetic and potential energy.",
-      "There will be a set of differential equations known as the Hamilton equations which show how the thing changes through time.",
-      "Hamiltonians can be used to describe such simple systems as a bouncing ball, a pendulum or an oscillating spring in which energy changes between kinetic and potential energy and back again over time.",
-      "Hamiltonians can also be used to study the orbits of planets and in the behaviour of atoms using the principles of quantum mechanics."
-    ],
-    "fetchedAt": "2026-10-04"
-  },
-  {
-    "title": "Marc Lamothe",
-    "paragraphs": [
-      "Marc Lamothe (born February 27, 1974) is a Canadian retired professional ice hockey goaltender. Lamothe played 4 games in the National Hockey League (NHL).",
-      "He played with the Chicago Black Hawks and the Detroit Red Wings. Before playing in the NHL, Lamothe played 3 seasons in the OHL with the Kingston Frontenacs.",
-      "He was drafted with the 92nd overall pick by the Montreal Canadiens in the 1992 NHL Entry Draft.",
-      "He has played for the Fredericton Canadiens, Syracuse Crunch, Hamilton Bulldogs and Grand Rapids Griffins of the AHL, as well as the Wheeling Thunderbirds of the ECHL and the Indianapolis Ice of the IHL.",
-      "When he left North America, he joined Lokomotiv Yaroslavl of the RSL. He also played for Severstal Cherepovets and SKA St. Petersburg.",
-      "He played 15 games in the KHL with Barys Astana, 14 games in the SM-liiga with the Pelicans, and 15 games in the DEL with the Hamburg Freezers."
-    ],
-    "fetchedAt": "2026-10-04"
-  },
-  {
-    "title": "John Bathersby",
-    "paragraphs": [
-      "John Alexius Bathersby (26 July 1936 – 9 March 2020) was an Australian bishop of the Roman Catholic Church. He became a priest in 1961.",
-      "He served as bishop of Cairns from 1986 to 1991, and as archbishop of Brisbane from 1991 to 2011. Bathersby was born in Stanthorpe, Queensland. He died on 9 March 2020 at the age of 83.",
-      "== References == == Other websites == John Bathersby at Catholic-Hierarchy."
-    ],
-    "fetchedAt": "2026-10-04"
-  },
-  {
-    "title": "Pátria",
-    "paragraphs": [
-      "\"Pátria\" (Portuguese pronunciation: [ˈpa. tɾjɐ]; \"Fatherland\") is the national anthem of East Timor.",
-      "== Lyrics == === Portuguese lyrics === === Translations === Because East Timor has three other official languages, Tetum (the national language), English and Indonesian, it has been translated into the other three languages from the original Portuguese lyrics."
-    ],
-    "fetchedAt": "2026-10-04"
-  },
-  {
-    "title": "Sámi people of Norway",
-    "paragraphs": [
-      "The Sámi ethnic group in Norway, or Sámi people in Norway, are part of an ethnic group that also lives in Sweden, Finland, and Russia.",
-      "In Norway, the core-area of the Sami, is in 4 municipalities in Finnmark county and 1 municipality in Troms county: Kautokeino, Karasjok, Porsanger, Tana og Nesseby and Kåfjord.",
-      "The core area is inside Norway's part of Sapmi (or Lapland). (Lapland is a part of 4 countries: Norway, Sweden, Finland and Russia.",
-      ") The Sami languages in Norway, are Northern Sami (en), Lule Sami language (en), and Southern Sami language (en).",
-      "== The government's definition == \"[P]eople who want to vote for\", or want to be a member of \"the Sami Parliament (en), they must register as Sami.",
-      "The definitions of Sami\" that started to be used by \"Sami organizations, including the Nordic Sami Council, in the 1950s, became part of Norwegian law in 1987."
-    ],
-    "fetchedAt": "2026-10-04"
-  },
-  {
-    "title": "João Clemente Baena Soares",
-    "paragraphs": [
-      "João Clemente Baena Soares (14 May 1931 – 7 June 2023) was a Brazilian diplomat. He was born in Belém.",
-      "He worked at the Brazilian Ministry of External Relations for 31 years before being elected to replace Alejandro Orfila as Secretary General of the Organization of American States from 1984 to 1994.",
-      "He was replaced in 1994 with President César Gaviria. Baena Soares died on 7 June 2023 at the age of 92."
-    ],
-    "fetchedAt": "2026-10-04"
-  },
-  {
-    "title": "Area code 704",
-    "paragraphs": [
-      "Area code 704 is an area code for North Carolina. It was one of the first area codes created in 1947. It initially covered the entire state but after it was split by 919 in 1954 and 828 in 1998.",
-      "It now covers the Charlotte area. It consists of towns such as Concord, Indian Trail, Charlotte, Cornelius, Cherryville, Huntersville, and Albemarle. It was overlaid by 980 in 2000."
     ],
     "fetchedAt": "2026-10-04"
   }
