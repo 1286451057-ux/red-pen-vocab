@@ -1,5 +1,96 @@
 [
   {
+    "title": "Who will be the next James Bond? – level 3",
+    "paragraphs": [
+      "Reports indicate that final auditions are currently underway to select the next James Bond. Actors Jack Lowden, Josh O’Connor, and Callum Turner emerge as top contenders.",
+      "Screen tests are reportedly evaluating finalists across three critical criteria: stunt capabilities, dialogue performance, and overall screen presence.",
+      "Industry analysts highlight Jack Lowden as the current betting favorite and note his potential."
+    ],
+    "fetchedAt": "2026-11-02"
+  },
+  {
+    "title": "The longest train – level 2",
+    "paragraphs": [
+      "A state-owned logistics company in South Africa successfully tested a freight train which is 7. 6 kilometres long.",
+      "The train consists of 696 empty wagons and recently travelled 860 kilometres from a port on the west coast to a mine.",
+      "Electric and diesel engines placed along the train provided all the power needed to move it. The company says."
+    ],
+    "fetchedAt": "2026-11-02"
+  },
+  {
+    "title": "Wolfhart Westendorf",
+    "paragraphs": [
+      "Wolfhart Westendorf (18 September 1924 – 23 February 2018) was a Polish-born German Egyptologist. Westendorf was born in Świebodzin, Poland.",
+      "He was a co-author of the Grundriss der Medizin der alten Ägypter, the most well published study of the subject of ancient Egyptian medicine done in any language.",
+      "He had also published many other books on Egyptology and the ancient Egyptian language. Westendorf died in Berlin on 23 February 2018 at the age of 93."
+    ],
+    "fetchedAt": "2026-11-02"
+  },
+  {
+    "title": "Ivory (color)",
+    "paragraphs": [
+      "Ivory is a color that is mostly white, but with a small amount of yellow.",
+      "It looks like ivory, the material from which the teeth and tusks of animals (such as, notably, the elephant and the walrus) is made. It has a very slight tint of yellow."
+    ],
+    "fetchedAt": "2026-11-02"
+  },
+  {
+    "title": "JavaServer Pages",
+    "paragraphs": [
+      "JavaServer Pages (JSP java) is a programming language used by server applications. It was created by Sun Microsystems. A software server such as Apache is needed to run it.",
+      "JSP works in a similar way to PHP but is written using the Java programming language."
+    ],
+    "fetchedAt": "2026-11-02"
+  },
+  {
+    "title": "Rufous-bellied thrush",
+    "paragraphs": [
+      "The rufous-bellied thrush (Turdus rufiventris) is a songbird of the thrush family. It is found all over eastern South America. The bird is named after the color of its underparts.",
+      "It is a common species of thrush within Brazil. It is the state bird of São Paulo, and is the national bird of Brazil since 2002."
+    ],
+    "fetchedAt": "2026-11-02"
+  },
+  {
+    "title": "Mar Roxas",
+    "paragraphs": [
+      "Manuel \"Mar\" Araneta Roxas II (Tagalog pronunciation: [ˈɾohas]; born May 13, 1957) is a Filipino politician. He was a Senator of the Philippines.",
+      "He is the grandson of former Philippine President Manuel Roxas. Roxas was Secretary of the Interior and Local Government from 2012 to 2015.",
+      "He was the Secretary of Trade and Industry from 2000 to 2003 and Secretary of Transportation and Communications from 2011 to 2012."
+    ],
+    "fetchedAt": "2026-11-02"
+  },
+  {
+    "title": "Srinisha Jayaseelan",
+    "paragraphs": [
+      "Srinisha Jayaseelan (born 26 September 1999) is an Indian playback singer in the Tamil movie industry. == Early Life == Srinisha was born in Chennai, Tamil Nadu.",
+      "She went to TST Rajah Girls Matriculation Higher Secondary School, Chennai and after she finished her bachelor's degree in commerce at Ethiraj College for Women.",
+      "== Career == Srinisha's debut as a playback singer in the year 2016 when she sang the song 'Maths Tough' for Music Director Ilaiyaraaja for the movie Amma Kanakku.",
+      "She had earlier sung a song for Music Director Yuvan Shankar Raja for the film Avan Ivan in 2014.",
+      "Vilambara Idaiveli from Imaikkaa Nodigal, Kanna Veesi from Kadhal Ondru Kanden and Adi Penne from the Naam series are few of her notable works."
+    ],
+    "fetchedAt": "2026-11-02"
+  },
+  {
+    "title": "The Copper Cistern",
+    "paragraphs": [
+      "The Copper Cistern is an oil painting on oak by Jean-Baptiste-Siméon-Chardin. It was painted in around 1735. It measures 28. 5 cm x 23 cm (11. 22 in x 9. 06 in). It hangs in the Louvre.",
+      "Chardin chose themes that were popular with all classes of 18th century Parisian society."
+    ],
+    "fetchedAt": "2026-11-02"
+  },
+  {
+    "title": "Uluṟu–Kata Tjuṯa Aboriginal Land Trust",
+    "paragraphs": [
+      "Uluṟu–Kata Tjuṯa Aboriginal Land Trust is the land trust that holds the freehold title to the land of Uluṟu–Kata Tjuṯa National Park (referred to as Northern Territory Portion 1728).",
+      "The trust is the legal landowner and holds the title on behalf of the people who are recognised as the land's traditional owners. It was created on 26 October 1985.",
+      "The land was originally claimed as part of the Katiti Land Claim in 1979. It was sumbitted by the Central Land Council on the behalf of several hundred people, most of whom lived at Muṯitjulu.",
+      "The claim was judged in 1980, and Commissioner Justice John Toohey formally recognised 104 traditional owners for Uluṟu and 57 for Kata Tjuṯa.",
+      "He granted them freehold title to the land now held by the Katiti Aboriginal Land Trust. They were not granted the title to Uluṟu–Kata Tjuṯa because it was already being used as a national park.",
+      "There was then a long legal case over the freehold title (actual ownership) of the park lands."
+    ],
+    "fetchedAt": "2026-11-02"
+  },
+  {
     "title": "Marie Osborne",
     "paragraphs": [
       "Marie Osborne Yeats (born Helen Alice Myres; November 5, 1911 – November 11, 2010), was an American actress, credited as Baby Marie between 1914 and 1919.",
@@ -2932,107 +3023,6 @@
     "paragraphs": [
       "Bromeliohyla, the bromeliad tree frogs, is a group of frogs in the family Hylidae. Scientists made this genus in 2005 when they looked at all the Hylidae frogs again.",
       "The first two species they put in this genus had been in Hyla. They are found in tropical southern Mexico, Belize, Guatemala, and northern Honduras."
-    ],
-    "fetchedAt": "2026-10-13"
-  },
-  {
-    "title": "Samuel Brannan",
-    "paragraphs": [
-      "Samuel Brannan (March 2, 1819 – May 5, 1889) was an American businessman. He was a member of The Church of Jesus Christ of Latter-day Saints.",
-      "He started the first newspaper in San Francisco, which was called The California Star. He was the first person to tell everyone about the gold in California during the California Gold Rush.",
-      "He was also the first person millionaire of the Gold Rush Brannan moved to Yerba Buena, a place in northern California.",
-      "He talked with the people who lived there and decided that the land by the Sacramento River would be a safe place for the Mormons to live.",
-      "A lot of people didn't agree with him, so the new city didn't work.",
-      "Brannan was the first person to do a lot of things there, like building a flour mill (a place that makes bread) and teaching in English."
-    ],
-    "fetchedAt": "2026-10-13"
-  },
-  {
-    "title": "Maxim Berezovsky",
-    "paragraphs": [
-      "Maxim Sozontovich Berezovsky (Russian: Максим Созонтович Березовский; Ukrainian: Максим Созонтович Березовський, romanized: Maksym Sozontovych Berezovskyi, c.",
-      "1740 – 2 April 1777) was a Russian and Ukrainian composer. He worked in St. Petersburg. He was the first Eastern Slavic composer to write an opera.",
-      "== Life == A lot of Berezovsky's early life is not known. His birth year is often said to be 1745. However, some musicologists doubt this. In 1758 he became a tenor singer in Oranienbaum.",
-      "He sang in some operas. He studied music composition with Baldassare Galuppi and Vincenzo Manfredini. He wrote choral concertos in the 1760s. In 1769, he went to Italy. He studied with Padre Martini.",
-      "In 1771 took an exam at the Bologna College of Music. He passed the exam. He wrote an opera called Il Demofonte in Italy. It was performed in 1773. He also wrote a violin sonata in Italy.",
-      "He returned to Russia in 1773. He became a composer for the Imperial Theatres office. He died on April 2, 1777 in St. Petersburg."
-    ],
-    "fetchedAt": "2026-10-13"
-  },
-  {
-    "title": "Juan Martín Díez",
-    "paragraphs": [
-      "Juan Martín Díez (1775, Valladolid - 1825) was a Spanish brigadier-general of cavalry.",
-      "The son of a peasant, Díez was head of guerilla bands, where he had done good service to his country during the Peninsular war and been promoted; offending the ruling powers, he was charged with conspiracy, tried, and killed."
-    ],
-    "fetchedAt": "2026-10-13"
-  },
-  {
-    "title": "Invercargill",
-    "paragraphs": [
-      "Invercargill (Māori: Waihōpai) is the southernmost and westernmost city in New Zealand, and one of the southernmost cities in the world. It is the commercial centre of the Southland region.",
-      "It lies in the Southland Plains on the Oreti or New River some 18 km north of Bluff, which is the southernmost town in the South Island.",
-      "It sits amid rich farmland that is bordered by large areas of conservation land and marine reserves, including Fiordland National Park covering the south-west corner of the South Island and the Catlins coastal region."
-    ],
-    "fetchedAt": "2026-10-13"
-  },
-  {
-    "title": "Boxcar function",
-    "paragraphs": [
-      "In math, a boxcar function is any function that has a number that is not zero at any given time and has a value of zero everywhere else.",
-      "The name comes from the fact that the graph looks like a boxcar, which is a type of railway car."
-    ],
-    "fetchedAt": "2026-10-13"
-  },
-  {
-    "title": "Gordie Howe",
-    "paragraphs": [
-      "Gordie Howe, OC (March 31, 1928 – June 10, 2016) was a Canadian professional ice hockey player.",
-      "He played for the Detroit Red Wings and the Hartford Whalers of the National Hockey League, and the Houston Aeros and the New England Whalers in the World Hockey Association.",
-      "Howe was often known as Mr. Hockey, and was considered to be one of the best hockey players ever. He was born in Floral, Saskatchewan. On October 26, 2014, Howe suffered a serious stroke.",
-      "On December 2, 2014, Howe had another stroke and was taken to a hospital and was placed in ICU.",
-      "He died on June 10, 2016 at his son's home in Sylvania, Ohio from complications of the stroke he suffered a year ago, aged 88."
-    ],
-    "fetchedAt": "2026-10-13"
-  },
-  {
-    "title": "Lithuania and nuclear weapons – level 3",
-    "paragraphs": [
-      "Lithuania’s parliament has taken a historic step to change its constitution, which aims to remove a long-standing ban on hosting foreign nuclear weapons on its soil.",
-      "Originally introduced after the fall of the Soviet Union to speed up the departure of Russian troops, the constitutional ban is now seen as outdated given current security threats."
-    ],
-    "fetchedAt": "2026-10-13"
-  },
-  {
-    "title": "Cristina Vee",
-    "paragraphs": [
-      "Cristina Danielle Valenzuela (born July 11, 1987), known professionally as Cristina Vee, is an American voice actress and singer.",
-      "She is best known for her work in English-language dubs of anime and in video games. == Early life == Cristina Vee was born Cristina Danielle Valenzuela in Los Angeles, California, on July 11, 1987.",
-      "She has Lebanese, Indigenous Mexican (Tepehuán), and Spanish ancestry. Vee grew up in Norwalk, California, where she attended public school.",
-      "She became interested in music at an early age and participated in the Norwalk All City band during middle school and high school.",
-      "Her classmates called her \"Sailor Moon Girl\" because of her interest in acting and animation. She also helped start the anime club at John Glenn High School.",
-      "Vee studied theatre arts at California State University, Long Beach, graduating in 2007. During college, Vee experienced depression and panic attacks that made it difficult for her to attend classes."
-    ],
-    "fetchedAt": "2026-10-13"
-  },
-  {
-    "title": "77 BC",
-    "paragraphs": [
-      "Year 77 BC was a year of the pre-Julian Roman calendar.",
-      "== Events == === Roman Republic === Marcus Aemilius Lepidus, consul and leader of the democratic party, is defeated by Quintus Lutatius Catulus outside Rome.",
-      "Pompeius marches to Spain to join with Quintus Metellus Pius. They try to stop the revolt of Quintus Sertorius, but do not succeed. The city of Tigranakert is built."
-    ],
-    "fetchedAt": "2026-10-13"
-  },
-  {
-    "title": ".om",
-    "paragraphs": [
-      "om is the Internet country code top-level domain (ccTLD) for Oman. . om domains are used by less than 0. 1% of all websites.",
-      "== Registry == Currently, the Telecommunications Regulatory Authority is the registry of . om ccTLD. The Authority is solely responsible for the management of the top level Internet domain name \".",
-      "om\" and \". عمان\". They are responsible for auto-renewing registered domains. In doing so, the Authority may: Set rules, instructions and guidelines for the aforesaid domain names administration.",
-      "Approve the accredited registrars and publish a list of their names in the Authority's website or by any other means.",
-      "Monitor the accredited registrars and registrants to check their compliance with the rules, instructions and guidance related to the respective domain names.",
-      "Publish the decisions of terminating the accreditation of the accredited registrars in the Authority's website or by any other means."
     ],
     "fetchedAt": "2026-10-13"
   }
