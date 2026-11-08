@@ -1,5 +1,81 @@
 [
   {
+    "title": "Pilar Pellicer",
+    "paragraphs": [
+      "Pilar Pellicer (born Pilar Pellicer López de Llergo; February 2, 1938 – May 16, 2020) was a Mexican actress.",
+      "Pellicer won the Ariel Award for Best Actress for her role as the main character in La Choca (1974).",
+      "Her other best known roles were as Admiradora in The Life of Agustín Lara (1959) and as Lydia Day of the Evil Gun (1968). Pellicer was born in Villahermosa, Tabasco.",
+      "Pellicer died of COVID-19 on May 16, 2020 in Mexico City, aged 82."
+    ],
+    "fetchedAt": "2026-11-08"
+  },
+  {
+    "title": "Sergei Makarov",
+    "paragraphs": [
+      "Sergei Mikhailovich Makarov (Russian: Серге́й Михайлович Макаров; born 19 June 1958 in Chelyabinsk, Soviet Union) is a Russian former ice hockey right wing. He was a two-time Olympic gold medalist.",
+      "He was voted one of six players to the International Ice Hockey Federation's (IIHF) Centennial All-Star Team. This was in a poll conducted by a group of 56 experts from 16 countries."
+    ],
+    "fetchedAt": "2026-11-08"
+  },
+  {
+    "title": "Nordvorpommern",
+    "paragraphs": [
+      "Nordvorpommern (\"North Western Pomerania\") is a former district in the northern part of Mecklenburg-Vorpommern, Germany.",
+      "It is on the coast of the Baltic Sea, and it surrounds the coastal city of Stralsund. == Geography == On the coast is a long peninsula, called the Darß.",
+      "Between the Darß and the mainland there is a very shallow lagoon. the lagoon and the peninsula are part of the Western Pomerania Lagoon Area National Park.",
+      "== History == Until 1819 the area was controlled by Sweden. Then it became a part of Prussia.",
+      "The modern district was made in 1994 by joining the three old districts of Grimmen, Ribnitz-Damgarten and Stralsund."
+    ],
+    "fetchedAt": "2026-11-08"
+  },
+  {
+    "title": "Divatte-sur-Loire",
+    "paragraphs": [
+      "Divatte-sur-Loire (Breton: Diwazh-Liger) is a commune of 6,844 people (2017). It is found in the region Pays de la Loire in the Loire-Atlantique department in western France.",
+      "The municipality was created on 1 January 2016 from the former communes of La Chapelle-Basse-Mer (the seat) and Barbechat."
+    ],
+    "fetchedAt": "2026-11-08"
+  },
+  {
+    "title": "Miiverse",
+    "paragraphs": [
+      "Miiverse was a social network for the Wii U and the Nintendo 3DS family. It was made by Nintendo and Hatena. It was powered by the Nintendo Network. People could make text and handwritten posts.",
+      "In some communities, they made videos of games. You could use Miiverse with any web browser on PC, tablets, and smartphones. All users who got a Nintendo Network ID were given a Miiverse account.",
+      "== Shutdown == On August 29, 2017, Nintendo of America said that Miiverse be shut down on November 7, 2017. Users could ask to get posts and screenshots they had made.",
+      "Replies to posts, however, would not be able to be seen. It was shut down on November 7, 2017, at 10:00 pm PT. Wii U Chat and the Japanese Nintendo TVii were also discontinued at this time.",
+      "On January 3, 2018, an archive was made of every Miiverse that people could see. It had almost 17TB. This was called \"Archiverse\"."
+    ],
+    "fetchedAt": "2026-11-08"
+  },
+  {
+    "title": "Night Crossing",
+    "paragraphs": [
+      "Night Crossing is a 1982 American British Cold War drama movie directed by Delbert Mann and starring John Hurt, Doug McKeon, Beau Bridges, Jane Alexander, Kay Walsh, Glynnis O'Connor, Ian Bannen, Anne Stallybrass and Sky Dumont.",
+      "It was distributed by Walt Disney Productions."
+    ],
+    "fetchedAt": "2026-11-08"
+  },
+  {
+    "title": "Materialise NV",
+    "paragraphs": [
+      "Materialize NV, based in Leuven, Belgium, is a company active in the field of 3D printing, offering both software and parts manufacturing.",
+      "== Overview == Materialize was founded in June 1990 in Louvain2 by Wilfried Vancraen3.",
+      "In 1991, the company released the first elements of the Mimics software suite, and in 1992 the Magics software suite.",
+      "The first of these suites, Mimics, transforms stacks of 2D images (eg DICOM files) into a 3D model and calculates the area of these 3D models.",
+      "Initial data can be obtained by computed tomography, confocal microscopy, microtomography or microscopic tomography (micro-CT or µCT), or magnetic resonance imaging (MRI) via image segmentation.",
+      "The second, Magics, makes it possible to optimize the printing result, to simulate the process, to manage the mesh structures, to generate supports, to import data, for example in CAD formats and to export them, in particular in 3D STL files."
+    ],
+    "fetchedAt": "2026-11-08"
+  },
+  {
+    "title": "Nordingrå",
+    "paragraphs": [
+      "Nordingrå is a locality in Kramfors Municipality in Västernorrland County in Sweden. In 2010, 306 people lived there. It is also a parish of about 50 villages, with about 1,500 people living there.",
+      "Nordingrå is a part of the Höga Kusten (High Coast) World Heritage Site."
+    ],
+    "fetchedAt": "2026-11-08"
+  },
+  {
     "title": "The Little Prince – level 3",
     "paragraphs": [
       "Hello students, We improved one of our websites for you. The name is www. thelittleprinceinlevels. com. The Little Prince is a famous book by Antoine de Saint-Exupéry.",
@@ -2937,79 +3013,6 @@
       "Major supermarket chains across France were hit by an unprecedented cyberattack that targeted commercial refrigeration systems.",
       "Hackers remotely took control of thermostats in hundreds of stores, and raised temperatures in fridges and freezers to as high as 50°C.",
       "The sudden heat caused thousands of tons of fresh and frozen food, including meat, dairy, and juice, to spoil completely."
-    ],
-    "fetchedAt": "2026-10-19"
-  },
-  {
-    "title": "The best countries to retire – level 3",
-    "paragraphs": [
-      "In a new global retirement index, Uruguay ranked as the best place in the world to retire abroad, and took the top spot from Portugal.",
-      "The study compared 46 retirement and passive-income programs across several areas, including quality of life, travel freedom, citizenship routes, taxation, and costs.",
-      "While Uruguay leads overall due to balanced scores, Europe remains the."
-    ],
-    "fetchedAt": "2026-10-19"
-  },
-  {
-    "title": "Hi-NRG",
-    "paragraphs": [
-      "Hi-NRG (pronounced \"high energy\") is a genre of uptempo disco or electronic dance music (EDM) that originated during the late 1970s and early 1980s.",
-      "As a music genre, typified by its fast tempo, staccato hi-hat rhythms (and the four-on-the-floor pattern), reverberated \"intense\" vocals and \"pulsating\" octave basslines, it was particularly influential on the disco scene."
-    ],
-    "fetchedAt": "2026-10-19"
-  },
-  {
-    "title": "Awadhi language",
-    "paragraphs": [
-      "Awadhi is an Indo-Aryan language. This language was spoken in a wide area of Awadh including Lucknow and Ayoudhya (Awadh) earlier.",
-      "Goswami Tulasidas wrote Ramcharitmanas, Geetavali, Kavitavali, and all his Shri Ram poems in this language. Hindi is a much newer language derived on Awadhi."
-    ],
-    "fetchedAt": "2026-10-19"
-  },
-  {
-    "title": "LaFlia Contenidos",
-    "paragraphs": [
-      "LaFlia Contenidos (or just LaFlia) is an Argentine media and services production company created by Argentine television presenter, sports leader, and businessman Marcelo Tinelli, as the successor of his first production company Ideas del Sur, whose general manager is Federico Facello.",
-      "It was announced on social networks on 20 February 2018.",
-      "== History == After the breakup at the end of 2017 of the partnership with the Indalo Group, Showmatch lived a year with many conflicts, leading to almost ceasing broadcasts.",
-      "At the end of that year, continuity was confirmed of the cycle in the present 2018 and 2019, with the support of the authorities of El Trece, but without the participation of Ideas del Sur as a producer.",
-      "However, there were rumors that the program should change its name since the Showmatch brand would not belong to the new production, so the possibility of retaking the old video match name was considered, but given the protection of said name by being owned by Telefe, the name that was handled for the 2018 season was originally going to be called ShowDance, then Tinelli decided that the name would be Bailando, but in the end, it returned with the same name as always (Showmatch).",
-      "=== Creation === According to Marcelo himself, he commented on Facebook Live in which he introduced the production company, the name is due to the union between the company's employees and viewers with more than twenty years of experience."
-    ],
-    "fetchedAt": "2026-10-19"
-  },
-  {
-    "title": "Basutoland",
-    "paragraphs": [
-      "Basutoland was a British colony that existed from 1884 to 1966 in present-day Lesotho.",
-      "Basutoland was completely surrounded by the Cape Colony from 1884–1910, the Union of South Africa from 1910–1961 and the Republic of South Africa from 1961–1966.",
-      "On 4 October 1966, Basutoland became independent as the Kingdom of Lesotho."
-    ],
-    "fetchedAt": "2026-10-19"
-  },
-  {
-    "title": "Greatest Hits: My Prerogative",
-    "paragraphs": [
-      "Greatest Hits: My Prerogative is the first greatest hits album by Britney Spears. It was released on November 1, 2004. The album has all of her hit songs to that point.",
-      "It also includes a cover of Bobby Brown's \"My Prerogative\" and two songs from the \"In The Zone\" recording sessions which did not make it on to that album.",
-      "Singles released in this album include \"My Prerogative\" and, outside of the United States, \"Do Somethin'\"."
-    ],
-    "fetchedAt": "2026-10-19"
-  },
-  {
-    "title": "Coraciiformes",
-    "paragraphs": [
-      "The Coraciiformes are a group of usually colorful \"near passerine\" birds. They include the kingfishers, the Hoopoe, the bee-eaters, the rollers, and the hornbills.",
-      "They generally have syndactyly, with three forward-pointing toes (and toes 3 & 4 fused at their base), though in many kingfishers one of these is missing.",
-      "This is largely an Old World order, with the representation in the New World limited to the dozen or so species of todies and motmots, and a few of the more than 90 species of kingfishers."
-    ],
-    "fetchedAt": "2026-10-19"
-  },
-  {
-    "title": "Heavy Fuel",
-    "paragraphs": [
-      "\"Heavy Fuel\" is a 1991 song by British rock band Dire Straits and is the second single from their sixth studio album On Every Street.",
-      "It went to number 55 in the United Kingdom, number 34 in New Zealand, number 26 in Australia, number 48 in Germany, number 32 in France, number 17 in Canada and number 25 in the Netherlands.",
-      "The music video features actor Randy Quaid."
     ],
     "fetchedAt": "2026-10-19"
   }
