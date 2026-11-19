@@ -1,5 +1,87 @@
 [
   {
+    "title": "Young people lose hearing – level 3",
+    "paragraphs": [
+      "The British Medical Journal published a study which showed that 1 billion young people were at risk of hearing loss.",
+      "Researchers shared their analysis of data from 2000 to 2021 on unsafe listening practices.",
+      "If the volume is too loud for too long, headphones, a concert, or even a restaurant could cause irreversible damage. Young people are complaining."
+    ],
+    "fetchedAt": "2026-11-19"
+  },
+  {
+    "title": "Barry Austin",
+    "paragraphs": [
+      "Barry Austin (17 September 1968 – 1 January 2021) was a British man from Chelmsley Wood, West Midlands, England. He was the fattest man in the United Kingdom. He weighed around 700 lbs or 320 kg.",
+      "In December 2009 Austin played 'Big Brian' in ITV1's comedy-drama The Fattest Man in Britain as Fat Brian. Austin died on 1 January 2021 at the age of 52."
+    ],
+    "fetchedAt": "2026-11-19"
+  },
+  {
+    "title": "Huffman coding",
+    "paragraphs": [
+      "Huffman coding is a way of encoding data. The method was developed in 1952, by David A. Huffman, at MIT. It was first published as A Method for the Construction of Minimum-Redundancy Codes, in 1952.",
+      "The method is a prefix code, and a way of lossless data compression. The idea behind it is very simple: There's a dictionary that contains words, and how often they occur in the text.",
+      "Each word is replaced by a variable-length code. Words that occur more often get shorter codes. The codes must be unique and not overlap .",
+      "The output from Huffman's algorithm is a variable-length code table for encoding a source symbol (such as a character in a file).",
+      "The algorithm constructs this table based on the estimated probability or frequency of occurrence (weight) for each possible value of the source symbol.",
+      "As in other entropy encoding methods, more common symbols are generally represented using fewer bits than less common symbols."
+    ],
+    "fetchedAt": "2026-11-19"
+  },
+  {
+    "title": "Ab urbe condita",
+    "paragraphs": [
+      "Ab urbe condita is a way to measure time. == Origin == The phrase is Latin. It literally means from when the city was founded. The city talked about is the city of Rome.",
+      "This way of measuring time was not used in Classical antiquity. The first to have used it was the historian Orosius, about 400 AD.",
+      "== History == Marcus Terentius Varro found out that the city of Rome was founded 440 years after the fall of Troy. Romulus and Remus founded it. Varro thought that was in the spring of 753 BC.",
+      "Marcus Porcius Cato Censorius thought that Rome was founded one year after the 7th Olympic Games. That would have been in 752 BC.",
+      "== Other works == Ab urbe condita is also the main work of Titus Livius, a Roman historian."
+    ],
+    "fetchedAt": "2026-11-19"
+  },
+  {
+    "title": "Governor of Santa Fe Province",
+    "paragraphs": [
+      "The Governor of Santa Fe (Gobernador de la Provincia de Santa Fe) is a citizen of Santa Fe Province, in Argentina, holding the office of governor for a period of time.",
+      "Right now, the governor of Santa Fe is Maximiliano Pullaro, of the UCR Party.",
+      "According to the Constitution of the province, the governor of the province is elected directly by the people of Santa Fe by simple majority of votes for a four-year term.",
+      "He does not have the possibility of immediate re-election, but he can run again once at least one term has passed between his first term and the next, just like the presidential elections in Uruguay."
+    ],
+    "fetchedAt": "2026-11-19"
+  },
+  {
+    "title": "Zakarpattia Oblast",
+    "paragraphs": [
+      "Zakarpattia Oblast (Ukrainian: Закарпатська область, translit. Zakarpats’ka oblast’; Rusyn: Подкарпатьска област, translit.",
+      "Podkarpat’ska oblast; Hungarian: Kárpátontúli terület, Kárpátalja; Slovak: Zakarpatská oblasť; also referred to as the Transcarpathian Oblast, Transcarpathia, Zakarpattya, or historically Subcarpathian Rus) is an administrative oblast (province) in western Ukraine.",
+      "Its administrative center is the city of Uzhhorod. Other major cities within the oblast include Mukachevo, Khust, Berehove and Chop which is home to railroad transport infrastructure.",
+      "Zakarpattia Oblast was formally established on January 22, 1946 after the incorporation of Subcarpathian Rus lands to the Ukrainian Soviet Socialist Republic.",
+      "During the Ukrainian independence referendum held in 1991, Zakarpattia Oblast voters were given a separate option on whether or not they favored autonomy for the region.",
+      "Although a large majority favored autonomy, it was not granted."
+    ],
+    "fetchedAt": "2026-11-19"
+  },
+  {
+    "title": "Province of Reggio Emilia",
+    "paragraphs": [
+      "The Province of Reggio Emilia (Italian: Provincia di Reggio Emilia or Italian: Provincia di Reggio nell'Emilia) is a province in the Emilia-Romagna region of Italy in northeastern Italy.",
+      "Its capital is the city of Reggio Emilia. == Geography == Reggio Emilia is a landlocked (it does not border the ocean) province in central Emilia-Romagna. It has an area of 2,291. 26 km2 (884.",
+      "The province is bordered to the north by Lombardy (Mantua province), to the east by the Modena province, to the west by the Parma province and to the south by Tuscany (Lucca and the Massa-Carrara provinces).",
+      "The highest mountain in the province is Monte Cusna (44°17′16″N 10°23′30″E); it is 2,121 m (6,959 ft).",
+      "This mountain is in the \"Appennino Tosco-Emiliano National Park\" (Italian: Parco nazionale dell'Appennino Tosco-Emiliano).",
+      "Other high mountains are Monte Prado, 2,054 m (6,739 ft) high, and Alpe di Succiso, 2,017 m (6,617 ft) high."
+    ],
+    "fetchedAt": "2026-11-19"
+  },
+  {
+    "title": "José María Gil-Robles",
+    "paragraphs": [
+      "José María Gil-Robles y Gil-Delgado (17 June 1935 — 13 February 2023) was a Spanish politician. He was formerly a member of the European Parliament in the European People's Party group.",
+      "He was President of the European Parliament from 1997 to 1999. From 2009 to 2014, he was president of the Jean Monnet Foundation for Europe. Gil-Robles died on 13 February 2023 at the age of 87."
+    ],
+    "fetchedAt": "2026-11-19"
+  },
+  {
     "title": "Prince Harry speaks about social media – level 3",
     "paragraphs": [
       "During a visit to the European Parliament in Brussels, Prince Harry delivered a powerful speech condemning social media platforms for exposing children to online harassment, bullying, and mental health risks.",
@@ -2884,93 +2966,6 @@
     "paragraphs": [
       "Many students try to memorize English words and feel frustrated when they forget them. They repeat vocabulary again and again, but the effect is temporary. The issue isn’t memory.",
       "It is the learning strategy. Words without context are difficult to keep. The brain needs connections to store information effectively. Stories create those connections. They give words meaning and."
-    ],
-    "fetchedAt": "2026-10-31"
-  },
-  {
-    "title": "No Way Out (2008)",
-    "paragraphs": [
-      "No Way Out (2008) was a professional wrestling pay-per-view show made by World Wrestling Entertainment (WWE). It took place on February 17, 2008 at the Thomas & Mack Center in Las Vegas, Nevada.",
-      "It was the tenth No Way Out event held by WWE."
-    ],
-    "fetchedAt": "2026-10-31"
-  },
-  {
-    "title": "GCE Advanced Level",
-    "paragraphs": [
-      "The General Certificate of Education Advanced Level (commonly shortened to A-Level) is a set of exams taken worldwide. They are usually taken during the end of secondary school.",
-      "In the UK, they are usually taken two years after the students have completed GCSE or IGCSE exams. Students in the UK usually take their A-level exams when they are roughly 18 years old.",
-      "Students usually need A-Levels if they want to go to university to study for a degree. A-Levels are usually split into six parts, each with its own exam.",
-      "Most people study three A-Levels, and one AS-Level (Advanced Subsidary Level). An AS-Level is the first half of an A-Level.",
-      "An AS-Level can be studied on its own, but to get an A-Level the second half must also be completed. The second half of an A-Level is an A2-Level.",
-      "A student might opt to appear for their AS-Level and A2-Level together in one go."
-    ],
-    "fetchedAt": "2026-10-31"
-  },
-  {
-    "title": "Lewis Wolpert",
-    "paragraphs": [
-      "Lewis Wolpert CBE FRS FRSL FMedSci (19 October 1929 – 28 January 2021) was a South African-born British developmental biologist, author, and broadcaster.",
-      "Wolpert was known for his work on the intracellular positional information that guides cellular development. He was elected a member of the Academia Europaea in 1989.",
-      "Wolpert died at a hospital in London on 28 January 2021 from COVID-19, aged 91. == Publications == Wolpert, Lewis; Richards, Alison (1988). A Passion for Science. Oxford, U.",
-      "K: Oxford University Press. ISBN 0-19-854213-5. Wolpert, Lewis (1991). The Triumph of the Embryo. Oxford, UK & New York: Oxford University Press. ISBN 0-19-854243-7. Wolpert, Lewis (1994).",
-      "The Unnatural Nature of Science. Harvard University Press. ISBN 0-674-92980-2. Retrieved 14 November 2010. Paperback ISBN 978-0-674-92981-4 First published 1992 by Faber & Faber, London.",
-      "Wolpert, Lewis (1999). Malignant Sadness: The Anatomy of Depression. New York: Free Press. ISBN 0-684-87058-4."
-    ],
-    "fetchedAt": "2026-10-31"
-  },
-  {
-    "title": "Tamarugal Province",
-    "paragraphs": [
-      "Tamarugal (Spanish: Provincia de Tamarugal) is one of two provinces in the northern Chilean region of Tarapacá (I). The capital is the city of Pozo Almonte.",
-      "Tamarugal means \"a place where there are many tamarugos\"; tamarugo (Prosopis tamarugo) is a tree endemic to the arid lands of northern Chile.",
-      "== Geography == The Tamarugal province has an area of 39,390. 5 km2 (15,208. 8 sq mi).",
-      "Tamarugal is bordered on the north by the Arica and Parinacota region, on the east by Bolivia, on the south by the Antofagasta region and on the west by the Iquique province and the Pacific Ocean.",
-      "== Population == As of 2002 (last national census), there were 22,531 people living in the province, giving it a population density of 0. 6 inhabitants/km².",
-      "The largest city of the province is Pozo Almonte, its capital, with a population, in 2002, of 6,384 inhabitants."
-    ],
-    "fetchedAt": "2026-10-31"
-  },
-  {
-    "title": "Leptodactylus ventrimaculatus",
-    "paragraphs": [
-      "The spotted-venter thin-toed frog, Bulun white-lipped frog, spotted-vented thin-toed frog, rana terrestre mugidora , or rana dedilarga de vientre punteado (Leptodactylus ventrimaculatus) is a frog.",
-      "It lives in Colombia, Peru, and Ecuador. Scientists think it might also live in Bolivia. == Body == The adult male frog is 47. 9–55. 4 mm long from nose to rear end and the adult female frog is 44.",
-      "8–59. 3 mm long. The skin of the frog's back can have cream-yellow color and dark brown marks. The sides of the body can be dark brown, red-brown, or light rbown. There are some marks over the eyes.",
-      "== Home == These frogs are awake at night. These frogs live in forests near streams.",
-      "It can also live in places that human beings have changed, for example places where cows eat grass and forestst that were cut down and are growing back.",
-      "Scientists saw the frog as high as 1400 meters above sea level. == Young == The frogs put their eggs on low plants. The tadpoles swim in water."
-    ],
-    "fetchedAt": "2026-10-31"
-  },
-  {
-    "title": "Heinsberg (district)",
-    "paragraphs": [
-      "Heinsberg is a Kreis (district) in the west of North Rhine-Westphalia, Germany. == History == The area became Prussian in 1815.",
-      "To help govern its new land Prussia made three districts Heinsberg, Erkelenz and Geilenkirchen in 1816.",
-      "In 1932 the districts of Heinsberg and Geilenkirchen were joined, and in 1972 the Erkelenz district was joined to the others as well.",
-      "In 1975 the municipality of Niederkrüchten was moved to the district Viersen. That was the last change to the district's size === Rivers === Rur is the main river."
-    ],
-    "fetchedAt": "2026-10-31"
-  },
-  {
-    "title": "Hypercube",
-    "paragraphs": [
-      "In geometry, a hypercube is a kind of polytope. It is an analogue of a square (n = 2) or a cube (n = 3) in another number of dimensions (which is known as n-dimensional).",
-      "A hypercube is a closed, compact, convex figure that is made of groups of opposite parallel line segments aligned in each of the space's dimensions, perpendicular to each other and of the same length.",
-      "An n-dimensional hypercube is also called an n-cube or an n-dimensional cube. The term \"measure polytope\" is also used, notably in the work of H. S. M.",
-      "Coxeter (originally from Elte, 1912), but it has been superseded. The hypercube is the special case of a hyperrectangle (also called an n-orthotope), where all of its parts are equal.",
-      "A unit hypercube is a hypercube whose side has length one unit.",
-      "Often, the hypercube whose corners (or vertices) are the 2n points in Rn with each coordinate equal to 0 or 1 is called \"the\" unit hypercube."
-    ],
-    "fetchedAt": "2026-10-31"
-  },
-  {
-    "title": "M. Karunanidhi",
-    "paragraphs": [
-      "Muthuvel Karunanidhi (3 June 1924 – 7 August 2018) was an Indian politician. He has served as the Chief Minister of Tamil Nadu five different times.",
-      "He is the former president of the Dravida Munnetra Kazhagam (DMK), a Dravidian political party in the state of Tamil Nadu. He has been the leader of the DMK since the death of its founder, C. N.",
-      "Annadurai, in 1969. Karunanidhi was born in Thirukuvalai, Tiruvarur, British India. He was an atheist. Karunanidhi died in Chennai at a hospital from multiple organ failure on 7 August 2018, aged 94."
     ],
     "fetchedAt": "2026-10-31"
   }
